@@ -1,0 +1,1550 @@
+{
+  "passed": true,
+  "scenes": 24988,
+  "per_seed": {
+    "42": {
+      "NDPNet": {
+        "ADE6": 1.2945079100195402,
+        "FDE6": 3.626806565005108,
+        "center_conflict_pairs": 795,
+        "center_conflict_pair_rate": 0.0032247465835939498,
+        "center_conflict_steps": 18903,
+        "actor_conflict_rate": 0.015283708326490392,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.2695579192708433,
+        "focal_FDE6": 5.913139338235625,
+        "improved": 0,
+        "degraded": 0,
+        "changed": 0,
+        "mean_acceleration": 1.0414469567473708,
+        "mean_jerk": 12.793306545683816,
+        "max_shift_from_A": 0.0
+      },
+      "RCIM_stage1": {
+        "ADE6": 1.17601677667249,
+        "FDE6": 3.2120871258349872,
+        "center_conflict_pairs": 342,
+        "center_conflict_pair_rate": 0.0013872494736970199,
+        "center_conflict_steps": 5291,
+        "actor_conflict_rate": 0.0066821317129249465,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.223639878361875,
+        "focal_FDE6": 5.764809019040488,
+        "improved": 23092,
+        "degraded": 9252,
+        "changed": 32344,
+        "mean_acceleration": 0.9905275362624909,
+        "mean_jerk": 12.177796140656113,
+        "max_shift_from_A": 3.999999990000903
+      },
+      "OldRCIM_stage1": {
+        "ADE6": 1.1502020678813623,
+        "FDE6": 3.115535875968013,
+        "center_conflict_pairs": 451,
+        "center_conflict_pair_rate": 0.0018293845398753097,
+        "center_conflict_steps": 16462,
+        "actor_conflict_rate": 0.008663163080965677,
+        "extra_gt5": 1175,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.2448436787006076,
+        "focal_FDE6": 5.778818737928668,
+        "improved": 22095,
+        "degraded": 9096,
+        "changed": 31191,
+        "mean_acceleration": 0.9760302400605808,
+        "mean_jerk": 12.02493970621551,
+        "max_shift_from_A": 19.986174328284363
+      },
+      "GeometryB_stage1": {
+        "ADE6": 1.292895674915122,
+        "FDE6": 3.6230825746923987,
+        "center_conflict_pairs": 374,
+        "center_conflict_pair_rate": 0.0015170505940429399,
+        "center_conflict_steps": 15956,
+        "actor_conflict_rate": 0.007297996386927246,
+        "extra_gt5": 29,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.2685801082390338,
+        "focal_FDE6": 5.910949920265469,
+        "improved": 221,
+        "degraded": 171,
+        "changed": 392,
+        "mean_acceleration": 1.0410400233261694,
+        "mean_jerk": 12.788248858170768,
+        "max_shift_from_A": 19.479626356062422
+      },
+      "NDPNet_refined": {
+        "ADE6": 1.1878077468451314,
+        "FDE6": 3.3365369374415037,
+        "center_conflict_pairs": 652,
+        "center_conflict_pair_rate": 0.0026446978270481198,
+        "center_conflict_steps": 17133,
+        "actor_conflict_rate": 0.01254311052718016,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.17872944739202,
+        "focal_FDE6": 5.774984663259687,
+        "improved": 62085,
+        "degraded": 34880,
+        "changed": 0,
+        "mean_acceleration": 1.0807773478342164,
+        "mean_jerk": 12.845880582110949,
+        "max_shift_from_A": 0.996998528045465
+      },
+      "OldRCIM_refined": {
+        "ADE6": 1.0841027958950904,
+        "FDE6": 2.8993980160474195,
+        "center_conflict_pairs": 411,
+        "center_conflict_pair_rate": 0.0016671331394429098,
+        "center_conflict_steps": 15541,
+        "actor_conflict_rate": 0.007872803415996058,
+        "extra_gt5": 1029,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.1620339853091664,
+        "focal_FDE6": 5.675640790540455,
+        "improved": 60184,
+        "degraded": 36922,
+        "changed": 31191,
+        "mean_acceleration": 1.0107416560119347,
+        "mean_jerk": 12.080900717919658,
+        "max_shift_from_A": 20.924131049735887
+      },
+      "GeometryB_refined": {
+        "ADE6": 1.1877243915752278,
+        "FDE6": 3.3336240492131006,
+        "center_conflict_pairs": 368,
+        "center_conflict_pair_rate": 0.0014927128839780797,
+        "center_conflict_steps": 15497,
+        "actor_conflict_rate": 0.007174823452126786,
+        "extra_gt5": 21,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.178211502057904,
+        "focal_FDE6": 5.7744630776729275,
+        "improved": 61940,
+        "degraded": 35194,
+        "changed": 392,
+        "mean_acceleration": 1.0824653359532763,
+        "mean_jerk": 12.841494323212775,
+        "max_shift_from_A": 20.442100433236035
+      },
+      "FullRCIM": {
+        "ADE6": 1.085581895716505,
+        "FDE6": 2.8785271386269016,
+        "center_conflict_pairs": 336,
+        "center_conflict_pair_rate": 0.0013629117636321597,
+        "center_conflict_steps": 5053,
+        "actor_conflict_rate": 0.006569223189357858,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.1337315851229786,
+        "focal_FDE6": 5.640397224390454,
+        "improved": 61449,
+        "degraded": 35569,
+        "changed": 32344,
+        "mean_acceleration": 1.0335421135875598,
+        "mean_jerk": 12.262163272643644,
+        "max_shift_from_A": 4.999876391712683
+      },
+      "Full_without_RCIM": {
+        "ADE6": 1.1349527094795904,
+        "FDE6": 3.1404920176518054,
+        "center_conflict_pairs": 338,
+        "center_conflict_pair_rate": 0.00137102433365378,
+        "center_conflict_steps": 5092,
+        "actor_conflict_rate": 0.006610280834291345,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.1553096837335772,
+        "focal_FDE6": 5.721298596951787,
+        "improved": 62262,
+        "degraded": 34394,
+        "changed": 917,
+        "mean_acceleration": 1.0981746468585787,
+        "mean_jerk": 12.932098612787213,
+        "max_shift_from_A": 4.999880141137183
+      },
+      "GeometryB_two_refiners": {
+        "ADE6": 1.1281889991334357,
+        "FDE6": 3.123889741084402,
+        "center_conflict_pairs": 365,
+        "center_conflict_pair_rate": 0.0014805440289456498,
+        "center_conflict_steps": 15210,
+        "actor_conflict_rate": 0.007113236984726556,
+        "extra_gt5": 21,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.155914467324044,
+        "focal_FDE6": 5.7221926517895145,
+        "improved": 62599,
+        "degraded": 34708,
+        "changed": 392,
+        "mean_acceleration": 1.0981322910561748,
+        "mean_jerk": 12.88274103234971,
+        "max_shift_from_A": 20.442100433236035
+      }
+    },
+    "43": {
+      "NDPNet": {
+        "ADE6": 1.2945079100195402,
+        "FDE6": 3.626806565005108,
+        "center_conflict_pairs": 795,
+        "center_conflict_pair_rate": 0.0032247465835939498,
+        "center_conflict_steps": 18903,
+        "actor_conflict_rate": 0.015283708326490392,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.2695579192708433,
+        "focal_FDE6": 5.913139338235625,
+        "improved": 0,
+        "degraded": 0,
+        "changed": 0,
+        "mean_acceleration": 1.0414469567473708,
+        "mean_jerk": 12.793306545683816,
+        "max_shift_from_A": 0.0
+      },
+      "RCIM_stage1": {
+        "ADE6": 1.17601677667249,
+        "FDE6": 3.2120871258349872,
+        "center_conflict_pairs": 342,
+        "center_conflict_pair_rate": 0.0013872494736970199,
+        "center_conflict_steps": 5291,
+        "actor_conflict_rate": 0.0066821317129249465,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.223639878361875,
+        "focal_FDE6": 5.764809019040488,
+        "improved": 23092,
+        "degraded": 9252,
+        "changed": 32344,
+        "mean_acceleration": 0.9905275362624909,
+        "mean_jerk": 12.177796140656113,
+        "max_shift_from_A": 3.999999990000903
+      },
+      "OldRCIM_stage1": {
+        "ADE6": 1.1502020678813623,
+        "FDE6": 3.115535875968013,
+        "center_conflict_pairs": 451,
+        "center_conflict_pair_rate": 0.0018293845398753097,
+        "center_conflict_steps": 16462,
+        "actor_conflict_rate": 0.008663163080965677,
+        "extra_gt5": 1175,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.2448436787006076,
+        "focal_FDE6": 5.778818737928668,
+        "improved": 22095,
+        "degraded": 9096,
+        "changed": 31191,
+        "mean_acceleration": 0.9760302400605808,
+        "mean_jerk": 12.02493970621551,
+        "max_shift_from_A": 19.986174328284363
+      },
+      "GeometryB_stage1": {
+        "ADE6": 1.292895674915122,
+        "FDE6": 3.6230825746923987,
+        "center_conflict_pairs": 374,
+        "center_conflict_pair_rate": 0.0015170505940429399,
+        "center_conflict_steps": 15956,
+        "actor_conflict_rate": 0.007297996386927246,
+        "extra_gt5": 29,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.2685801082390338,
+        "focal_FDE6": 5.910949920265469,
+        "improved": 221,
+        "degraded": 171,
+        "changed": 392,
+        "mean_acceleration": 1.0410400233261694,
+        "mean_jerk": 12.788248858170768,
+        "max_shift_from_A": 19.479626356062422
+      },
+      "NDPNet_refined": {
+        "ADE6": 1.1882886339819754,
+        "FDE6": 3.3400149318117376,
+        "center_conflict_pairs": 653,
+        "center_conflict_pair_rate": 0.0026487541120589295,
+        "center_conflict_steps": 17355,
+        "actor_conflict_rate": 0.012584168172113648,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.181249258811169,
+        "focal_FDE6": 5.780752278747471,
+        "improved": 61407,
+        "degraded": 35448,
+        "changed": 0,
+        "mean_acceleration": 1.0834677679985603,
+        "mean_jerk": 12.84773281073667,
+        "max_shift_from_A": 0.9969800072530915
+      },
+      "OldRCIM_refined": {
+        "ADE6": 1.0849322058182393,
+        "FDE6": 2.9047560765992437,
+        "center_conflict_pairs": 411,
+        "center_conflict_pair_rate": 0.0016671331394429098,
+        "center_conflict_steps": 15762,
+        "actor_conflict_rate": 0.007893332238462801,
+        "extra_gt5": 1047,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.16183298655903,
+        "focal_FDE6": 5.680452579778644,
+        "improved": 59436,
+        "degraded": 37611,
+        "changed": 31191,
+        "mean_acceleration": 1.010519300733278,
+        "mean_jerk": 12.076711715680764,
+        "max_shift_from_A": 20.95738097270403
+      },
+      "GeometryB_refined": {
+        "ADE6": 1.1865814334432783,
+        "FDE6": 3.335913407452591,
+        "center_conflict_pairs": 366,
+        "center_conflict_pair_rate": 0.0014846003139564598,
+        "center_conflict_steps": 15491,
+        "actor_conflict_rate": 0.007133765807193299,
+        "extra_gt5": 21,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.1801868726575178,
+        "focal_FDE6": 5.778679182476732,
+        "improved": 61457,
+        "degraded": 35603,
+        "changed": 392,
+        "mean_acceleration": 1.0832084281395764,
+        "mean_jerk": 12.843110662582188,
+        "max_shift_from_A": 20.44372264270042
+      },
+      "FullRCIM": {
+        "ADE6": 1.0863620151237487,
+        "FDE6": 2.883801476735011,
+        "center_conflict_pairs": 337,
+        "center_conflict_pair_rate": 0.00136696804864297,
+        "center_conflict_steps": 5116,
+        "actor_conflict_rate": 0.00657948760059123,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.136017876619096,
+        "focal_FDE6": 5.6533920419442225,
+        "improved": 61482,
+        "degraded": 35320,
+        "changed": 32344,
+        "mean_acceleration": 1.0370663191581986,
+        "mean_jerk": 12.273126904917897,
+        "max_shift_from_A": 4.999874037959864
+      },
+      "Full_without_RCIM": {
+        "ADE6": 1.1355964621526913,
+        "FDE6": 3.143236514815062,
+        "center_conflict_pairs": 339,
+        "center_conflict_pair_rate": 0.00137508061866459,
+        "center_conflict_steps": 5120,
+        "actor_conflict_rate": 0.006620545245524717,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.156889158153436,
+        "focal_FDE6": 5.728899719412818,
+        "improved": 62167,
+        "degraded": 34321,
+        "changed": 917,
+        "mean_acceleration": 1.0959989752516872,
+        "mean_jerk": 12.935080103178676,
+        "max_shift_from_A": 4.999874278796442
+      },
+      "GeometryB_two_refiners": {
+        "ADE6": 1.1279267263941781,
+        "FDE6": 3.125482356657263,
+        "center_conflict_pairs": 361,
+        "center_conflict_pair_rate": 0.0014643188889024098,
+        "center_conflict_steps": 15251,
+        "actor_conflict_rate": 0.007031121694859583,
+        "extra_gt5": 21,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.1551637615840384,
+        "focal_FDE6": 5.722724221029217,
+        "improved": 63075,
+        "degraded": 34270,
+        "changed": 392,
+        "mean_acceleration": 1.097075049920531,
+        "mean_jerk": 12.883486796937841,
+        "max_shift_from_A": 20.44372264270042
+      }
+    },
+    "44": {
+      "NDPNet": {
+        "ADE6": 1.2945079100195402,
+        "FDE6": 3.626806565005108,
+        "center_conflict_pairs": 795,
+        "center_conflict_pair_rate": 0.0032247465835939498,
+        "center_conflict_steps": 18903,
+        "actor_conflict_rate": 0.015283708326490392,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.2695579192708433,
+        "focal_FDE6": 5.913139338235625,
+        "improved": 0,
+        "degraded": 0,
+        "changed": 0,
+        "mean_acceleration": 1.0414469567473708,
+        "mean_jerk": 12.793306545683816,
+        "max_shift_from_A": 0.0
+      },
+      "RCIM_stage1": {
+        "ADE6": 1.17601677667249,
+        "FDE6": 3.2120871258349872,
+        "center_conflict_pairs": 342,
+        "center_conflict_pair_rate": 0.0013872494736970199,
+        "center_conflict_steps": 5291,
+        "actor_conflict_rate": 0.0066821317129249465,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.223639878361875,
+        "focal_FDE6": 5.764809019040488,
+        "improved": 23092,
+        "degraded": 9252,
+        "changed": 32344,
+        "mean_acceleration": 0.9905275362624909,
+        "mean_jerk": 12.177796140656113,
+        "max_shift_from_A": 3.999999990000903
+      },
+      "OldRCIM_stage1": {
+        "ADE6": 1.1502020678813623,
+        "FDE6": 3.115535875968013,
+        "center_conflict_pairs": 451,
+        "center_conflict_pair_rate": 0.0018293845398753097,
+        "center_conflict_steps": 16462,
+        "actor_conflict_rate": 0.008663163080965677,
+        "extra_gt5": 1175,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.2448436787006076,
+        "focal_FDE6": 5.778818737928668,
+        "improved": 22095,
+        "degraded": 9096,
+        "changed": 31191,
+        "mean_acceleration": 0.9760302400605808,
+        "mean_jerk": 12.02493970621551,
+        "max_shift_from_A": 19.986174328284363
+      },
+      "GeometryB_stage1": {
+        "ADE6": 1.292895674915122,
+        "FDE6": 3.6230825746923987,
+        "center_conflict_pairs": 374,
+        "center_conflict_pair_rate": 0.0015170505940429399,
+        "center_conflict_steps": 15956,
+        "actor_conflict_rate": 0.007297996386927246,
+        "extra_gt5": 29,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.2685801082390338,
+        "focal_FDE6": 5.910949920265469,
+        "improved": 221,
+        "degraded": 171,
+        "changed": 392,
+        "mean_acceleration": 1.0410400233261694,
+        "mean_jerk": 12.788248858170768,
+        "max_shift_from_A": 19.479626356062422
+      },
+      "NDPNet_refined": {
+        "ADE6": 1.1890266203724122,
+        "FDE6": 3.3402205410894625,
+        "center_conflict_pairs": 650,
+        "center_conflict_pair_rate": 0.0026365852570265,
+        "center_conflict_steps": 17161,
+        "actor_conflict_rate": 0.012532846115946789,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.1843512332709496,
+        "focal_FDE6": 5.782994371839186,
+        "improved": 61468,
+        "degraded": 35465,
+        "changed": 0,
+        "mean_acceleration": 1.0790615555396625,
+        "mean_jerk": 12.838885611865651,
+        "max_shift_from_A": 0.9969039105317687
+      },
+      "OldRCIM_refined": {
+        "ADE6": 1.0841438359725368,
+        "FDE6": 2.9011772518127072,
+        "center_conflict_pairs": 411,
+        "center_conflict_pair_rate": 0.0016671331394429098,
+        "center_conflict_steps": 15751,
+        "actor_conflict_rate": 0.007913861060929546,
+        "extra_gt5": 1034,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.164895930747848,
+        "focal_FDE6": 5.676782019886871,
+        "improved": 59779,
+        "degraded": 37339,
+        "changed": 31191,
+        "mean_acceleration": 1.0057372184114366,
+        "mean_jerk": 12.06373563821359,
+        "max_shift_from_A": 20.965399100662708
+      },
+      "GeometryB_refined": {
+        "ADE6": 1.1874638320979107,
+        "FDE6": 3.33598230594825,
+        "center_conflict_pairs": 368,
+        "center_conflict_pair_rate": 0.0014927128839780797,
+        "center_conflict_steps": 15298,
+        "actor_conflict_rate": 0.007174823452126786,
+        "extra_gt5": 21,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.1840395618857493,
+        "focal_FDE6": 5.781425298639027,
+        "improved": 61505,
+        "degraded": 35593,
+        "changed": 392,
+        "mean_acceleration": 1.0790551708556393,
+        "mean_jerk": 12.834044277205642,
+        "max_shift_from_A": 20.450927545959726
+      },
+      "FullRCIM": {
+        "ADE6": 1.0887295266237396,
+        "FDE6": 2.8849123749157886,
+        "center_conflict_pairs": 336,
+        "center_conflict_pair_rate": 0.0013629117636321597,
+        "center_conflict_steps": 5092,
+        "actor_conflict_rate": 0.006558958778124487,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.1427077209459955,
+        "focal_FDE6": 5.6565855102296,
+        "improved": 60394,
+        "degraded": 36485,
+        "changed": 32344,
+        "mean_acceleration": 1.0337409084604334,
+        "mean_jerk": 12.260991820524692,
+        "max_shift_from_A": 4.999877492356503
+      },
+      "Full_without_RCIM": {
+        "ADE6": 1.1381329505990416,
+        "FDE6": 3.145829122837361,
+        "center_conflict_pairs": 339,
+        "center_conflict_pair_rate": 0.00137508061866459,
+        "center_conflict_steps": 5105,
+        "actor_conflict_rate": 0.006620545245524717,
+        "extra_gt5": 0,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.160700280943476,
+        "focal_FDE6": 5.724894397148422,
+        "improved": 62092,
+        "degraded": 34445,
+        "changed": 917,
+        "mean_acceleration": 1.0923952690239698,
+        "mean_jerk": 12.917932121343627,
+        "max_shift_from_A": 4.999878588859684
+      },
+      "GeometryB_two_refiners": {
+        "ADE6": 1.1311278332289647,
+        "FDE6": 3.1293022316699073,
+        "center_conflict_pairs": 364,
+        "center_conflict_pair_rate": 0.0014764877439348398,
+        "center_conflict_steps": 15087,
+        "actor_conflict_rate": 0.007092708162259813,
+        "extra_gt5": 21,
+        "valid6_targets": 97424,
+        "all_predicted_targets": 97424,
+        "eligible_pairs": 246531,
+        "focal_targets": 24988,
+        "focal_ADE6": 2.1633025139318907,
+        "focal_FDE6": 5.735531380106136,
+        "improved": 62551,
+        "degraded": 34757,
+        "changed": 392,
+        "mean_acceleration": 1.0955301011299559,
+        "mean_jerk": 12.87525853099654,
+        "max_shift_from_A": 20.450927545959726
+      }
+    }
+  },
+  "three_seed": {
+    "NDPNet": {
+      "ADE6": {
+        "mean": 1.2945079100195402,
+        "sample_sd": 0.0
+      },
+      "FDE6": {
+        "mean": 3.626806565005108,
+        "sample_sd": 0.0
+      },
+      "center_conflict_pairs": {
+        "mean": 795.0,
+        "sample_sd": 0.0
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.0032247465835939498,
+        "sample_sd": 0.0
+      },
+      "center_conflict_steps": {
+        "mean": 18903.0,
+        "sample_sd": 0.0
+      },
+      "actor_conflict_rate": {
+        "mean": 0.015283708326490392,
+        "sample_sd": 0.0
+      },
+      "extra_gt5": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.2695579192708433,
+        "sample_sd": 0.0
+      },
+      "focal_FDE6": {
+        "mean": 5.913139338235626,
+        "sample_sd": 1.0877919644084146e-15
+      },
+      "improved": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "degraded": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "changed": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 1.0414469567473708,
+        "sample_sd": 0.0
+      },
+      "mean_jerk": {
+        "mean": 12.793306545683814,
+        "sample_sd": 2.175583928816829e-15
+      },
+      "max_shift_from_A": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      }
+    },
+    "RCIM_stage1": {
+      "ADE6": {
+        "mean": 1.17601677667249,
+        "sample_sd": 0.0
+      },
+      "FDE6": {
+        "mean": 3.2120871258349872,
+        "sample_sd": 0.0
+      },
+      "center_conflict_pairs": {
+        "mean": 342.0,
+        "sample_sd": 0.0
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.0013872494736970199,
+        "sample_sd": 0.0
+      },
+      "center_conflict_steps": {
+        "mean": 5291.0,
+        "sample_sd": 0.0
+      },
+      "actor_conflict_rate": {
+        "mean": 0.0066821317129249465,
+        "sample_sd": 0.0
+      },
+      "extra_gt5": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.223639878361875,
+        "sample_sd": 0.0
+      },
+      "focal_FDE6": {
+        "mean": 5.764809019040488,
+        "sample_sd": 0.0
+      },
+      "improved": {
+        "mean": 23092.0,
+        "sample_sd": 0.0
+      },
+      "degraded": {
+        "mean": 9252.0,
+        "sample_sd": 0.0
+      },
+      "changed": {
+        "mean": 32344.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 0.9905275362624909,
+        "sample_sd": 0.0
+      },
+      "mean_jerk": {
+        "mean": 12.177796140656113,
+        "sample_sd": 0.0
+      },
+      "max_shift_from_A": {
+        "mean": 3.999999990000903,
+        "sample_sd": 0.0
+      }
+    },
+    "OldRCIM_stage1": {
+      "ADE6": {
+        "mean": 1.1502020678813623,
+        "sample_sd": 0.0
+      },
+      "FDE6": {
+        "mean": 3.1155358759680127,
+        "sample_sd": 5.438959822042073e-16
+      },
+      "center_conflict_pairs": {
+        "mean": 451.0,
+        "sample_sd": 0.0
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.00182938453987531,
+        "sample_sd": 2.655742100606481e-19
+      },
+      "center_conflict_steps": {
+        "mean": 16462.0,
+        "sample_sd": 0.0
+      },
+      "actor_conflict_rate": {
+        "mean": 0.008663163080965677,
+        "sample_sd": 0.0
+      },
+      "extra_gt5": {
+        "mean": 1175.0,
+        "sample_sd": 0.0
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.2448436787006076,
+        "sample_sd": 0.0
+      },
+      "focal_FDE6": {
+        "mean": 5.778818737928668,
+        "sample_sd": 0.0
+      },
+      "improved": {
+        "mean": 22095.0,
+        "sample_sd": 0.0
+      },
+      "degraded": {
+        "mean": 9096.0,
+        "sample_sd": 0.0
+      },
+      "changed": {
+        "mean": 31191.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 0.9760302400605808,
+        "sample_sd": 0.0
+      },
+      "mean_jerk": {
+        "mean": 12.02493970621551,
+        "sample_sd": 0.0
+      },
+      "max_shift_from_A": {
+        "mean": 19.986174328284363,
+        "sample_sd": 0.0
+      }
+    },
+    "GeometryB_stage1": {
+      "ADE6": {
+        "mean": 1.292895674915122,
+        "sample_sd": 0.0
+      },
+      "FDE6": {
+        "mean": 3.6230825746923987,
+        "sample_sd": 0.0
+      },
+      "center_conflict_pairs": {
+        "mean": 374.0,
+        "sample_sd": 0.0
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.0015170505940429399,
+        "sample_sd": 0.0
+      },
+      "center_conflict_steps": {
+        "mean": 15956.0,
+        "sample_sd": 0.0
+      },
+      "actor_conflict_rate": {
+        "mean": 0.007297996386927246,
+        "sample_sd": 0.0
+      },
+      "extra_gt5": {
+        "mean": 29.0,
+        "sample_sd": 0.0
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.2685801082390338,
+        "sample_sd": 0.0
+      },
+      "focal_FDE6": {
+        "mean": 5.910949920265469,
+        "sample_sd": 0.0
+      },
+      "improved": {
+        "mean": 221.0,
+        "sample_sd": 0.0
+      },
+      "degraded": {
+        "mean": 171.0,
+        "sample_sd": 0.0
+      },
+      "changed": {
+        "mean": 392.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 1.0410400233261694,
+        "sample_sd": 0.0
+      },
+      "mean_jerk": {
+        "mean": 12.788248858170768,
+        "sample_sd": 0.0
+      },
+      "max_shift_from_A": {
+        "mean": 19.479626356062422,
+        "sample_sd": 0.0
+      }
+    },
+    "NDPNet_refined": {
+      "ADE6": {
+        "mean": 1.188374333733173,
+        "sample_sd": 0.0006139393328277988
+      },
+      "FDE6": {
+        "mean": 3.3389241367809013,
+        "sample_sd": 0.0020699297834194273
+      },
+      "center_conflict_pairs": {
+        "mean": 651.6666666666666,
+        "sample_sd": 1.5275252316519468
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.0026433457320445167,
+        "sample_sd": 6.196077700783748e-06
+      },
+      "center_conflict_steps": {
+        "mean": 17216.333333333332,
+        "sample_sd": 120.9021643037598
+      },
+      "actor_conflict_rate": {
+        "mean": 0.012553374938413532,
+        "sample_sd": 2.715707947799953e-05
+      },
+      "extra_gt5": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.1814433131580464,
+        "sample_sd": 0.002815912273898008
+      },
+      "focal_FDE6": {
+        "mean": 5.7795771046154485,
+        "sample_sd": 0.004132146362673448
+      },
+      "improved": {
+        "mean": 61653.333333333336,
+        "sample_sd": 375.0764366543616
+      },
+      "degraded": {
+        "mean": 35264.333333333336,
+        "sample_sd": 332.95094733809265
+      },
+      "changed": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 1.081102223790813,
+        "sample_sd": 0.0022209987277387877
+      },
+      "mean_jerk": {
+        "mean": 12.844166334904422,
+        "sample_sd": 0.004666070571653346
+      },
+      "max_shift_from_A": {
+        "mean": 0.996960815276775,
+        "sample_sd": 5.014346857480241e-05
+      }
+    },
+    "OldRCIM_refined": {
+      "ADE6": {
+        "mean": 1.0843929458952888,
+        "sample_sd": 0.00046746338933078825
+      },
+      "FDE6": {
+        "mean": 2.90177711481979,
+        "sample_sd": 0.002728933846707094
+      },
+      "center_conflict_pairs": {
+        "mean": 411.0,
+        "sample_sd": 0.0
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.0016671331394429098,
+        "sample_sd": 0.0
+      },
+      "center_conflict_steps": {
+        "mean": 15684.666666666666,
+        "sample_sd": 124.54048873090764
+      },
+      "actor_conflict_rate": {
+        "mean": 0.007893332238462801,
+        "sample_sd": 2.052882246674371e-05
+      },
+      "extra_gt5": {
+        "mean": 1036.6666666666667,
+        "sample_sd": 9.291573243177568
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.1629209675386813,
+        "sample_sd": 0.001713318383301962
+      },
+      "focal_FDE6": {
+        "mean": 5.677625130068656,
+        "sample_sd": 0.0025142503857332713
+      },
+      "improved": {
+        "mean": 59799.666666666664,
+        "sample_sd": 374.4280082116365
+      },
+      "degraded": {
+        "mean": 37290.666666666664,
+        "sample_sd": 347.03361988910143
+      },
+      "changed": {
+        "mean": 31191.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 1.008999391718883,
+        "sample_sd": 0.002827311706082106
+      },
+      "mean_jerk": {
+        "mean": 12.073782690604668,
+        "sample_sd": 0.00894954642712153
+      },
+      "max_shift_from_A": {
+        "mean": 20.948970374367544,
+        "sample_sd": 0.021881879035127838
+      }
+    },
+    "GeometryB_refined": {
+      "ADE6": {
+        "mean": 1.187256552372139,
+        "sample_sd": 0.0005990091705344888
+      },
+      "FDE6": {
+        "mean": 3.3351732542046473,
+        "sample_sd": 0.0013420930780130196
+      },
+      "center_conflict_pairs": {
+        "mean": 367.3333333333333,
+        "sample_sd": 1.1547005383792517
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.001490008693970873,
+        "sample_sd": 4.6837944858019794e-06
+      },
+      "center_conflict_steps": {
+        "mean": 15428.666666666666,
+        "sample_sd": 113.20041224895488
+      },
+      "actor_conflict_rate": {
+        "mean": 0.007161137570482291,
+        "sample_sd": 2.3704642354640533e-05
+      },
+      "extra_gt5": {
+        "mean": 21.0,
+        "sample_sd": 0.0
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.180812645533724,
+        "sample_sd": 0.002963994620218277
+      },
+      "focal_FDE6": {
+        "mean": 5.778189186262895,
+        "sample_sd": 0.0035068792982335156
+      },
+      "improved": {
+        "mean": 61634.0,
+        "sample_sd": 266.08833119849504
+      },
+      "degraded": {
+        "mean": 35463.333333333336,
+        "sample_sd": 233.30309327853612
+      },
+      "changed": {
+        "mean": 392.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 1.0815763116494974,
+        "sample_sd": 0.0022147595075259203
+      },
+      "mean_jerk": {
+        "mean": 12.839549754333534,
+        "sample_sd": 0.0048358915458880285
+      },
+      "max_shift_from_A": {
+        "mean": 20.44558354063206,
+        "sample_sd": 0.004698583360245214
+      }
+    },
+    "FullRCIM": {
+      "ADE6": {
+        "mean": 1.086891145821331,
+        "sample_sd": 0.0016391703857096237
+      },
+      "FDE6": {
+        "mean": 2.8824136634259006,
+        "sample_sd": 0.0034113530969306534
+      },
+      "center_conflict_pairs": {
+        "mean": 336.3333333333333,
+        "sample_sd": 0.5773502691896258
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.001364263858635763,
+        "sample_sd": 2.341897242901115e-06
+      },
+      "center_conflict_steps": {
+        "mean": 5087.0,
+        "sample_sd": 31.796226191169293
+      },
+      "actor_conflict_rate": {
+        "mean": 0.006569223189357858,
+        "sample_sd": 1.026441123337142e-05
+      },
+      "extra_gt5": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.1374857275626904,
+        "sample_sd": 0.004664621460822904
+      },
+      "focal_FDE6": {
+        "mean": 5.650124925521426,
+        "sample_sd": 0.008574420498934907
+      },
+      "improved": {
+        "mean": 61108.333333333336,
+        "sample_sd": 618.8508167024855
+      },
+      "degraded": {
+        "mean": 35791.333333333336,
+        "sample_sd": 613.4984379224884
+      },
+      "changed": {
+        "mean": 32344.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 1.0347831137353973,
+        "sample_sd": 0.0019798106228632677
+      },
+      "mean_jerk": {
+        "mean": 12.265427332695412,
+        "sample_sd": 0.006693701093095178
+      },
+      "max_shift_from_A": {
+        "mean": 4.999875974009683,
+        "sample_sd": 1.7646730240755473e-06
+      }
+    },
+    "Full_without_RCIM": {
+      "ADE6": {
+        "mean": 1.1362273740771078,
+        "sample_sd": 0.0016813746717315337
+      },
+      "FDE6": {
+        "mean": 3.1431858851014094,
+        "sample_sd": 0.002668912787325564
+      },
+      "center_conflict_pairs": {
+        "mean": 338.6666666666667,
+        "sample_sd": 0.5773502691896258
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.0013737285236609866,
+        "sample_sd": 2.3418972429009897e-06
+      },
+      "center_conflict_steps": {
+        "mean": 5105.666666666667,
+        "sample_sd": 14.011899704655802
+      },
+      "actor_conflict_rate": {
+        "mean": 0.006617123775113593,
+        "sample_sd": 5.9261605886605085e-06
+      },
+      "extra_gt5": {
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.1576330409434967,
+        "sample_sd": 0.002771219185458387
+      },
+      "focal_FDE6": {
+        "mean": 5.725030904504343,
+        "sample_sd": 0.0038023994214923798
+      },
+      "improved": {
+        "mean": 62173.666666666664,
+        "sample_sd": 85.19585279421372
+      },
+      "degraded": {
+        "mean": 34386.666666666664,
+        "sample_sd": 62.32442004008809
+      },
+      "changed": {
+        "mean": 917.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 1.095522963711412,
+        "sample_sd": 0.002918945405218923
+      },
+      "mean_jerk": {
+        "mean": 12.928370279103172,
+        "sample_sd": 0.009161805187759322
+      },
+      "max_shift_from_A": {
+        "mean": 4.99987766959777,
+        "sample_sd": 3.0373576659921077e-06
+      }
+    },
+    "GeometryB_two_refiners": {
+      "ADE6": {
+        "mean": 1.1290811862521928,
+        "sample_sd": 0.0017772927820385825
+      },
+      "FDE6": {
+        "mean": 3.126224776470524,
+        "sample_sd": 0.0027815740092414845
+      },
+      "center_conflict_pairs": {
+        "mean": 363.3333333333333,
+        "sample_sd": 2.0816659994661326
+      },
+      "center_conflict_pair_rate": {
+        "mean": 0.0014737835539276331,
+        "sample_sd": 8.443830591147263e-06
+      },
+      "center_conflict_steps": {
+        "mean": 15182.666666666666,
+        "sample_sd": 85.34830597811144
+      },
+      "actor_conflict_rate": {
+        "mean": 0.007079022280615317,
+        "sample_sd": 4.2734151738096014e-05
+      },
+      "extra_gt5": {
+        "mean": 21.0,
+        "sample_sd": 0.0
+      },
+      "valid6_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "all_predicted_targets": {
+        "mean": 97424.0,
+        "sample_sd": 0.0
+      },
+      "eligible_pairs": {
+        "mean": 246531.0,
+        "sample_sd": 0.0
+      },
+      "focal_targets": {
+        "mean": 24988.0,
+        "sample_sd": 0.0
+      },
+      "focal_ADE6": {
+        "mean": 2.158126914279991,
+        "sample_sd": 0.004497889904674961
+      },
+      "focal_FDE6": {
+        "mean": 5.726816084308289,
+        "sample_sd": 0.007552345800949823
+      },
+      "improved": {
+        "mean": 62741.666666666664,
+        "sample_sd": 289.67107783369283
+      },
+      "degraded": {
+        "mean": 34578.333333333336,
+        "sample_sd": 268.1461044530264
+      },
+      "changed": {
+        "mean": 392.0,
+        "sample_sd": 0.0
+      },
+      "mean_acceleration": {
+        "mean": 1.0969124807022206,
+        "sample_sd": 0.0013086900573036496
+      },
+      "mean_jerk": {
+        "mean": 12.880495453428031,
+        "sample_sd": 0.004550610796400303
+      },
+      "max_shift_from_A": {
+        "mean": 20.44558354063206,
+        "sample_sd": 0.004698583360245214
+      }
+    }
+  },
+  "paired_scene_bootstrap": {
+    "FullRCIM_minus_Full_without_RCIM": {
+      "ADE6": {
+        "delta": -0.04933622825577269,
+        "CI95": [
+          -0.051156971795407596,
+          -0.047476913433327536
+        ]
+      },
+      "FDE6": {
+        "delta": -0.2607722216755141,
+        "CI95": [
+          -0.26805618783834495,
+          -0.25323319597092275
+        ]
+      },
+      "center_conflict_rate": {
+        "delta": -9.46466502522333e-06,
+        "CI95": [
+          -2.2746394742840478e-05,
+          0.0
+        ]
+      }
+    },
+    "FullRCIM_minus_GeometryB_two_refiners": {
+      "ADE6": {
+        "delta": -0.042190040430863364,
+        "CI95": [
+          -0.04422232387087482,
+          -0.040198000794708366
+        ]
+      },
+      "FDE6": {
+        "delta": -0.2438111130446178,
+        "CI95": [
+          -0.25148387972276137,
+          -0.23607047965368727
+        ]
+      },
+      "center_conflict_rate": {
+        "delta": -0.00010951969529186997,
+        "CI95": [
+          -0.00017832321345654566,
+          -4.139342078487975e-05
+        ]
+      }
+    },
+    "FullRCIM_minus_OldRCIM_refined": {
+      "ADE6": {
+        "delta": 0.0024981999260454456,
+        "CI95": [
+          -0.0010394366581554094,
+          0.006013252854171821
+        ]
+      },
+      "FDE6": {
+        "delta": -0.01936345139388324,
+        "CI95": [
+          -0.029359454872667657,
+          -0.009459305319222903
+        ]
+      },
+      "center_conflict_rate": {
+        "delta": -0.00030286928080714657,
+        "CI95": [
+          -0.0003862219548889883,
+          -0.00022331388846633582
+        ]
+      }
+    },
+    "FullRCIM_minus_NDPNet_refined": {
+      "ADE6": {
+        "delta": -0.10148318791184179,
+        "CI95": [
+          -0.10413205579769079,
+          -0.0988375659707116
+        ]
+      },
+      "FDE6": {
+        "delta": -0.4565104733550052,
+        "CI95": [
+          -0.466306903481132,
+          -0.44676853458524307
+        ]
+      },
+      "center_conflict_rate": {
+        "delta": -0.0012790818734087531,
+        "CI95": [
+          -0.0014267466209933587,
+          -0.0011332989162793578
+        ]
+      }
+    },
+    "FullRCIM_minus_NDPNet": {
+      "ADE6": {
+        "delta": -0.20761676419821254,
+        "CI95": [
+          -0.2115840513897032,
+          -0.2036831134329817
+        ]
+      },
+      "FDE6": {
+        "delta": -0.7443929015791851,
+        "CI95": [
+          -0.7574851798346194,
+          -0.7310654499055123
+        ]
+      },
+      "center_conflict_rate": {
+        "delta": -0.0018604827249581863,
+        "CI95": [
+          -0.002047594965786042,
+          -0.0016804964766242163
+        ]
+      }
+    }
+  },
+  "bootstrap_scope": "Conditioned on fixed RCIM42 and three fixed refiner seeds, not all training seeds.",
+  "metric_protocol": "SelectedTop1 ADE/FDE over native6s;not official min-of6 metrics. Scored+focal valid endpoint, focal metrics separate; center-distance<1m conflict proxy,not WOMD oriented boxes.",
+  "measured_inference_cost": {
+    "selection_all_method_bundle_mean_ms": 10.053970646250034,
+    "refinement_all_variant_bundle_mean_ms": 44.4552617430701,
+    "scope": "Measured sequential diagnostic bundle,not single-method production latency; excludes cached backbone extraction."
+  },
+  "modules_selected_on_train_calibration_only": true,
+  "backbone": "Historical locally adapted AV2 NDPNet selected using AV2 validation; not official author weights or fully unexposed validation."
+}

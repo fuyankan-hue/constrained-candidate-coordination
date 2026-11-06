@@ -1,0 +1,137 @@
+{
+  "dataset": "av2",
+  "future_steps": 60,
+  "history_steps": 50,
+  "RCIM": {
+    "parameters": 44449,
+    "seed": 42,
+    "input_hidden_dim": 128,
+    "modes": 6,
+    "near_far_hidden_inputs": "zero, geometry retained",
+    "loss": "original_joint_ce",
+    "soft_label_temperature": 3,
+    "relative_ADE_weight": 1,
+    "relative_FDE_weight": 0.25,
+    "supervision": {
+      "distance_m_lte": 75,
+      "minimum_common_future_steps": 45,
+      "both_endpoint_valid": true
+    },
+    "optimizer": "AdamW",
+    "lr": 0.0002,
+    "weight_decay": 0.0001,
+    "gradient_clip": 5,
+    "max_epochs": 8,
+    "patience": 3,
+    "min_delta": 0.0001,
+    "checkpoint_selection": "edge-weighted calibration Joint CE; no audit selection",
+    "architecture": {
+      "mode_hidden_dim": 128,
+      "projection_dim": 32,
+      "geometric_pair_dim": 16,
+      "pair_input_dim": 112,
+      "blocks": "near:112-64-32;far:144-64-32;refine:144-64-32;head:32-1",
+      "activations": "GELU",
+      "candidate_pair_features": "sum,abs difference,product,geometry",
+      "parameters": 44449
+    }
+  },
+  "coordination": {
+    "modes": 6,
+    "observed_graph_distance_m": 75,
+    "CJM_max_path_m": 20,
+    "projection_max_path_m": 4,
+    "projection_buffer_m": 1e-08,
+    "joint_score_weight": 1,
+    "exact_product_limit": 65536,
+    "coordinate_sweeps": 8,
+    "original_anchor": "independent_top1"
+  },
+  "refinement": {
+    "parameters_each": 76026,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "train_scenes": 8192,
+    "tune_scenes": 1024,
+    "batch_size": 16,
+    "max_epochs": 10,
+    "optimizer_steps_each": 5120,
+    "early_stop": false,
+    "optimizer": "AdamW",
+    "lr": 0.0002,
+    "weight_decay": 0.0001,
+    "schedule": "cosine",
+    "eta_min": 2e-05,
+    "min_delta": 0.0001,
+    "checkpoint_selection": "unprotected tune endpoint-valid ADE+.25FDE; epoch0 eligible",
+    "loss_weights": {
+      "endpoint": 0.25,
+      "residual_l2": 0.05,
+      "acceleration_l2": 0.002
+    },
+    "I1": {
+      "position_loss": "SmoothL1",
+      "endpoint_loss": "SmoothL1",
+      "gradient_clip": 5,
+      "residual_bound_m": 1
+    },
+    "I2": {
+      "position_loss": "Euclidean",
+      "endpoint_loss": "Euclidean",
+      "gradient_clip": 1,
+      "residual_bound_m": 1,
+      "initialization": "same-seed I1, zero final output head"
+    },
+    "protection_betas": [
+      1,
+      0.5,
+      0.25,
+      0.125,
+      0
+    ],
+    "I2_remaining_radius": "clip(5-1e-4-max_t||Y1-A||,0,1)",
+    "total_path_shift_bound_m": 5,
+    "architecture": {
+      "independent": true,
+      "hidden_dim": 64,
+      "attention_heads": 4,
+      "future_tokens": 16,
+      "spline_degree": 3,
+      "total_controls": 12,
+      "learned_controls": 9,
+      "first_three_controls_zero": true,
+      "history_dim": 77,
+      "mode_specific_refine_dim": 128,
+      "node_input_dim": 83,
+      "dropout": 0
+    }
+  },
+  "evaluation": {
+    "endpoint_index": 59,
+    "extra_FDE_threshold_m": 5.000001,
+    "geometry": "all requested pairs, center distance <1m",
+    "geometry_independent_of_future_validity": true,
+    "bootstrap_resamples": 5000,
+    "bootstrap_seed": 9413,
+    "bootstrap_unit": "whole scene; three fixed models averaged within scene",
+    "scope": "selected top1 custom metrics, not official min-of-six leaderboard",
+    "historical_all_target_bootstrap_seed": 4201,
+    "fixed_refiner_attribution_bootstrap_seed": 20261103
+  },
+  "runtime": {
+    "backbone": "torch2.0.1+cu118,numpy1.24.3",
+    "RCIM_training_and_selection": "torch2.0.1+cu118,numpy1.24.3",
+    "refiner_training_and_inference": "torch2.0.1+cu118,numpy1.24.3"
+  },
+  "data_split": {
+    "training_scenes": 199908,
+    "fit": 159753,
+    "calibration": 20136,
+    "reserved_development": 20019,
+    "validation_scenes": 24988,
+    "rule": "sha256(scene)[:8] mod10:0 calibration,1development,2..9fit"
+  }
+}

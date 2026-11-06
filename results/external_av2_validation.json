@@ -1,0 +1,2127 @@
+{
+  "passed": true,
+  "scenes": 24988,
+  "new_classical_methods": {
+    "ORCA": {
+      "deterministic": true,
+      "configuration": {
+        "time_horizon": 2.0
+      },
+      "table": {
+        "NDPNet": {
+          "ADE6": 1.2945079100195402,
+          "FDE6": 3.626806565005108,
+          "Focal_ADE6": 2.2695579192708433,
+          "Focal_FDE6": 5.913139338235625,
+          "close_center_pair_rate": 0.0032247465835939498,
+          "extra_gt5_rate": 0.0,
+          "targets": 97424,
+          "focal_targets": 24988,
+          "pairs": 246531,
+          "overlap": 795,
+          "overlap_steps": 18903,
+          "gt5": 0,
+          "mean_acceleration": 1.0414469567473708,
+          "mean_jerk": 12.793306545683816,
+          "mean_scene_seconds": null
+        },
+        "native": {
+          "ADE6": 1.2947369292162185,
+          "FDE6": 3.626307765444457,
+          "Focal_ADE6": 2.2697523275918705,
+          "Focal_FDE6": 5.911813465676497,
+          "close_center_pair_rate": 0.0010627466728322199,
+          "extra_gt5_rate": 1.0264411233371654e-05,
+          "targets": 97424,
+          "focal_targets": 24988,
+          "pairs": 246531,
+          "overlap": 262,
+          "overlap_steps": 2819,
+          "gt5": 1,
+          "mean_acceleration": 1.048874975512526,
+          "mean_jerk": 12.84240984897846,
+          "mean_scene_seconds": 0.00010817594950203341
+        },
+        "common_P": {
+          "ADE6": 1.2947330420679175,
+          "FDE6": 3.626306917736509,
+          "Focal_ADE6": 2.2697523275918705,
+          "Focal_FDE6": 5.911813465676497,
+          "close_center_pair_rate": 0.00105869038782141,
+          "extra_gt5_rate": 1.0264411233371654e-05,
+          "targets": 97424,
+          "focal_targets": 24988,
+          "pairs": 246531,
+          "overlap": 261,
+          "overlap_steps": 3011,
+          "gt5": 1,
+          "mean_acceleration": 1.048830379807572,
+          "mean_jerk": 12.841939144059694,
+          "mean_scene_seconds": 0.00017374565851750184
+        }
+      }
+    },
+    "CHOMP_style": {
+      "deterministic": true,
+      "configuration": {
+        "smoothness": 0.0001,
+        "collision_weight": 1.0,
+        "max_iterations": 30
+      },
+      "table": {
+        "NDPNet": {
+          "ADE6": 1.2945079100195402,
+          "FDE6": 3.626806565005108,
+          "Focal_ADE6": 2.2695579192708433,
+          "Focal_FDE6": 5.913139338235625,
+          "close_center_pair_rate": 0.0032247465835939498,
+          "extra_gt5_rate": 0.0,
+          "targets": 97424,
+          "focal_targets": 24988,
+          "pairs": 246531,
+          "overlap": 795,
+          "overlap_steps": 18903,
+          "gt5": 0,
+          "mean_acceleration": 1.0414469567473708,
+          "mean_jerk": 12.793306545683816,
+          "mean_scene_seconds": null
+        },
+        "native": {
+          "ADE6": 1.2946671484031627,
+          "FDE6": 3.6288168022452254,
+          "Focal_ADE6": 2.269533564056731,
+          "Focal_FDE6": 5.91468755577845,
+          "close_center_pair_rate": 0.00321663401357233,
+          "extra_gt5_rate": 0.0,
+          "targets": 97424,
+          "focal_targets": 24988,
+          "pairs": 246531,
+          "overlap": 793,
+          "overlap_steps": 18793,
+          "gt5": 0,
+          "mean_acceleration": 0.6864703355398716,
+          "mean_jerk": 3.1131006555619503,
+          "mean_scene_seconds": 0.0017484778666235483
+        },
+        "common_P": {
+          "ADE6": 1.2946623928164007,
+          "FDE6": 3.6288122665170004,
+          "Focal_ADE6": 2.269533108295075,
+          "Focal_FDE6": 5.914688418565488,
+          "close_center_pair_rate": 0.00320040887352909,
+          "extra_gt5_rate": 0.0,
+          "targets": 97424,
+          "focal_targets": 24988,
+          "pairs": 246531,
+          "overlap": 789,
+          "overlap_steps": 18688,
+          "gt5": 0,
+          "mean_acceleration": 0.6866424366195051,
+          "mean_jerk": 3.118520501555737,
+          "mean_scene_seconds": 0.0018116972300803826
+        }
+      }
+    },
+    "SCP_style": {
+      "deterministic": true,
+      "configuration": {
+        "smoothness": 0.0001,
+        "collision_weight": 10.0,
+        "max_iterations": 10,
+        "trust_region": 0.5,
+        "admm_rho": 10.0,
+        "admm_max_iterations": 500,
+        "admm_tolerance": 0.0001
+      },
+      "table": {
+        "NDPNet": {
+          "ADE6": 1.2945079100195402,
+          "FDE6": 3.626806565005108,
+          "Focal_ADE6": 2.2695579192708433,
+          "Focal_FDE6": 5.913139338235625,
+          "close_center_pair_rate": 0.0032247465835939498,
+          "extra_gt5_rate": 0.0,
+          "targets": 97424,
+          "focal_targets": 24988,
+          "pairs": 246531,
+          "overlap": 795,
+          "overlap_steps": 18903,
+          "gt5": 0,
+          "mean_acceleration": 1.0414469567473708,
+          "mean_jerk": 12.793306545683816,
+          "mean_scene_seconds": null
+        },
+        "native": {
+          "ADE6": 1.2948290864281635,
+          "FDE6": 3.628948273562207,
+          "Focal_ADE6": 2.269578225155018,
+          "Focal_FDE6": 5.914691836990493,
+          "close_center_pair_rate": 0.0015981762942591398,
+          "extra_gt5_rate": 0.0,
+          "targets": 97424,
+          "focal_targets": 24988,
+          "pairs": 246531,
+          "overlap": 394,
+          "overlap_steps": 2230,
+          "gt5": 0,
+          "mean_acceleration": 0.6894773888347374,
+          "mean_jerk": 3.1466971246698296,
+          "mean_scene_seconds": 0.009257617236808017
+        },
+        "common_P": {
+          "ADE6": 1.2948233441853163,
+          "FDE6": 3.628944060137786,
+          "Focal_ADE6": 2.2695781095734153,
+          "Focal_FDE6": 5.914691795950662,
+          "close_center_pair_rate": 0.0015900637242375198,
+          "extra_gt5_rate": 0.0,
+          "targets": 97424,
+          "focal_targets": 24988,
+          "pairs": 246531,
+          "overlap": 392,
+          "overlap_steps": 2576,
+          "gt5": 0,
+          "mean_acceleration": 0.6894840956900998,
+          "mean_jerk": 3.1471808032060777,
+          "mean_scene_seconds": 0.00932411239326688
+        }
+      }
+    }
+  },
+  "classical_paired_scene_bootstrap": {
+    "ORCA": {
+      "native_minus_NDPNet": {
+        "ADE6": {
+          "delta": 0.00022901919668091346,
+          "CI95": [
+            1.718935317115853e-05,
+            0.00043984707154455873
+          ]
+        },
+        "FDE6": {
+          "delta": -0.0004987995606509024,
+          "CI95": [
+            -0.0009386733567893237,
+            -7.182205716721656e-05
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.00019440832103361953,
+          "CI95": [
+            -0.00035073688544724643,
+            0.0007599989925575968
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": -0.0013258725591285677,
+          "CI95": [
+            -0.0022603992641885627,
+            -0.00041928174840982177
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.00216199991076173,
+          "CI95": [
+            -0.002373819442515047,
+            -0.001957595251351809
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 1.0264411233371654e-05,
+          "CI95": [
+            0.0,
+            3.0995297757052695e-05
+          ]
+        }
+      },
+      "native_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.2078457833948935,
+          "CI95": [
+            0.20382274538265444,
+            0.21189259673033037
+          ]
+        },
+        "FDE6": {
+          "delta": 0.7438941020185342,
+          "CI95": [
+            0.7310433137196543,
+            0.756694894336846
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.13226660002918364,
+          "CI95": [
+            0.12430933795192076,
+            0.1399964049988506
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.26168854015509385,
+          "CI95": [
+            0.24001023182396922,
+            0.2833600138568448
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.0003015171858035433,
+          "CI95": [
+            -0.0003825205509937154,
+            -0.0002245693446240684
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 1.0264411233371654e-05,
+          "CI95": [
+            0.0,
+            3.0995297757052695e-05
+          ]
+        }
+      },
+      "common_P_minus_NDPNet": {
+        "ADE6": {
+          "delta": 0.00022513204837996948,
+          "CI95": [
+            1.4065832141551065e-05,
+            0.0004366075114211302
+          ]
+        },
+        "FDE6": {
+          "delta": -0.0004996472685988531,
+          "CI95": [
+            -0.0009405902544900503,
+            -7.300484721694326e-05
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.00019440832103361953,
+          "CI95": [
+            -0.00035073688544724643,
+            0.0007599989925575968
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": -0.0013258725591285677,
+          "CI95": [
+            -0.0022603992641885627,
+            -0.00041928174840982177
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.0021660561957725396,
+          "CI95": [
+            -0.0023780995566890064,
+            -0.001963320985716076
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 1.0264411233371654e-05,
+          "CI95": [
+            0.0,
+            3.0995297757052695e-05
+          ]
+        }
+      },
+      "common_P_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.20784189624659255,
+          "CI95": [
+            0.20382264767138117,
+            0.21189031922469975
+          ]
+        },
+        "FDE6": {
+          "delta": 0.7438932543105863,
+          "CI95": [
+            0.7310424847538575,
+            0.756694894336846
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.13226660002918364,
+          "CI95": [
+            0.12430933795192076,
+            0.1399964049988506
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.26168854015509385,
+          "CI95": [
+            0.24001023182396922,
+            0.2833600138568448
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.0003055734708143533,
+          "CI95": [
+            -0.00038570925263862956,
+            -0.0002291680342528352
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 1.0264411233371654e-05,
+          "CI95": [
+            0.0,
+            3.0995297757052695e-05
+          ]
+        }
+      }
+    },
+    "CHOMP_style": {
+      "native_minus_NDPNet": {
+        "ADE6": {
+          "delta": 0.0001592383836169254,
+          "CI95": [
+            0.0001197579491552478,
+            0.00020316604582710653
+          ]
+        },
+        "FDE6": {
+          "delta": 0.0020102372401206523,
+          "CI95": [
+            0.0018549106377327388,
+            0.0021640962298144356
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": -2.435521409495794e-05,
+          "CI95": [
+            -6.028236370490117e-05,
+            1.2185349925834688e-05
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.0015482175428010974,
+          "CI95": [
+            0.0011300904574987314,
+            0.001964259874848814
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -8.11257002162e-06,
+          "CI95": [
+            -3.292438897137427e-05,
+            1.6344367655788814e-05
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "native_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.2077760025818295,
+          "CI95": [
+            0.20374386237395806,
+            0.21183854282228243
+          ]
+        },
+        "FDE6": {
+          "delta": 0.7464031388193058,
+          "CI95": [
+            0.733487061538622,
+            0.7591601397224226
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.13204783649405508,
+          "CI95": [
+            0.12417798218446313,
+            0.13988233999446
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.2645626302570236,
+          "CI95": [
+            0.24289319098826498,
+            0.286466401450026
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": 0.0018523701549365665,
+          "CI95": [
+            0.0016659645250293263,
+            0.0020425473921686366
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "common_P_minus_NDPNet": {
+        "ADE6": {
+          "delta": 0.00015448279685499735,
+          "CI95": [
+            0.00011548815773402664,
+            0.0001982153280874171
+          ]
+        },
+        "FDE6": {
+          "delta": 0.0020057015118948494,
+          "CI95": [
+            0.0018505428275884489,
+            0.0021596005404147275
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": -2.4810975751053464e-05,
+          "CI95": [
+            -6.062136842394695e-05,
+            1.1781833731310916e-05
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.0015490803298399587,
+          "CI95": [
+            0.0011304362949836465,
+            0.0019653975386862642
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -2.4337710064859996e-05,
+          "CI95": [
+            -4.530144745220452e-05,
+            -8.032471265799666e-06
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "common_P_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.2077712469950676,
+          "CI95": [
+            0.20373636053645847,
+            0.2118338532679602
+          ]
+        },
+        "FDE6": {
+          "delta": 0.7463986030910799,
+          "CI95": [
+            0.7334834787320493,
+            0.7591569830921149
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.132047380732399,
+          "CI95": [
+            0.12417708551279893,
+            0.13988197613091544
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.26456349304406235,
+          "CI95": [
+            0.2428940208920809,
+            0.28646815238910756
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": 0.0018361450148933266,
+          "CI95": [
+            0.001649304619559512,
+            0.0020289645535852656
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "SCP_style": {
+      "native_minus_NDPNet": {
+        "ADE6": {
+          "delta": 0.00032117640862162157,
+          "CI95": [
+            0.0002529779980733072,
+            0.00039287155301403554
+          ]
+        },
+        "FDE6": {
+          "delta": 0.002141708557112966,
+          "CI95": [
+            0.001974967899777226,
+            0.00230813215266335
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 2.030588418685816e-05,
+          "CI95": [
+            -3.2911886072020156e-05,
+            7.540246651067153e-05
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.001552498754850841,
+          "CI95": [
+            0.0011258528196693427,
+            0.0019779188102784107
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.0016265702893348097,
+          "CI95": [
+            -0.001799776050875821,
+            -0.00145534983893923
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "native_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.2079379406068342,
+          "CI95": [
+            0.203898830467382,
+            0.21198952174623104
+          ]
+        },
+        "FDE6": {
+          "delta": 0.7465346101362981,
+          "CI95": [
+            0.733615199725127,
+            0.7592734393848344
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.1320924975923369,
+          "CI95": [
+            0.12421944220144354,
+            0.13991578719803455
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.2645669114690733,
+          "CI95": [
+            0.24287660034522995,
+            0.28646881098240823
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": 0.00023391243562337666,
+          "CI95": [
+            8.069730699089244e-05,
+            0.00038967349034189317
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "common_P_minus_NDPNet": {
+        "ADE6": {
+          "delta": 0.0003154341657745017,
+          "CI95": [
+            0.0002489050095649321,
+            0.00038694716814775067
+          ]
+        },
+        "FDE6": {
+          "delta": 0.0021374951326926183,
+          "CI95": [
+            0.0019716278859462388,
+            0.0023030431893748355
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 2.0190302584506362e-05,
+          "CI95": [
+            -3.298418544314591e-05,
+            7.537692368974507e-05
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.0015524577150184049,
+          "CI95": [
+            0.0011257715630696684,
+            0.0019778520700575774
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.00163468285935643,
+          "CI95": [
+            -0.0018085048482066979,
+            -0.001462199687739532
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "common_P_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.20793219836398708,
+          "CI95": [
+            0.20389060917916008,
+            0.2119839946005711
+          ]
+        },
+        "FDE6": {
+          "delta": 0.7465303967118779,
+          "CI95": [
+            0.7336116221069029,
+            0.7592707790462144
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.13209238201073453,
+          "CI95": [
+            0.12421922333721963,
+            0.139915776918384
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.2645668704292408,
+          "CI95": [
+            0.24287661658283854,
+            0.2864687733712092
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": 0.00022579986560175667,
+          "CI95": [
+            7.354003431504548e-05,
+            0.0003819368850242923
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0,
+          "CI95": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "solver_diagnostics": {
+    "ORCA": {
+      "mean_iterations": 60.0,
+      "solver_subproblems": 0,
+      "converged_subproblems": 0,
+      "numerical_degeneracies": 0,
+      "common_P_violations": 0
+    },
+    "CHOMP_style": {
+      "mean_iterations": 2.360332959820714,
+      "solver_subproblems": 0,
+      "converged_subproblems": 0,
+      "numerical_degeneracies": 0,
+      "common_P_violations": 0
+    },
+    "SCP_style": {
+      "mean_iterations": 9.520409796702417,
+      "solver_subproblems": 237896,
+      "converged_subproblems": 237896,
+      "numerical_degeneracies": 0,
+      "common_P_violations": 0
+    }
+  },
+  "prior_learned_methods": {
+    "SmartRefine": {
+      "per_seed": {
+        "42": {
+          "NDPNet": {
+            "ADE6": 1.2945079100195402,
+            "FDE6": 3.626806565005108,
+            "Focal_ADE6": 2.2695579192708433,
+            "Focal_FDE6": 5.913139338235625,
+            "close_center_pair_rate": 0.0032247465835939498,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 795,
+            "overlap_steps": 18903,
+            "gt5": 0,
+            "improved": 0,
+            "degraded": 0,
+            "mean_acceleration": 1.0414469567473708,
+            "mean_jerk": 12.793306545683816
+          },
+          "external_native": {
+            "ADE6": 1.0949258768531818,
+            "FDE6": 2.8329757265767577,
+            "Focal_ADE6": 2.2771068448365406,
+            "Focal_FDE6": 6.047907799563422,
+            "close_center_pair_rate": 0.0020970993505887697,
+            "extra_gt5_rate": 0.030382657250780095,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 517,
+            "overlap_steps": 17796,
+            "gt5": 2960,
+            "improved": 60107,
+            "degraded": 37316,
+            "mean_acceleration": 2.9945897584737127,
+            "mean_jerk": 52.27049337101018,
+            "mean_scene_latency_ms": 38.60202097754101
+          },
+          "external_common_P": {
+            "ADE6": 1.095487941204432,
+            "FDE6": 2.8380526939384567,
+            "Focal_ADE6": 2.2750107288558143,
+            "Focal_FDE6": 6.042219206881065,
+            "close_center_pair_rate": 0.0016062888642807598,
+            "extra_gt5_rate": 0.029797585810477912,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 396,
+            "overlap_steps": 15664,
+            "gt5": 2903,
+            "improved": 59959,
+            "degraded": 37045,
+            "mean_acceleration": 2.9687392395971957,
+            "mean_jerk": 51.77064267747951,
+            "mean_scene_latency_ms": 38.72936969973567
+          },
+          "frozen_full_method": {
+            "ADE6": 1.085581895716505,
+            "FDE6": 2.8785271386269016,
+            "Focal_ADE6": 2.1337315851229786,
+            "Focal_FDE6": 5.640397224390454,
+            "close_center_pair_rate": 0.0013629117636321597,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 336,
+            "overlap_steps": 5053,
+            "gt5": 0,
+            "improved": 61449,
+            "degraded": 35569,
+            "mean_acceleration": 1.0335421135875598,
+            "mean_jerk": 12.262163272643644
+          }
+        },
+        "43": {
+          "NDPNet": {
+            "ADE6": 1.2945079100195402,
+            "FDE6": 3.626806565005108,
+            "Focal_ADE6": 2.2695579192708433,
+            "Focal_FDE6": 5.913139338235625,
+            "close_center_pair_rate": 0.0032247465835939498,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 795,
+            "overlap_steps": 18903,
+            "gt5": 0,
+            "improved": 0,
+            "degraded": 0,
+            "mean_acceleration": 1.0414469567473708,
+            "mean_jerk": 12.793306545683816
+          },
+          "external_native": {
+            "ADE6": 1.0995005463872545,
+            "FDE6": 2.8430120473931084,
+            "Focal_ADE6": 2.3001287386883034,
+            "Focal_FDE6": 6.10436066387173,
+            "close_center_pair_rate": 0.0021092682056212,
+            "extra_gt5_rate": 0.032055756281819676,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 520,
+            "overlap_steps": 17995,
+            "gt5": 3123,
+            "improved": 61723,
+            "degraded": 35699,
+            "mean_acceleration": 2.392409722916104,
+            "mean_jerk": 40.56685886273707,
+            "mean_scene_latency_ms": 38.67125365035372
+          },
+          "external_common_P": {
+            "ADE6": 1.1009466232566967,
+            "FDE6": 2.8498578759988447,
+            "Focal_ADE6": 2.299826759816823,
+            "Focal_FDE6": 6.1042335641728735,
+            "close_center_pair_rate": 0.0016427954293780499,
+            "extra_gt5_rate": 0.03149121366398423,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 405,
+            "overlap_steps": 15994,
+            "gt5": 3068,
+            "improved": 61503,
+            "degraded": 35460,
+            "mean_acceleration": 2.3728538370680594,
+            "mean_jerk": 40.181108130909344,
+            "mean_scene_latency_ms": 38.80010473888236
+          },
+          "frozen_full_method": {
+            "ADE6": 1.0863620151237487,
+            "FDE6": 2.883801476735011,
+            "Focal_ADE6": 2.136017876619096,
+            "Focal_FDE6": 5.6533920419442225,
+            "close_center_pair_rate": 0.00136696804864297,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 337,
+            "overlap_steps": 5116,
+            "gt5": 0,
+            "improved": 61482,
+            "degraded": 35320,
+            "mean_acceleration": 1.0370663191581986,
+            "mean_jerk": 12.273126904917897
+          }
+        },
+        "44": {
+          "NDPNet": {
+            "ADE6": 1.2945079100195402,
+            "FDE6": 3.626806565005108,
+            "Focal_ADE6": 2.2695579192708433,
+            "Focal_FDE6": 5.913139338235625,
+            "close_center_pair_rate": 0.0032247465835939498,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 795,
+            "overlap_steps": 18903,
+            "gt5": 0,
+            "improved": 0,
+            "degraded": 0,
+            "mean_acceleration": 1.0414469567473708,
+            "mean_jerk": 12.793306545683816
+          },
+          "external_native": {
+            "ADE6": 1.096389952093447,
+            "FDE6": 2.835049213450861,
+            "Focal_ADE6": 2.3010496424714795,
+            "Focal_FDE6": 6.105674387951833,
+            "close_center_pair_rate": 0.00211738077564282,
+            "extra_gt5_rate": 0.030228691082279522,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 522,
+            "overlap_steps": 17697,
+            "gt5": 2945,
+            "improved": 61667,
+            "degraded": 35757,
+            "mean_acceleration": 2.958110228763099,
+            "mean_jerk": 50.7912077832613,
+            "mean_scene_latency_ms": 38.55349642553278
+          },
+          "external_common_P": {
+            "ADE6": 1.097216520426812,
+            "FDE6": 2.840759863461172,
+            "Focal_ADE6": 2.299184235221496,
+            "Focal_FDE6": 6.1007687783818945,
+            "close_center_pair_rate": 0.0015941200092483298,
+            "extra_gt5_rate": 0.02965388405321071,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 393,
+            "overlap_steps": 15843,
+            "gt5": 2889,
+            "improved": 61485,
+            "degraded": 35533,
+            "mean_acceleration": 2.93180446677723,
+            "mean_jerk": 50.28785373042218,
+            "mean_scene_latency_ms": 38.67485698379573
+          },
+          "frozen_full_method": {
+            "ADE6": 1.0887295266237396,
+            "FDE6": 2.8849123749157886,
+            "Focal_ADE6": 2.1427077209459955,
+            "Focal_FDE6": 5.6565855102296,
+            "close_center_pair_rate": 0.0013629117636321597,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 336,
+            "overlap_steps": 5092,
+            "gt5": 0,
+            "improved": 60394,
+            "degraded": 36485,
+            "mean_acceleration": 1.0337409084604334,
+            "mean_jerk": 12.260991820524692
+          }
+        }
+      },
+      "three_seed": {
+        "NDPNet": {
+          "ADE6": {
+            "mean": 1.2945079100195402,
+            "sample_sd": 0.0
+          },
+          "FDE6": {
+            "mean": 3.626806565005108,
+            "sample_sd": 0.0
+          },
+          "Focal_ADE6": {
+            "mean": 2.2695579192708433,
+            "sample_sd": 0.0
+          },
+          "Focal_FDE6": {
+            "mean": 5.913139338235626,
+            "sample_sd": 1.0877919644084146e-15
+          },
+          "close_center_pair_rate": {
+            "mean": 0.0032247465835939498,
+            "sample_sd": 0.0
+          },
+          "extra_gt5_rate": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "targets": {
+            "mean": 97424.0,
+            "sample_sd": 0.0
+          },
+          "focal_targets": {
+            "mean": 24988.0,
+            "sample_sd": 0.0
+          },
+          "pairs": {
+            "mean": 246531.0,
+            "sample_sd": 0.0
+          },
+          "overlap": {
+            "mean": 795.0,
+            "sample_sd": 0.0
+          },
+          "overlap_steps": {
+            "mean": 18903.0,
+            "sample_sd": 0.0
+          },
+          "gt5": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "improved": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "degraded": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "mean_acceleration": {
+            "mean": 1.0414469567473708,
+            "sample_sd": 0.0
+          },
+          "mean_jerk": {
+            "mean": 12.793306545683814,
+            "sample_sd": 2.175583928816829e-15
+          }
+        },
+        "external_native": {
+          "ADE6": {
+            "mean": 1.0969387917779612,
+            "sample_sd": 0.002336197569976985
+          },
+          "FDE6": {
+            "mean": 2.8370123291402423,
+            "sample_sd": 0.00529833004725074
+          },
+          "Focal_ADE6": {
+            "mean": 2.2927617419987745,
+            "sample_sd": 0.0135653554990113
+          },
+          "Focal_FDE6": {
+            "mean": 6.085980950462329,
+            "sample_sd": 0.032978858110429214
+          },
+          "close_center_pair_rate": {
+            "mean": 0.0021079161106175963,
+            "sample_sd": 1.0208093417962056e-05
+          },
+          "extra_gt5_rate": {
+            "mean": 0.03088903487162643,
+            "sample_sd": 0.0010133388041583984
+          },
+          "targets": {
+            "mean": 97424.0,
+            "sample_sd": 0.0
+          },
+          "focal_targets": {
+            "mean": 24988.0,
+            "sample_sd": 0.0
+          },
+          "pairs": {
+            "mean": 246531.0,
+            "sample_sd": 0.0
+          },
+          "overlap": {
+            "mean": 519.6666666666666,
+            "sample_sd": 2.5166114784235836
+          },
+          "overlap_steps": {
+            "mean": 17829.333333333332,
+            "sample_sd": 151.77066031790642
+          },
+          "gt5": {
+            "mean": 3009.3333333333335,
+            "sample_sd": 98.72351965632775
+          },
+          "improved": {
+            "mean": 61165.666666666664,
+            "sample_sd": 917.2596869662012
+          },
+          "degraded": {
+            "mean": 36257.333333333336,
+            "sample_sd": 917.2907572483946
+          },
+          "mean_acceleration": {
+            "mean": 2.781703236717638,
+            "sample_sd": 0.3376311136994576
+          },
+          "mean_jerk": {
+            "mean": 47.87618667233619,
+            "sample_sd": 6.373129234031318
+          },
+          "mean_scene_latency_ms": {
+            "mean": 38.60892368447583,
+            "sample_sd": 0.05918130212874261
+          }
+        },
+        "external_common_P": {
+          "ADE6": {
+            "mean": 1.097883694962647,
+            "sample_sd": 0.002789828638622604
+          },
+          "FDE6": {
+            "mean": 2.8428901444661583,
+            "sample_sd": 0.006184185778247486
+          },
+          "Focal_ADE6": {
+            "mean": 2.2913405746313775,
+            "sample_sd": 0.014145709835641557
+          },
+          "Focal_FDE6": {
+            "mean": 6.082407183145278,
+            "sample_sd": 0.03484689745592881
+          },
+          "close_center_pair_rate": {
+            "mean": 0.00161440143430238,
+            "sample_sd": 2.533149177344191e-05
+          },
+          "extra_gt5_rate": {
+            "mean": 0.030314227842557617,
+            "sample_sd": 0.001021828883248014
+          },
+          "targets": {
+            "mean": 97424.0,
+            "sample_sd": 0.0
+          },
+          "focal_targets": {
+            "mean": 24988.0,
+            "sample_sd": 0.0
+          },
+          "pairs": {
+            "mean": 246531.0,
+            "sample_sd": 0.0
+          },
+          "overlap": {
+            "mean": 398.0,
+            "sample_sd": 6.244997998398398
+          },
+          "overlap_steps": {
+            "mean": 15833.666666666666,
+            "sample_sd": 165.19786116452397
+          },
+          "gt5": {
+            "mean": 2953.3333333333335,
+            "sample_sd": 99.55065712155461
+          },
+          "improved": {
+            "mean": 60982.333333333336,
+            "sample_sd": 886.2783610882832
+          },
+          "degraded": {
+            "mean": 36012.666666666664,
+            "sample_sd": 894.771665473004
+          },
+          "mean_acceleration": {
+            "mean": 2.757799181147495,
+            "sample_sd": 0.33388356175041306
+          },
+          "mean_jerk": {
+            "mean": 47.41320151293701,
+            "sample_sd": 6.306904690904653
+          },
+          "mean_scene_latency_ms": {
+            "mean": 38.73477714080459,
+            "sample_sd": 0.0627987289102706
+          }
+        },
+        "frozen_full_method": {
+          "ADE6": {
+            "mean": 1.086891145821331,
+            "sample_sd": 0.0016391703857096237
+          },
+          "FDE6": {
+            "mean": 2.8824136634259006,
+            "sample_sd": 0.0034113530969306534
+          },
+          "Focal_ADE6": {
+            "mean": 2.1374857275626904,
+            "sample_sd": 0.004664621460822904
+          },
+          "Focal_FDE6": {
+            "mean": 5.650124925521426,
+            "sample_sd": 0.008574420498934907
+          },
+          "close_center_pair_rate": {
+            "mean": 0.001364263858635763,
+            "sample_sd": 2.341897242901115e-06
+          },
+          "extra_gt5_rate": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "targets": {
+            "mean": 97424.0,
+            "sample_sd": 0.0
+          },
+          "focal_targets": {
+            "mean": 24988.0,
+            "sample_sd": 0.0
+          },
+          "pairs": {
+            "mean": 246531.0,
+            "sample_sd": 0.0
+          },
+          "overlap": {
+            "mean": 336.3333333333333,
+            "sample_sd": 0.5773502691896258
+          },
+          "overlap_steps": {
+            "mean": 5087.0,
+            "sample_sd": 31.796226191169293
+          },
+          "gt5": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "improved": {
+            "mean": 61108.333333333336,
+            "sample_sd": 618.8508167024855
+          },
+          "degraded": {
+            "mean": 35791.333333333336,
+            "sample_sd": 613.4984379224884
+          },
+          "mean_acceleration": {
+            "mean": 1.0347831137353973,
+            "sample_sd": 0.0019798106228632677
+          },
+          "mean_jerk": {
+            "mean": 12.265427332695412,
+            "sample_sd": 0.006693701093095178
+          }
+        }
+      }
+    },
+    "SRefiner": {
+      "per_seed": {
+        "42": {
+          "NDPNet": {
+            "ADE6": 1.2945079100195402,
+            "FDE6": 3.626806565005108,
+            "Focal_ADE6": 2.2695579192708433,
+            "Focal_FDE6": 5.913139338235625,
+            "close_center_pair_rate": 0.0032247465835939498,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 795,
+            "overlap_steps": 18903,
+            "gt5": 0,
+            "improved": 0,
+            "degraded": 0,
+            "mean_acceleration": 1.0414469567473708,
+            "mean_jerk": 12.793306545683816
+          },
+          "external_native": {
+            "ADE6": 1.0936567548996223,
+            "FDE6": 2.8371955432681886,
+            "Focal_ADE6": 2.2315537596862853,
+            "Focal_FDE6": 5.917317661783805,
+            "close_center_pair_rate": 0.00241348958143195,
+            "extra_gt5_rate": 0.005204056495319428,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 595,
+            "overlap_steps": 17926,
+            "gt5": 507,
+            "improved": 62942,
+            "degraded": 34481,
+            "mean_acceleration": 6.327838294079561,
+            "mean_jerk": 114.36914688915647,
+            "mean_scene_latency_ms": 65.43295285773003
+          },
+          "external_common_P": {
+            "ADE6": 1.0958049444278246,
+            "FDE6": 2.846826203074365,
+            "Focal_ADE6": 2.2316788976120883,
+            "Focal_FDE6": 5.917518303724377,
+            "close_center_pair_rate": 0.0018577785349509798,
+            "extra_gt5_rate": 0.005039825915585482,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 458,
+            "overlap_steps": 16501,
+            "gt5": 491,
+            "improved": 62742,
+            "degraded": 34235,
+            "mean_acceleration": 6.243635414006413,
+            "mean_jerk": 112.79614894300424,
+            "mean_scene_latency_ms": 65.57912355670894
+          },
+          "frozen_full_method": {
+            "ADE6": 1.085581895716505,
+            "FDE6": 2.8785271386269016,
+            "Focal_ADE6": 2.1337315851229786,
+            "Focal_FDE6": 5.640397224390454,
+            "close_center_pair_rate": 0.0013629117636321597,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 336,
+            "overlap_steps": 5053,
+            "gt5": 0,
+            "improved": 61449,
+            "degraded": 35569,
+            "mean_acceleration": 1.0335421135875598,
+            "mean_jerk": 12.262163272643644
+          }
+        },
+        "43": {
+          "NDPNet": {
+            "ADE6": 1.2945079100195402,
+            "FDE6": 3.626806565005108,
+            "Focal_ADE6": 2.2695579192708433,
+            "Focal_FDE6": 5.913139338235625,
+            "close_center_pair_rate": 0.0032247465835939498,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 795,
+            "overlap_steps": 18903,
+            "gt5": 0,
+            "improved": 0,
+            "degraded": 0,
+            "mean_acceleration": 1.0414469567473708,
+            "mean_jerk": 12.793306545683816
+          },
+          "external_native": {
+            "ADE6": 1.0874405864221235,
+            "FDE6": 2.8095067308412327,
+            "Focal_ADE6": 2.215668007569044,
+            "Focal_FDE6": 5.843878986150229,
+            "close_center_pair_rate": 0.00236887044631304,
+            "extra_gt5_rate": 0.004670307111184102,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 584,
+            "overlap_steps": 17793,
+            "gt5": 455,
+            "improved": 64280,
+            "degraded": 33143,
+            "mean_acceleration": 6.073560580967736,
+            "mean_jerk": 109.61417308744763,
+            "mean_scene_latency_ms": 65.10987812942275
+          },
+          "external_common_P": {
+            "ADE6": 1.089652417919642,
+            "FDE6": 2.819296724325459,
+            "Focal_ADE6": 2.2156665057008085,
+            "Focal_FDE6": 5.843967158472669,
+            "close_center_pair_rate": 0.0018537222499401698,
+            "extra_gt5_rate": 0.004557398587617014,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 457,
+            "overlap_steps": 16417,
+            "gt5": 444,
+            "improved": 64081,
+            "degraded": 32897,
+            "mean_acceleration": 5.994980442782103,
+            "mean_jerk": 108.15129510152599,
+            "mean_scene_latency_ms": 65.24003238780419
+          },
+          "frozen_full_method": {
+            "ADE6": 1.0863620151237487,
+            "FDE6": 2.883801476735011,
+            "Focal_ADE6": 2.136017876619096,
+            "Focal_FDE6": 5.6533920419442225,
+            "close_center_pair_rate": 0.00136696804864297,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 337,
+            "overlap_steps": 5116,
+            "gt5": 0,
+            "improved": 61482,
+            "degraded": 35320,
+            "mean_acceleration": 1.0370663191581986,
+            "mean_jerk": 12.273126904917897
+          }
+        },
+        "44": {
+          "NDPNet": {
+            "ADE6": 1.2945079100195402,
+            "FDE6": 3.626806565005108,
+            "Focal_ADE6": 2.2695579192708433,
+            "Focal_FDE6": 5.913139338235625,
+            "close_center_pair_rate": 0.0032247465835939498,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 795,
+            "overlap_steps": 18903,
+            "gt5": 0,
+            "improved": 0,
+            "degraded": 0,
+            "mean_acceleration": 1.0414469567473708,
+            "mean_jerk": 12.793306545683816
+          },
+          "external_native": {
+            "ADE6": 1.0867758299995118,
+            "FDE6": 2.821271518360003,
+            "Focal_ADE6": 2.211666443027898,
+            "Focal_FDE6": 5.864667399444526,
+            "close_center_pair_rate": 0.0023323638812157497,
+            "extra_gt5_rate": 0.004803744457217934,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 575,
+            "overlap_steps": 17830,
+            "gt5": 468,
+            "improved": 63653,
+            "degraded": 33769,
+            "mean_acceleration": 4.6763726643810575,
+            "mean_jerk": 82.9546401497219,
+            "mean_scene_latency_ms": 64.50047023431384
+          },
+          "external_common_P": {
+            "ADE6": 1.0888700429599945,
+            "FDE6": 2.8303824319886863,
+            "Focal_ADE6": 2.2116558488474447,
+            "Focal_FDE6": 5.864390254741396,
+            "close_center_pair_rate": 0.0018658911049725998,
+            "extra_gt5_rate": 0.004629249466250616,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 460,
+            "overlap_steps": 16482,
+            "gt5": 451,
+            "improved": 63416,
+            "degraded": 33525,
+            "mean_acceleration": 4.617568990662558,
+            "mean_jerk": 81.86493318625088,
+            "mean_scene_latency_ms": 64.63552224542897
+          },
+          "frozen_full_method": {
+            "ADE6": 1.0887295266237396,
+            "FDE6": 2.8849123749157886,
+            "Focal_ADE6": 2.1427077209459955,
+            "Focal_FDE6": 5.6565855102296,
+            "close_center_pair_rate": 0.0013629117636321597,
+            "extra_gt5_rate": 0.0,
+            "targets": 97424,
+            "focal_targets": 24988,
+            "pairs": 246531,
+            "overlap": 336,
+            "overlap_steps": 5092,
+            "gt5": 0,
+            "improved": 60394,
+            "degraded": 36485,
+            "mean_acceleration": 1.0337409084604334,
+            "mean_jerk": 12.260991820524692
+          }
+        }
+      },
+      "three_seed": {
+        "NDPNet": {
+          "ADE6": {
+            "mean": 1.2945079100195402,
+            "sample_sd": 0.0
+          },
+          "FDE6": {
+            "mean": 3.626806565005108,
+            "sample_sd": 0.0
+          },
+          "Focal_ADE6": {
+            "mean": 2.2695579192708433,
+            "sample_sd": 0.0
+          },
+          "Focal_FDE6": {
+            "mean": 5.913139338235626,
+            "sample_sd": 1.0877919644084146e-15
+          },
+          "close_center_pair_rate": {
+            "mean": 0.0032247465835939498,
+            "sample_sd": 0.0
+          },
+          "extra_gt5_rate": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "targets": {
+            "mean": 97424.0,
+            "sample_sd": 0.0
+          },
+          "focal_targets": {
+            "mean": 24988.0,
+            "sample_sd": 0.0
+          },
+          "pairs": {
+            "mean": 246531.0,
+            "sample_sd": 0.0
+          },
+          "overlap": {
+            "mean": 795.0,
+            "sample_sd": 0.0
+          },
+          "overlap_steps": {
+            "mean": 18903.0,
+            "sample_sd": 0.0
+          },
+          "gt5": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "improved": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "degraded": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "mean_acceleration": {
+            "mean": 1.0414469567473708,
+            "sample_sd": 0.0
+          },
+          "mean_jerk": {
+            "mean": 12.793306545683814,
+            "sample_sd": 2.175583928816829e-15
+          }
+        },
+        "external_native": {
+          "ADE6": {
+            "mean": 1.0892910571070857,
+            "sample_sd": 0.003795387093192084
+          },
+          "FDE6": {
+            "mean": 2.822657930823141,
+            "sample_sd": 0.013896373197429819
+          },
+          "Focal_ADE6": {
+            "mean": 2.2196294034277426,
+            "sample_sd": 0.010518832341554214
+          },
+          "Focal_FDE6": {
+            "mean": 5.875288015792854,
+            "sample_sd": 0.03785376980456727
+          },
+          "close_center_pair_rate": {
+            "mean": 0.0023715746363202465,
+            "sample_sd": 4.063039861468876e-05
+          },
+          "extra_gt5_rate": {
+            "mean": 0.0048927026879071545,
+            "sample_sd": 0.000277771986297624
+          },
+          "targets": {
+            "mean": 97424.0,
+            "sample_sd": 0.0
+          },
+          "focal_targets": {
+            "mean": 24988.0,
+            "sample_sd": 0.0
+          },
+          "pairs": {
+            "mean": 246531.0,
+            "sample_sd": 0.0
+          },
+          "overlap": {
+            "mean": 584.6666666666666,
+            "sample_sd": 10.016652800877813
+          },
+          "overlap_steps": {
+            "mean": 17849.666666666668,
+            "sample_sd": 68.64643714959527
+          },
+          "gt5": {
+            "mean": 476.6666666666667,
+            "sample_sd": 27.061657993059725
+          },
+          "improved": {
+            "mean": 63625.0,
+            "sample_sd": 669.4393176382756
+          },
+          "degraded": {
+            "mean": 33797.666666666664,
+            "sample_sd": 669.4604792915959
+          },
+          "mean_acceleration": {
+            "mean": 5.692590513142785,
+            "sample_sd": 0.8892065710242922
+          },
+          "mean_jerk": {
+            "mean": 102.312653375442,
+            "sample_sd": 16.932275422963684
+          },
+          "mean_scene_latency_ms": {
+            "mean": 65.01443374048888,
+            "sample_sd": 0.47351154608679524
+          }
+        },
+        "external_common_P": {
+          "ADE6": {
+            "mean": 1.0914424684358204,
+            "sample_sd": 0.003798213426070327
+          },
+          "FDE6": {
+            "mean": 2.8321684531295035,
+            "sample_sd": 0.013851370101300374
+          },
+          "Focal_ADE6": {
+            "mean": 2.2196670840534467,
+            "sample_sd": 0.010594059223193173
+          },
+          "Focal_FDE6": {
+            "mean": 5.875291905646147,
+            "sample_sd": 0.03796810814744718
+          },
+          "close_center_pair_rate": {
+            "mean": 0.0018591306299545831,
+            "sample_sd": 6.196077700783843e-06
+          },
+          "extra_gt5_rate": {
+            "mean": 0.004742157989817704,
+            "sample_sd": 0.00026027923988146607
+          },
+          "targets": {
+            "mean": 97424.0,
+            "sample_sd": 0.0
+          },
+          "focal_targets": {
+            "mean": 24988.0,
+            "sample_sd": 0.0
+          },
+          "pairs": {
+            "mean": 246531.0,
+            "sample_sd": 0.0
+          },
+          "overlap": {
+            "mean": 458.3333333333333,
+            "sample_sd": 1.5275252316519465
+          },
+          "overlap_steps": {
+            "mean": 16466.666666666668,
+            "sample_sd": 44.04921490030593
+          },
+          "gt5": {
+            "mean": 462.0,
+            "sample_sd": 25.357444666211933
+          },
+          "improved": {
+            "mean": 63413.0,
+            "sample_sd": 669.5050410564509
+          },
+          "degraded": {
+            "mean": 33552.333333333336,
+            "sample_sd": 669.4186532606732
+          },
+          "mean_acceleration": {
+            "mean": 5.6187282824836915,
+            "sample_sd": 0.8758979788642547
+          },
+          "mean_jerk": {
+            "mean": 100.93745907692704,
+            "sample_sd": 16.679766176120637
+          },
+          "mean_scene_latency_ms": {
+            "mean": 65.15155939664736,
+            "sample_sd": 0.47798165371224555
+          }
+        },
+        "frozen_full_method": {
+          "ADE6": {
+            "mean": 1.086891145821331,
+            "sample_sd": 0.0016391703857096237
+          },
+          "FDE6": {
+            "mean": 2.8824136634259006,
+            "sample_sd": 0.0034113530969306534
+          },
+          "Focal_ADE6": {
+            "mean": 2.1374857275626904,
+            "sample_sd": 0.004664621460822904
+          },
+          "Focal_FDE6": {
+            "mean": 5.650124925521426,
+            "sample_sd": 0.008574420498934907
+          },
+          "close_center_pair_rate": {
+            "mean": 0.001364263858635763,
+            "sample_sd": 2.341897242901115e-06
+          },
+          "extra_gt5_rate": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "targets": {
+            "mean": 97424.0,
+            "sample_sd": 0.0
+          },
+          "focal_targets": {
+            "mean": 24988.0,
+            "sample_sd": 0.0
+          },
+          "pairs": {
+            "mean": 246531.0,
+            "sample_sd": 0.0
+          },
+          "overlap": {
+            "mean": 336.3333333333333,
+            "sample_sd": 0.5773502691896258
+          },
+          "overlap_steps": {
+            "mean": 5087.0,
+            "sample_sd": 31.796226191169293
+          },
+          "gt5": {
+            "mean": 0.0,
+            "sample_sd": 0.0
+          },
+          "improved": {
+            "mean": 61108.333333333336,
+            "sample_sd": 618.8508167024855
+          },
+          "degraded": {
+            "mean": 35791.333333333336,
+            "sample_sd": 613.4984379224884
+          },
+          "mean_acceleration": {
+            "mean": 1.0347831137353973,
+            "sample_sd": 0.0019798106228632677
+          },
+          "mean_jerk": {
+            "mean": 12.265427332695412,
+            "sample_sd": 0.006693701093095178
+          }
+        }
+      }
+    }
+  },
+  "prior_learned_paired_scene_bootstrap": {
+    "SmartRefine": {
+      "external_native_minus_NDPNet": {
+        "ADE6": {
+          "delta": -0.19756911824158097,
+          "CI95": [
+            -0.20570985202686015,
+            -0.1892093202481517
+          ]
+        },
+        "FDE6": {
+          "delta": -0.7897942358648588,
+          "CI95": [
+            -0.8134211426843511,
+            -0.7647011439711949
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.02320382272794021,
+          "CI95": [
+            0.0046513774568504385,
+            0.0424276407820265
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.1728416122266801,
+          "CI95": [
+            0.12127807768575065,
+            0.2264982403622964
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.001116830472976353,
+          "CI95": [
+            -0.001307893277345655,
+            -0.0009285805592659579
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.030889034871626427,
+          "CI95": [
+            0.029880981763640405,
+            0.03194466060704164
+          ]
+        }
+      },
+      "external_common_P_minus_NDPNet": {
+        "ADE6": {
+          "delta": -0.19662421505689479,
+          "CI95": [
+            -0.20469131444309824,
+            -0.1884325109373859
+          ]
+        },
+        "FDE6": {
+          "delta": -0.7839164205389434,
+          "CI95": [
+            -0.8073256371444227,
+            -0.7590863024168923
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.02178265536054376,
+          "CI95": [
+            0.0031558573819336013,
+            0.04072135564529602
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.16926784490963112,
+          "CI95": [
+            0.11767361795394825,
+            0.22277921612847065
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.0016103451492915698,
+          "CI95": [
+            -0.0017861729324851999,
+            -0.0014402764348300482
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.030314227842557613,
+          "CI95": [
+            0.02930660063770004,
+            0.03136275944146867
+          ]
+        }
+      },
+      "external_native_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.010047645956631613,
+          "CI95": [
+            0.003783514103241145,
+            0.016467601856433683
+          ]
+        },
+        "FDE6": {
+          "delta": -0.04540133428567369,
+          "CI95": [
+            -0.06296958334907134,
+            -0.026579291143919374
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.15527601443609026,
+          "CI95": [
+            0.13936149129252423,
+            0.17231770025605245
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.43585602494090253,
+          "CI95": [
+            0.3913209906601093,
+            0.48336359656754474
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": 0.0007436522519818333,
+          "CI95": [
+            0.0006315725876881337,
+            0.0008625571630354578
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.030889034871626427,
+          "CI95": [
+            0.029880981763640405,
+            0.03194466060704164
+          ]
+        }
+      },
+      "external_common_P_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.010992549141317778,
+          "CI95": [
+            0.004839156751221247,
+            0.017264123866664916
+          ]
+        },
+        "FDE6": {
+          "delta": -0.03952351895975825,
+          "CI95": [
+            -0.05702376117703703,
+            -0.021018653950830572
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.1538548470686938,
+          "CI95": [
+            0.1379778448249887,
+            0.170591798020533
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.4322822576238536,
+          "CI95": [
+            0.38706583396142025,
+            0.4793467434043326
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": 0.00025013757566661664,
+          "CI95": [
+            0.00016527638301185664,
+            0.0003410018820427743
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.030314227842557613,
+          "CI95": [
+            0.02930660063770004,
+            0.03136275944146867
+          ]
+        }
+      }
+    },
+    "SRefiner": {
+      "external_native_minus_NDPNet": {
+        "ADE6": {
+          "delta": -0.20521685291245603,
+          "CI95": [
+            -0.2099062878936307,
+            -0.20037590341243414
+          ]
+        },
+        "FDE6": {
+          "delta": -0.8041486341819499,
+          "CI95": [
+            -0.8200208665042671,
+            -0.7883373515840277
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": -0.04992851584310217,
+          "CI95": [
+            -0.05710668325844118,
+            -0.04302872761221158
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": -0.03785132244278559,
+          "CI95": [
+            -0.057803551588517195,
+            -0.01864068784213024
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.0008531719472737033,
+          "CI95": [
+            -0.0010288722281458144,
+            -0.0006865887456640363
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0048927026879071545,
+          "CI95": [
+            0.0044979971542329356,
+            0.0053102358304957025
+          ]
+        }
+      },
+      "external_common_P_minus_NDPNet": {
+        "ADE6": {
+          "delta": -0.20306544158372195,
+          "CI95": [
+            -0.20765922353994667,
+            -0.19830754489952418
+          ]
+        },
+        "FDE6": {
+          "delta": -0.7946381118755883,
+          "CI95": [
+            -0.8103779649002711,
+            -0.7791569310859094
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": -0.04989083521739878,
+          "CI95": [
+            -0.05697861803476294,
+            -0.04301835936359471
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": -0.037847432589490256,
+          "CI95": [
+            -0.057794408899354145,
+            -0.018872394878820135
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": -0.0013656159536393666,
+          "CI95": [
+            -0.0015216366522285286,
+            -0.0012144717551607048
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.004742157989817704,
+          "CI95": [
+            0.004352130427611198,
+            0.005149724514813679
+          ]
+        }
+      },
+      "external_native_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.002399911285756528,
+          "CI95": [
+            -0.0008959884600952271,
+            0.005813806268895432
+          ]
+        },
+        "FDE6": {
+          "delta": -0.059755732602764844,
+          "CI95": [
+            -0.07003390388185249,
+            -0.04948520309728643
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.08214367586504785,
+          "CI95": [
+            0.07439093366122494,
+            0.09001028352615477
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.22516309027143683,
+          "CI95": [
+            0.2044390272211262,
+            0.24559780603842854
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": 0.0010073107776844832,
+          "CI95": [
+            0.0008808103865675213,
+            0.0011351590955910153
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.0048927026879071545,
+          "CI95": [
+            0.0044979971542329356,
+            0.0053102358304957025
+          ]
+        }
+      },
+      "external_common_P_minus_frozen_full_method": {
+        "ADE6": {
+          "delta": 0.0045513226144905826,
+          "CI95": [
+            0.0012828940468628397,
+            0.007945364867974333
+          ]
+        },
+        "FDE6": {
+          "delta": -0.05024521029640311,
+          "CI95": [
+            -0.06024434063975054,
+            -0.0400376522075981
+          ]
+        },
+        "Focal_ADE6": {
+          "delta": 0.08218135649075126,
+          "CI95": [
+            0.07445348026151931,
+            0.0900351053190938
+          ]
+        },
+        "Focal_FDE6": {
+          "delta": 0.22516698012473219,
+          "CI95": [
+            0.204672256600461,
+            0.24550565703761132
+          ]
+        },
+        "close_center_pair_rate": {
+          "delta": 0.00049486677131882,
+          "CI95": [
+            0.00039847200719474846,
+            0.0005946858336468077
+          ]
+        },
+        "extra_gt5_rate": {
+          "delta": 0.004742157989817704,
+          "CI95": [
+            0.004352130427611198,
+            0.005149724514813679
+          ]
+        }
+      }
+    }
+  },
+  "protocol_sha256": "8cccc399ec8bdff3847599a96b68c26f39c5d970fac623ba97bd35dda11397ac",
+  "scope": "Five baseline families, same frozen NDPNet and full AV2 Validation; primary focal6s and secondary all-requested6s both retained.",
+  "CI_scope": "Deterministic classical baseline versus our fixed3-refiner mean within each scene; resample whole scenes, never triple deterministic outputs into independent seeds.",
+  "implementation": "ORCA dynamic-agent RVO2 core port; explicitly adapted CHOMP-style and SCP/TrajOpt-style postprocessors, not unmodified robotics benchmark reproductions.",
+  "exposure": "Historical AV2 Validation exposure retained; all new classical parameters frozen using Training tune only before evaluation."
+}

@@ -1,0 +1,86 @@
+{
+  "scope": "Deterministic reconstruction from user-owned metadata; no actual scene IDs or filenames distributed",
+  "canonical_encoding": "JSON sort_keys=True,separators=(comma,colon),ensure_ascii=True; SHA256 of UTF8",
+  "fingerprints": {
+    "av2_refiner_train.txt": {
+      "canonical_SHA256": "1fc91e748ac0cf958a9546b075f7bd9e8a4201dad66af5b6e61c2fa160b8cbca",
+      "file_SHA256": "5d13e311525a4020ae1aaade24b0e9988b89e6c41ec6c373b83290c28b2df027",
+      "counts": {
+        "lines": 8192
+      }
+    },
+    "av2_refiner_tune.txt": {
+      "canonical_SHA256": "3dbe925f26b086befee863cc78769e4c6d65f37710c70884b00cace277c5b367",
+      "file_SHA256": "0107f2eeff6b663c32ce612df63df28e93d77efbfc1b1a439ecd66b7e3efb8d7",
+      "counts": {
+        "lines": 1024
+      }
+    },
+    "av2_train_files.txt": {
+      "canonical_SHA256": "a4f4be95623ac1399bd85c8d36b3568cc6c841a5511b4806bb32eca4491be6f1",
+      "file_SHA256": "c8ac54c3d829f6c0b8e5b1c4b7317c907fe463a987da292c05ad4431fdb2ad66",
+      "counts": {
+        "lines": 199908
+      }
+    },
+    "av2_val_files.txt": {
+      "canonical_SHA256": "97f3f2621cf1907cd011c01e9ec28eb3655924d67064dc47cd0dbbb780f21e8f",
+      "file_SHA256": "613a94a1fe1af9dcde5625485c0b6af3242d969ddb8b3384daa8a7084a88a824",
+      "counts": {
+        "lines": 24988
+      }
+    },
+    "womd_final_cohorts.json": {
+      "canonical_SHA256": "2c0fbfa7ba129f198843e1ee13f17a386ca7f774958e8603b7c478dd64983bfb",
+      "file_SHA256": "474999081c8920b6643c3f007119273a6519067b723e18da1a3715c2875e4113",
+      "counts": {
+        "confirmation": 20000,
+        "validation": 44097
+      }
+    },
+    "womd_rcim_development.json": {
+      "canonical_SHA256": "4793b0706cc80bc3bbd532f894e6c0e868aabfa56192afea171e1d56cdbeee24",
+      "file_SHA256": "a6d8926b40f7e9ce4f9000c6ba2a80cdf827c5272b4f9842903de6ba1a35e38a",
+      "counts": {
+        "calibration": 2000,
+        "audit": 5000
+      }
+    },
+    "womd_refiners.json": {
+      "canonical_SHA256": "1486d56512aa934cc883dc4bab0bc3d19759f9cad79d27d14d6a6c60a8b22f9b",
+      "file_SHA256": "6d7993e31d13b5ca709a1f526b8f63f06b7f02c6b30fc2f4e0c5eff25e75fed2",
+      "counts": {
+        "train": 8192,
+        "tune": 1024
+      }
+    }
+  },
+  "womd": {
+    "role_rule": "sha256(scene) first8 hex modulo5 nonzero fit; otherwise sha256(full_interaction_cal:+scene) first8 hex modulo2 nonzero calibration else audit",
+    "calibration_namespace": "full_interaction_calibration2000_v1",
+    "audit_namespace": "full_interaction_audit5000_v1",
+    "refiner_namespace": "StageR_corrected_fit_v1_20261027",
+    "confirmation_namespace": "ndpnet_nfi_air_training_confirmation20000_v1_20261027",
+    "fixed_original_manifest_sha256": "6ed54c4a6e8e8cbfce826f9a29c93309cf03ab4df3c739932ecb202f09e7a3fe",
+    "requires_local_historical_metadata": true,
+    "qualified_confirmation_pool_count": 84828
+  },
+  "av2": {
+    "role_modulus": 10,
+    "calibration_bucket": 0,
+    "development_bucket": 1,
+    "fit_buckets": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "refiner_train_namespace": "AV2_refiner_fit",
+    "refiner_tune_namespace": "AV2_refiner_tune",
+    "ordered_files": "Lexically sorted native processed .pkl basenames"
+  }
+}

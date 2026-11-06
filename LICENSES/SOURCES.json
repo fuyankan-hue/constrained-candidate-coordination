@@ -1,0 +1,18 @@
+{
+  "checked_on": "2026-11-06",
+  "Apache": {
+    "url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "SHA256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "Waymo": {
+    "url": "https://waymo.com/open/terms/",
+    "version": "March 2025 as served on check date",
+    "copy": "LICENSES/Waymo_Dataset_License_March_2025.html",
+    "SHA256": "56573ab807192d99f1553054052faa1708983e36f7a5ece2061e6ead2e76f37a"
+  },
+  "AV2": {
+    "terms": "https://www.argoverse.org/about.html#terms-of-use",
+    "data": "CC-BY-NC-SA-4.0",
+    "API": "MIT"
+  }
+}

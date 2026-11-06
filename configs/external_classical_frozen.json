@@ -1,0 +1,181 @@
+{
+  "FROZEN_ORCA.json": {
+    "passed": true,
+    "method": "ORCA",
+    "configuration": {
+      "time_horizon": 2.0
+    },
+    "selected_index": 0,
+    "selection": "Original1024 Training tune scenes only; minimum focal ADE+.25FDE; deterministic index tie-break; no Validation selection",
+    "scores": [
+      {
+        "index": 0,
+        "configuration": {
+          "time_horizon": 2.0
+        },
+        "Focal_ADE6": 2.2955033046686917,
+        "Focal_FDE6": 6.087024923954188,
+        "criterion": 3.8172595356572385,
+        "mean_seconds": 9.411511037882292e-05
+      },
+      {
+        "index": 1,
+        "configuration": {
+          "time_horizon": 5.0
+        },
+        "Focal_ADE6": 2.307970488423801,
+        "Focal_FDE6": 6.090745198315635,
+        "criterion": 3.8306567880027096,
+        "mean_seconds": 9.492618454487456e-05
+      }
+    ],
+    "protocol_sha256": "8cccc399ec8bdff3847599a96b68c26f39c5d970fac623ba97bd35dda11397ac",
+    "seconds": 0.6617622375488281
+  },
+  "FROZEN_CHOMP_style.json": {
+    "passed": true,
+    "method": "CHOMP_style",
+    "configuration": {
+      "smoothness": 0.0001,
+      "collision_weight": 1.0,
+      "max_iterations": 30
+    },
+    "selected_index": 0,
+    "selection": "Original1024 Training tune scenes only; minimum focal ADE+.25FDE; deterministic index tie-break; no Validation selection",
+    "scores": [
+      {
+        "index": 0,
+        "configuration": {
+          "smoothness": 0.0001,
+          "collision_weight": 1.0,
+          "max_iterations": 30
+        },
+        "Focal_ADE6": 2.293751487386125,
+        "Focal_FDE6": 6.090200222485783,
+        "criterion": 3.8163015430075706,
+        "mean_seconds": 0.0019545812402377294
+      },
+      {
+        "index": 1,
+        "configuration": {
+          "smoothness": 0.0001,
+          "collision_weight": 10.0,
+          "max_iterations": 30
+        },
+        "Focal_ADE6": 2.2937778020075528,
+        "Focal_FDE6": 6.090173176643936,
+        "criterion": 3.8163210961685365,
+        "mean_seconds": 0.004601432085014068
+      },
+      {
+        "index": 2,
+        "configuration": {
+          "smoothness": 0.001,
+          "collision_weight": 1.0,
+          "max_iterations": 30
+        },
+        "Focal_ADE6": 2.2937380103353586,
+        "Focal_FDE6": 6.105899204967375,
+        "criterion": 3.8202128115772025,
+        "mean_seconds": 0.0018787145175167552
+      },
+      {
+        "index": 3,
+        "configuration": {
+          "smoothness": 0.001,
+          "collision_weight": 10.0,
+          "max_iterations": 30
+        },
+        "Focal_ADE6": 2.293761828246877,
+        "Focal_FDE6": 6.1058761880144266,
+        "criterion": 3.820230875250483,
+        "mean_seconds": 0.004271766944395239
+      }
+    ],
+    "protocol_sha256": "8cccc399ec8bdff3847599a96b68c26f39c5d970fac623ba97bd35dda11397ac",
+    "seconds": 16.482211351394653
+  },
+  "FROZEN_SCP_style.json": {
+    "passed": true,
+    "method": "SCP_style",
+    "configuration": {
+      "smoothness": 0.0001,
+      "collision_weight": 10.0,
+      "max_iterations": 10,
+      "trust_region": 0.5,
+      "admm_rho": 10.0,
+      "admm_max_iterations": 500,
+      "admm_tolerance": 0.0001
+    },
+    "selected_index": 1,
+    "selection": "Original1024 Training tune scenes only; minimum focal ADE+.25FDE; deterministic index tie-break; no Validation selection",
+    "scores": [
+      {
+        "index": 0,
+        "configuration": {
+          "smoothness": 0.0001,
+          "collision_weight": 1.0,
+          "max_iterations": 10,
+          "trust_region": 0.5,
+          "admm_rho": 10.0,
+          "admm_max_iterations": 500,
+          "admm_tolerance": 0.0001
+        },
+        "Focal_ADE6": 2.293784879910413,
+        "Focal_FDE6": 6.090172396827696,
+        "criterion": 3.816327979117337,
+        "mean_seconds": 0.009584856705046718
+      },
+      {
+        "index": 1,
+        "configuration": {
+          "smoothness": 0.0001,
+          "collision_weight": 10.0,
+          "max_iterations": 10,
+          "trust_region": 0.5,
+          "admm_rho": 10.0,
+          "admm_max_iterations": 500,
+          "admm_tolerance": 0.0001
+        },
+        "Focal_ADE6": 2.293784878364614,
+        "Focal_FDE6": 6.090172336165767,
+        "criterion": 3.8163279624060555,
+        "mean_seconds": 0.009665292668003644
+      },
+      {
+        "index": 2,
+        "configuration": {
+          "smoothness": 0.001,
+          "collision_weight": 1.0,
+          "max_iterations": 10,
+          "trust_region": 0.5,
+          "admm_rho": 10.0,
+          "admm_max_iterations": 500,
+          "admm_tolerance": 0.0001
+        },
+        "Focal_ADE6": 2.293771377184834,
+        "Focal_FDE6": 6.105874025024344,
+        "criterion": 3.8202398834409204,
+        "mean_seconds": 0.010317604796838964
+      },
+      {
+        "index": 3,
+        "configuration": {
+          "smoothness": 0.001,
+          "collision_weight": 10.0,
+          "max_iterations": 10,
+          "trust_region": 0.5,
+          "admm_rho": 10.0,
+          "admm_max_iterations": 500,
+          "admm_tolerance": 0.0001
+        },
+        "Focal_ADE6": 2.293772800184935,
+        "Focal_FDE6": 6.105875432577126,
+        "criterion": 3.8202416583292162,
+        "mean_seconds": 0.01056312546187499
+      }
+    ],
+    "protocol_sha256": "8cccc399ec8bdff3847599a96b68c26f39c5d970fac623ba97bd35dda11397ac",
+    "seconds": 47.41603446006775
+  }
+}

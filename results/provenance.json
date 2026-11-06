@@ -1,0 +1,38 @@
+{
+  "womd_final_protocol": {
+    "source_id": "official_waymo/nfi_20k_data/results/full_interaction_20261025_1310/analysis/frozen_RCIM_final_evaluation_20261030/PROTOCOL_FROZEN.json",
+    "original_file_SHA256": "02cfa4690a1e456b8e54d50dec3f518a8fe5e1ddd57fac57999646cd683d86eb"
+  },
+  "womd_replication_protocol": {
+    "source_id": "official_waymo/nfi_20k_data/results/full_interaction_20261025_1310/analysis/frozen_RCIM_multiseed_completion_20261030_v2/PROTOCOL_FROZEN.json",
+    "original_file_SHA256": "d5b4da5dfb9a61a76eb44d3bfa9b1aa8ea3ef3555c3d36e5fc758ab83d75d267"
+  },
+  "womd_confirmation_results": {
+    "source_id": "official_waymo/nfi_20k_data/results/full_interaction_20261025_1310/analysis/frozen_RCIM_final_evaluation_20261030/confirmation/RESULTS.json",
+    "original_file_SHA256": "0b3012b9905bd9bc15e50ff525330706019d0e1e308f275502dab76f0b68c713"
+  },
+  "womd_validation_results": {
+    "source_id": "official_waymo/nfi_20k_data/results/full_interaction_20261025_1310/analysis/frozen_RCIM_final_evaluation_20261030/validation/RESULTS.json",
+    "original_file_SHA256": "fb2d1ad1a02aafc4908f961b2ea3941e29ae4246796772af2ebccea203361a38"
+  },
+  "av2_protocol": {
+    "source_id": "results/av2_frozen_framework_20261030_v1/AV2_MODULE_PROTOCOL.json",
+    "original_file_SHA256": "8c4ea889fb6bcac5362029472b70151ca6ebcc1c57d239280bc0d7f964f16a47"
+  },
+  "av2_results": {
+    "source_id": "results/av2_frozen_framework_20261030_v1/AV2_RESULTS.json",
+    "original_file_SHA256": "90d94b4b231b24847cbcae34bde8851c7d8f84480167ec5f999c1aec45aae7fd"
+  },
+  "metadata/METRIC_RECHECK.json": {
+    "source_id": "results/av2_frozen_framework_20261030_v1/analysis/closing_checks_20261031/METRIC_RECHECK.json",
+    "original_file_SHA256": "95e0805f18494cbdd1011633178aa31fd0c31d71024c2b7c5e84254b07a2dc04"
+  },
+  "metadata/INFERENCE_COST.json": {
+    "source_id": "results/av2_frozen_framework_20261030_v1/analysis/closing_checks_20261031/INFERENCE_COST.json",
+    "original_file_SHA256": "45815c2e1d67f82f5c45ec2d7228f11e5ae3a953e817bb03ec51c77b6d2bdfae"
+  },
+  "manuscript_tables": {
+    "source_main_tex_SHA256": "488a0235a3d060cab1a6c13a7cd641427225e1990a348620ac959519916f85e1",
+    "tables": 11
+  }
+}

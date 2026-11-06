@@ -1,0 +1,647 @@
+{
+  "passed": true,
+  "methods": {
+    "NDPNet": {
+      "passed": true,
+      "method": "NDPNet",
+      "seed": 42,
+      "scenes": 256,
+      "repetitions": 3,
+      "samples": 768,
+      "cached_prediction_suffix": {
+        "samples": 768,
+        "mean_ms": 0.02646698779547781,
+        "median_ms": 0.02526001480873674,
+        "p95_ms": 0.030826493457425386,
+        "max_ms": 0.27093698736280203,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 0.024592400267265918,
+            "median_ms": 0.023790023988112807,
+            "p95_ms": 0.026531005278229713,
+            "max_ms": 0.058581994380801916
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 0.025652871054217256,
+            "median_ms": 0.02491100167389959,
+            "p95_ms": 0.028539502818603065,
+            "max_ms": 0.11129301856271923
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 0.02876266349900376,
+            "median_ms": 0.026641006115823984,
+            "p95_ms": 0.03617308684624729,
+            "max_ms": 0.27093698736280203
+          }
+        }
+      },
+      "end_to_end_inference": {
+        "samples": 768,
+        "mean_ms": 68.67878562911756,
+        "median_ms": 67.88913550553843,
+        "p95_ms": 72.25528315175325,
+        "max_ms": 95.72696898248978,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 68.12812595976501,
+            "median_ms": 67.55127300857566,
+            "p95_ms": 69.53249818470795,
+            "max_ms": 93.5528650006745
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 68.40441883658927,
+            "median_ms": 67.88728649553377,
+            "p95_ms": 69.83607481088256,
+            "max_ms": 95.72696898248978
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 69.41140534075019,
+            "median_ms": 68.15414602169767,
+            "p95_ms": 73.98686089145485,
+            "max_ms": 94.87753600114956
+          }
+        }
+      },
+      "cached_suffix_memory": {
+        "peak_allocated_MiB": 0.0,
+        "peak_reserved_MiB": 0.0,
+        "peak_process_RSS_GiB": 0.6167831420898438
+      },
+      "end_to_end_memory": {
+        "peak_allocated_MiB": 597.45068359375,
+        "peak_reserved_MiB": 2236.0,
+        "peak_process_RSS_GiB": 2.1055450439453125,
+        "resident_models_MiB": 72.3623046875,
+        "incremental_peak_over_resident_MiB": 525.08837890625
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "torch": "2.0.1+cu118",
+      "numpy": "1.24.3",
+      "cpu_threads": 1,
+      "measured_scope": "Synchronized wall time, batch1; GPU frozen backbone+required D2H outputs+isolated CPU coordination+refiner transfers+geometry protection. H2D graph transfer included. Disk IO, adapters, graph cloning,model load,metrics excluded.",
+      "baseline_scope": "Native NDPNet baseline copies only logits and selected trajectory, no unused hidden-feature copies.",
+      "dummy_label_scaffolding": "Frozen bank/collate allocate zero targets; no true GT/future validity provided; this scaffolding remains included.",
+      "hidden_feature_scope": "Near/Far stages retained in backbone; zero unused Near/Far hidden input tensors replace unnecessary host copies; Refine host copy retained when used.",
+      "numerical_modes": "Backbone scatter uses original extraction non-forced-determinism; strict deterministic refinement/coordination restored afterward. TF32 disabled for all methods; same fixed protocol.",
+      "exact_replay": "Verified separately against full frozen evaluation on32same-feature scenes before timing.",
+      "fresh_backbone_repeat_max_path_difference_m": [
+        0.000244140625,
+        6.103515625e-05,
+        7.62939453125e-06,
+        0.0001220703125
+      ],
+      "extra_trainable_parameters": 0,
+      "backbone_parameters": 10576681,
+      "frozen_manifest_sha256": "c1c81b12fba61a8b25fde55cdcd9170b7d38b5456796e4ff084ffb139f2794e4",
+      "inputs_sha256": "1affb5ed9b9e93dbf0077db010fe640c9816b422da8f076cb5124579d9f6159f",
+      "completed_time": "2026-10-31T10:36:13+0800"
+    },
+    "NDPNet_refined": {
+      "passed": true,
+      "method": "NDPNet_refined",
+      "seed": 42,
+      "scenes": 256,
+      "repetitions": 3,
+      "samples": 768,
+      "cached_prediction_suffix": {
+        "samples": 768,
+        "mean_ms": 5.503302523682881,
+        "median_ms": 4.186900012427941,
+        "p95_ms": 11.632238596212103,
+        "max_ms": 58.48964399774559,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 3.5275344162369224,
+            "median_ms": 3.4545219969004393,
+            "p95_ms": 3.5262279852759093,
+            "max_ms": 7.870250003179535
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 4.165533840217841,
+            "median_ms": 4.1550705063855276,
+            "p95_ms": 4.672881466103718,
+            "max_ms": 8.148997003445402
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 8.716481486517445,
+            "median_ms": 6.965806998778135,
+            "p95_ms": 16.948200308252098,
+            "max_ms": 58.48964399774559
+          }
+        }
+      },
+      "end_to_end_inference": {
+        "samples": 768,
+        "mean_ms": 73.68011265820466,
+        "median_ms": 72.06500499160029,
+        "p95_ms": 82.35932970128488,
+        "max_ms": 139.20406199758872,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 71.27494076423052,
+            "median_ms": 70.6647330080159,
+            "p95_ms": 72.58194309542887,
+            "max_ms": 97.2318220010493
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 72.39107628269248,
+            "median_ms": 71.72328350134194,
+            "p95_ms": 74.97851009684382,
+            "max_ms": 100.4517579858657
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 77.03002527513763,
+            "median_ms": 74.76757501717657,
+            "p95_ms": 85.82832239917478,
+            "max_ms": 139.20406199758872
+          }
+        }
+      },
+      "cached_suffix_memory": {
+        "peak_allocated_MiB": 66.572265625,
+        "peak_reserved_MiB": 88.0,
+        "peak_process_RSS_GiB": 1.8707466125488281
+      },
+      "end_to_end_memory": {
+        "peak_allocated_MiB": 597.7509765625,
+        "peak_reserved_MiB": 2236.0,
+        "peak_process_RSS_GiB": 2.11376953125,
+        "resident_models_MiB": 72.66259765625,
+        "incremental_peak_over_resident_MiB": 525.08837890625
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "torch": "2.0.1+cu118",
+      "numpy": "1.24.3",
+      "cpu_threads": 1,
+      "measured_scope": "Synchronized wall time, batch1; GPU frozen backbone+required D2H outputs+isolated CPU coordination+refiner transfers+geometry protection. H2D graph transfer included. Disk IO, adapters, graph cloning,model load,metrics excluded.",
+      "baseline_scope": "Native NDPNet baseline copies only logits and selected trajectory, no unused hidden-feature copies.",
+      "dummy_label_scaffolding": "Frozen bank/collate allocate zero targets; no true GT/future validity provided; this scaffolding remains included.",
+      "hidden_feature_scope": "Near/Far stages retained in backbone; zero unused Near/Far hidden input tensors replace unnecessary host copies; Refine host copy retained when used.",
+      "numerical_modes": "Backbone scatter uses original extraction non-forced-determinism; strict deterministic refinement/coordination restored afterward. TF32 disabled for all methods; same fixed protocol.",
+      "exact_replay": "Verified separately against full frozen evaluation on32same-feature scenes before timing.",
+      "fresh_backbone_repeat_max_path_difference_m": [
+        0.0002465959014443797,
+        6.0917579389752063e-05,
+        2.3080903588379442e-07,
+        7.112039384082891e-07
+      ],
+      "extra_trainable_parameters": 76026,
+      "backbone_parameters": 10576681,
+      "frozen_manifest_sha256": "c1c81b12fba61a8b25fde55cdcd9170b7d38b5456796e4ff084ffb139f2794e4",
+      "inputs_sha256": "1affb5ed9b9e93dbf0077db010fe640c9816b422da8f076cb5124579d9f6159f",
+      "completed_time": "2026-10-31T10:37:21+0800"
+    },
+    "OldRCIM_refined": {
+      "passed": true,
+      "method": "OldRCIM_refined",
+      "seed": 42,
+      "scenes": 256,
+      "repetitions": 3,
+      "samples": 768,
+      "cached_prediction_suffix": {
+        "samples": 768,
+        "mean_ms": 9.473264709451238,
+        "median_ms": 6.3032529869815335,
+        "p95_ms": 24.638309850706648,
+        "max_ms": 157.32642100192606,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 3.713448039763342,
+            "median_ms": 3.7041270115878433,
+            "p95_ms": 3.7835665949387476,
+            "max_ms": 4.065228975377977
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 6.264955017281886,
+            "median_ms": 6.230965998838656,
+            "p95_ms": 7.59234951401595,
+            "max_ms": 11.993014981271699
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 17.69630152683268,
+            "median_ms": 13.22690598317422,
+            "p95_ms": 37.67470909224352,
+            "max_ms": 157.32642100192606
+          }
+        }
+      },
+      "end_to_end_inference": {
+        "samples": 768,
+        "mean_ms": 78.18249929842598,
+        "median_ms": 75.03763248678297,
+        "p95_ms": 94.92034651048016,
+        "max_ms": 230.97709499415942,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 71.82059694309643,
+            "median_ms": 71.44870198681019,
+            "p95_ms": 73.7798669928452,
+            "max_ms": 78.98399798432365
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 75.06023624407149,
+            "median_ms": 74.32741549564525,
+            "p95_ms": 78.89833673543762,
+            "max_ms": 101.1121159826871
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 86.5679467780805,
+            "median_ms": 81.40051600639708,
+            "p95_ms": 107.06658010021783,
+            "max_ms": 230.97709499415942
+          }
+        }
+      },
+      "cached_suffix_memory": {
+        "peak_allocated_MiB": 66.572265625,
+        "peak_reserved_MiB": 88.0,
+        "peak_process_RSS_GiB": 1.9137992858886719
+      },
+      "end_to_end_memory": {
+        "peak_allocated_MiB": 597.7509765625,
+        "peak_reserved_MiB": 2236.0,
+        "peak_process_RSS_GiB": 2.1299591064453125,
+        "resident_models_MiB": 72.66259765625,
+        "incremental_peak_over_resident_MiB": 525.08837890625
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "torch": "2.0.1+cu118",
+      "numpy": "1.24.3",
+      "cpu_threads": 1,
+      "measured_scope": "Synchronized wall time, batch1; GPU frozen backbone+required D2H outputs+isolated CPU coordination+refiner transfers+geometry protection. H2D graph transfer included. Disk IO, adapters, graph cloning,model load,metrics excluded.",
+      "baseline_scope": "Native NDPNet baseline copies only logits and selected trajectory, no unused hidden-feature copies.",
+      "dummy_label_scaffolding": "Frozen bank/collate allocate zero targets; no true GT/future validity provided; this scaffolding remains included.",
+      "hidden_feature_scope": "Near/Far stages retained in backbone; zero unused Near/Far hidden input tensors replace unnecessary host copies; Refine host copy retained when used.",
+      "numerical_modes": "Backbone scatter uses original extraction non-forced-determinism; strict deterministic refinement/coordination restored afterward. TF32 disabled for all methods; same fixed protocol.",
+      "exact_replay": "Verified separately against full frozen evaluation on32same-feature scenes before timing.",
+      "fresh_backbone_repeat_max_path_difference_m": [
+        0.0002467569356667809,
+        6.0838093190795917e-05,
+        1.5349090318750314e-05,
+        4.801026989298407e-07
+      ],
+      "extra_trainable_parameters": 120475,
+      "backbone_parameters": 10576681,
+      "frozen_manifest_sha256": "c1c81b12fba61a8b25fde55cdcd9170b7d38b5456796e4ff084ffb139f2794e4",
+      "inputs_sha256": "1affb5ed9b9e93dbf0077db010fe640c9816b422da8f076cb5124579d9f6159f",
+      "completed_time": "2026-10-31T10:38:37+0800"
+    },
+    "GeometryB_two_refiners": {
+      "passed": true,
+      "method": "GeometryB_two_refiners",
+      "seed": 42,
+      "scenes": 256,
+      "repetitions": 3,
+      "samples": 768,
+      "cached_prediction_suffix": {
+        "samples": 768,
+        "mean_ms": 12.125008970997442,
+        "median_ms": 8.91261849028524,
+        "p95_ms": 26.727795958868164,
+        "max_ms": 142.15661498019472,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 7.209413350802066,
+            "median_ms": 7.1697010134812444,
+            "p95_ms": 7.372026678058319,
+            "max_ms": 10.13849998707883
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 8.899942622954415,
+            "median_ms": 8.860518501023762,
+            "p95_ms": 10.127196951361839,
+            "max_ms": 15.5200740264263
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 19.948444910081097,
+            "median_ms": 15.673243993660435,
+            "p95_ms": 40.13180958863807,
+            "max_ms": 142.15661498019472
+          }
+        }
+      },
+      "end_to_end_inference": {
+        "samples": 768,
+        "mean_ms": 79.79403002226111,
+        "median_ms": 76.75465098873246,
+        "p95_ms": 98.38837580027754,
+        "max_ms": 208.33094301633537,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 74.58608543828728,
+            "median_ms": 74.13580801221542,
+            "p95_ms": 76.09671730315313,
+            "max_ms": 98.86613700655289
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 76.85150076323583,
+            "median_ms": 76.23605598928407,
+            "p95_ms": 79.35755929065635,
+            "max_ms": 103.37377100950107
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 87.2980380303144,
+            "median_ms": 82.70915699540637,
+            "p95_ms": 106.51890900917351,
+            "max_ms": 208.33094301633537
+          }
+        }
+      },
+      "cached_suffix_memory": {
+        "peak_allocated_MiB": 66.87255859375,
+        "peak_reserved_MiB": 90.0,
+        "peak_process_RSS_GiB": 1.879669189453125
+      },
+      "end_to_end_memory": {
+        "peak_allocated_MiB": 598.05126953125,
+        "peak_reserved_MiB": 2236.0,
+        "peak_process_RSS_GiB": 2.119415283203125,
+        "resident_models_MiB": 72.962890625,
+        "incremental_peak_over_resident_MiB": 525.08837890625
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "torch": "2.0.1+cu118",
+      "numpy": "1.24.3",
+      "cpu_threads": 1,
+      "measured_scope": "Synchronized wall time, batch1; GPU frozen backbone+required D2H outputs+isolated CPU coordination+refiner transfers+geometry protection. H2D graph transfer included. Disk IO, adapters, graph cloning,model load,metrics excluded.",
+      "baseline_scope": "Native NDPNet baseline copies only logits and selected trajectory, no unused hidden-feature copies.",
+      "dummy_label_scaffolding": "Frozen bank/collate allocate zero targets; no true GT/future validity provided; this scaffolding remains included.",
+      "hidden_feature_scope": "Near/Far stages retained in backbone; zero unused Near/Far hidden input tensors replace unnecessary host copies; Refine host copy retained when used.",
+      "numerical_modes": "Backbone scatter uses original extraction non-forced-determinism; strict deterministic refinement/coordination restored afterward. TF32 disabled for all methods; same fixed protocol.",
+      "exact_replay": "Verified separately against full frozen evaluation on32same-feature scenes before timing.",
+      "fresh_backbone_repeat_max_path_difference_m": [
+        7.473113328160252e-07,
+        6.098589051362069e-05,
+        1.4515814172000319e-05,
+        5.718611646443605e-07
+      ],
+      "extra_trainable_parameters": 152052,
+      "backbone_parameters": 10576681,
+      "frozen_manifest_sha256": "c1c81b12fba61a8b25fde55cdcd9170b7d38b5456796e4ff084ffb139f2794e4",
+      "inputs_sha256": "1affb5ed9b9e93dbf0077db010fe640c9816b422da8f076cb5124579d9f6159f",
+      "completed_time": "2026-10-31T10:39:55+0800"
+    },
+    "Full_without_RCIM": {
+      "passed": true,
+      "method": "Full_without_RCIM",
+      "seed": 42,
+      "scenes": 256,
+      "repetitions": 3,
+      "samples": 768,
+      "cached_prediction_suffix": {
+        "samples": 768,
+        "mean_ms": 14.47649594744386,
+        "median_ms": 9.23081548535265,
+        "p95_ms": 38.92638394172536,
+        "max_ms": 212.65103900805116,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 7.435649738465322,
+            "median_ms": 7.349335006438196,
+            "p95_ms": 7.448597319307737,
+            "max_ms": 11.974283988820389
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 9.289788542039094,
+            "median_ms": 9.1699390031863,
+            "p95_ms": 10.912437850493006,
+            "max_ms": 13.177312008338049
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 26.620859983151995,
+            "median_ms": 19.255635008448735,
+            "p95_ms": 43.621289002476246,
+            "max_ms": 212.65103900805116
+          }
+        }
+      },
+      "end_to_end_inference": {
+        "samples": 768,
+        "mean_ms": 82.10287683133781,
+        "median_ms": 77.25546750589274,
+        "p95_ms": 105.25324815389467,
+        "max_ms": 278.34077100851573,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 74.9256638601816,
+            "median_ms": 74.55806198413484,
+            "p95_ms": 76.46388391731307,
+            "max_ms": 95.5489779880736
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 77.20756716584609,
+            "median_ms": 76.56276550551411,
+            "p95_ms": 79.84089019882958,
+            "max_ms": 104.26647600252181
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 93.83420062137849,
+            "median_ms": 86.33841900154948,
+            "p95_ms": 114.36539079586508,
+            "max_ms": 278.34077100851573
+          }
+        }
+      },
+      "cached_suffix_memory": {
+        "peak_allocated_MiB": 66.87255859375,
+        "peak_reserved_MiB": 90.0,
+        "peak_process_RSS_GiB": 1.8870391845703125
+      },
+      "end_to_end_memory": {
+        "peak_allocated_MiB": 598.05126953125,
+        "peak_reserved_MiB": 2236.0,
+        "peak_process_RSS_GiB": 2.1268844604492188,
+        "resident_models_MiB": 72.962890625,
+        "incremental_peak_over_resident_MiB": 525.08837890625
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "torch": "2.0.1+cu118",
+      "numpy": "1.24.3",
+      "cpu_threads": 1,
+      "measured_scope": "Synchronized wall time, batch1; GPU frozen backbone+required D2H outputs+isolated CPU coordination+refiner transfers+geometry protection. H2D graph transfer included. Disk IO, adapters, graph cloning,model load,metrics excluded.",
+      "baseline_scope": "Native NDPNet baseline copies only logits and selected trajectory, no unused hidden-feature copies.",
+      "dummy_label_scaffolding": "Frozen bank/collate allocate zero targets; no true GT/future validity provided; this scaffolding remains included.",
+      "hidden_feature_scope": "Near/Far stages retained in backbone; zero unused Near/Far hidden input tensors replace unnecessary host copies; Refine host copy retained when used.",
+      "numerical_modes": "Backbone scatter uses original extraction non-forced-determinism; strict deterministic refinement/coordination restored afterward. TF32 disabled for all methods; same fixed protocol.",
+      "exact_replay": "Verified separately against full frozen evaluation on32same-feature scenes before timing.",
+      "fresh_backbone_repeat_max_path_difference_m": [
+        0.00024704055795155,
+        6.0677410715470614e-05,
+        2.983216802476818e-07,
+        5.12729002366541e-07
+      ],
+      "extra_trainable_parameters": 152052,
+      "backbone_parameters": 10576681,
+      "frozen_manifest_sha256": "c1c81b12fba61a8b25fde55cdcd9170b7d38b5456796e4ff084ffb139f2794e4",
+      "inputs_sha256": "1affb5ed9b9e93dbf0077db010fe640c9816b422da8f076cb5124579d9f6159f",
+      "completed_time": "2026-10-31T10:41:17+0800"
+    },
+    "FullRCIM": {
+      "passed": true,
+      "method": "FullRCIM",
+      "seed": 42,
+      "scenes": 256,
+      "repetitions": 3,
+      "samples": 768,
+      "cached_prediction_suffix": {
+        "samples": 768,
+        "mean_ms": 17.334017523391292,
+        "median_ms": 10.762290985439904,
+        "p95_ms": 45.99284711293876,
+        "max_ms": 277.6785239984747,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 7.459690788196688,
+            "median_ms": 7.404146977933124,
+            "p95_ms": 7.478853996144608,
+            "max_ms": 12.404854991473258
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 10.760203246270487,
+            "median_ms": 10.675499492208473,
+            "p95_ms": 12.912841091747396,
+            "max_ms": 15.959851996740326
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 33.207332452739024,
+            "median_ms": 25.03137500025332,
+            "p95_ms": 58.14666330988984,
+            "max_ms": 277.6785239984747
+          }
+        }
+      },
+      "end_to_end_inference": {
+        "samples": 768,
+        "mean_ms": 85.12604457253777,
+        "median_ms": 79.14833250106312,
+        "p95_ms": 113.74766546359751,
+        "max_ms": 341.12865102360956,
+        "by_requested_targets": {
+          "1": {
+            "samples": 123,
+            "mean_ms": 75.18621539007077,
+            "median_ms": 74.7403480054345,
+            "p95_ms": 76.06817190244328,
+            "max_ms": 97.58790701744147
+          },
+          "2-4": {
+            "samples": 402,
+            "mean_ms": 78.79169786281464,
+            "median_ms": 78.1018574925838,
+            "p95_ms": 81.70282875653356,
+            "max_ms": 106.49869599728845
+          },
+          ">=5": {
+            "samples": 243,
+            "mean_ms": 100.63635883900747,
+            "median_ms": 91.8424460105598,
+            "p95_ms": 125.68116009060759,
+            "max_ms": 341.12865102360956
+          }
+        }
+      },
+      "cached_suffix_memory": {
+        "peak_allocated_MiB": 66.87255859375,
+        "peak_reserved_MiB": 90.0,
+        "peak_process_RSS_GiB": 1.9091911315917969
+      },
+      "end_to_end_memory": {
+        "peak_allocated_MiB": 598.05126953125,
+        "peak_reserved_MiB": 2236.0,
+        "peak_process_RSS_GiB": 2.1175003051757812,
+        "resident_models_MiB": 72.962890625,
+        "incremental_peak_over_resident_MiB": 525.08837890625
+      },
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "torch": "2.0.1+cu118",
+      "numpy": "1.24.3",
+      "cpu_threads": 1,
+      "measured_scope": "Synchronized wall time, batch1; GPU frozen backbone+required D2H outputs+isolated CPU coordination+refiner transfers+geometry protection. H2D graph transfer included. Disk IO, adapters, graph cloning,model load,metrics excluded.",
+      "baseline_scope": "Native NDPNet baseline copies only logits and selected trajectory, no unused hidden-feature copies.",
+      "dummy_label_scaffolding": "Frozen bank/collate allocate zero targets; no true GT/future validity provided; this scaffolding remains included.",
+      "hidden_feature_scope": "Near/Far stages retained in backbone; zero unused Near/Far hidden input tensors replace unnecessary host copies; Refine host copy retained when used.",
+      "numerical_modes": "Backbone scatter uses original extraction non-forced-determinism; strict deterministic refinement/coordination restored afterward. TF32 disabled for all methods; same fixed protocol.",
+      "exact_replay": "Verified separately against full frozen evaluation on32same-feature scenes before timing.",
+      "fresh_backbone_repeat_max_path_difference_m": [
+        0.0004946512981405249,
+        7.570013167423895e-07,
+        6.0987332744844025e-05,
+        1.6318983853125246e-06
+      ],
+      "extra_trainable_parameters": 196501,
+      "backbone_parameters": 10576681,
+      "frozen_manifest_sha256": "c1c81b12fba61a8b25fde55cdcd9170b7d38b5456796e4ff084ffb139f2794e4",
+      "inputs_sha256": "1affb5ed9b9e93dbf0077db010fe640c9816b422da8f076cb5124579d9f6159f",
+      "completed_time": "2026-10-31T10:42:44+0800"
+    }
+  },
+  "protocol": {
+    "passed": true,
+    "scenes": 256,
+    "selection": "First256sha256(av2-closing-latency:+scene) among original FIT hash remainders2..9; no labels/error selection",
+    "subset": "FIT only; no validation timing selection",
+    "refiner_seed": 42,
+    "RCIM_seed": 42,
+    "warmup_scenes": 20,
+    "repetitions": 3,
+    "input_graph_future_fields_zero": true,
+    "real_GT_not_in_benchmark_inputs": true,
+    "input_file_sha256": "1affb5ed9b9e93dbf0077db010fe640c9816b422da8f076cb5124579d9f6159f",
+    "frozen_manifest_sha256": "c1c81b12fba61a8b25fde55cdcd9170b7d38b5456796e4ff084ffb139f2794e4",
+    "scene_id_metadata_omitted": true,
+    "scene_count": 256
+  },
+  "numerical_replay": {
+    "passed": true,
+    "scenes": 32,
+    "all_candidate_choices_identical": true,
+    "maximum_path_difference_m": {
+      "NDPNet": 0.0,
+      "NDPNet_refined": 0.0,
+      "OldRCIM_refined": 0.0,
+      "GeometryB_two_refiners": 0.0,
+      "Full_without_RCIM": 0.0,
+      "FullRCIM": 0.0
+    },
+    "reference": "Unmodified frozen choose()+final_paths() on exactly same prediction features",
+    "scorer_and_refiner_seed": 42,
+    "frozen_manifest_sha256": "c1c81b12fba61a8b25fde55cdcd9170b7d38b5456796e4ff084ffb139f2794e4"
+  },
+  "frozen_files_unchanged": true,
+  "code_sha256": "97f522609604a6291f176d3ad5bc7e5b322f1deca81db551f284b7bae08241a6",
+  "seconds_this_session": 451.29192545000114,
+  "interpretation": "Single fixed FIT sample,seed42 reference weights. No benchmark-performance tuning; batch1 latency,not throughput or closed-loop planning rate."
+}

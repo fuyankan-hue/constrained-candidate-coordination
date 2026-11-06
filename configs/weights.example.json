@@ -1,0 +1,65 @@
+{
+  "rcim": "checkpoints/rcim42.pt",
+  "heads": {
+    "42": {
+      "Full": {
+        "i1": "checkpoints/seed42/i1_E.pt",
+        "i2": "checkpoints/seed42/i2_RCIM.pt"
+      },
+      "NoRCIM": {
+        "i1": "checkpoints/seed42/i1_E.pt",
+        "i2": "checkpoints/seed42/i2_NoRCIM.pt"
+      },
+      "B2": {
+        "i1": "checkpoints/seed42/i1_B.pt",
+        "i2": "checkpoints/seed42/i2_B.pt"
+      },
+      "A_I1": {
+        "i1": "checkpoints/seed42/i1_A.pt"
+      },
+      "E_I1": {
+        "i1": "checkpoints/seed42/i1_E.pt"
+      }
+    },
+    "43": {
+      "Full": {
+        "i1": "checkpoints/seed43/i1_E.pt",
+        "i2": "checkpoints/seed43/i2_RCIM.pt"
+      },
+      "NoRCIM": {
+        "i1": "checkpoints/seed43/i1_E.pt",
+        "i2": "checkpoints/seed43/i2_NoRCIM.pt"
+      },
+      "B2": {
+        "i1": "checkpoints/seed43/i1_B.pt",
+        "i2": "checkpoints/seed43/i2_B.pt"
+      },
+      "A_I1": {
+        "i1": "checkpoints/seed43/i1_A.pt"
+      },
+      "E_I1": {
+        "i1": "checkpoints/seed43/i1_E.pt"
+      }
+    },
+    "44": {
+      "Full": {
+        "i1": "checkpoints/seed44/i1_E.pt",
+        "i2": "checkpoints/seed44/i2_RCIM.pt"
+      },
+      "NoRCIM": {
+        "i1": "checkpoints/seed44/i1_E.pt",
+        "i2": "checkpoints/seed44/i2_NoRCIM.pt"
+      },
+      "B2": {
+        "i1": "checkpoints/seed44/i1_B.pt",
+        "i2": "checkpoints/seed44/i2_B.pt"
+      },
+      "A_I1": {
+        "i1": "checkpoints/seed44/i1_A.pt"
+      },
+      "E_I1": {
+        "i1": "checkpoints/seed44/i1_E.pt"
+      }
+    }
+  }
+}
