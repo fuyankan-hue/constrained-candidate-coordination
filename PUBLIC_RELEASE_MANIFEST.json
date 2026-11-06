@@ -35,6 +35,10 @@
       "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
     },
     {
+      "path": "configs/artifact_release.json",
+      "treatment": "original release I/O or reproduction documentation; no model algorithm changes"
+    },
+    {
       "path": "configs/av2.json",
       "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
     },
@@ -73,6 +77,10 @@
     {
       "path": "docs/PUBLIC_RELEASE_NOTES.md",
       "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "docs/checkpoints.md",
+      "treatment": "original release I/O or reproduction documentation; no model algorithm changes"
     },
     {
       "path": "docs/data.md",
@@ -319,6 +327,10 @@
       "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
     },
     {
+      "path": "scripts/download_paper_artifacts.py",
+      "treatment": "original release I/O or reproduction documentation; no model algorithm changes"
+    },
+    {
       "path": "scripts/evaluate.py",
       "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
     },
@@ -357,6 +369,10 @@
     {
       "path": "scripts/preprocess_womd.py",
       "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/restore_paper_splits.py",
+      "treatment": "original release I/O or reproduction documentation; no model algorithm changes"
     },
     {
       "path": "scripts/stage_native_av2.py",
@@ -589,6 +605,10 @@
     {
       "path": "tests/test_contracts.py",
       "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "tests/test_public_artifacts.py",
+      "treatment": "original no-data release I/O correctness tests"
     },
     {
       "path": "third_party/NOTICE.md",
@@ -1336,7 +1356,7 @@
     "Actual fit smoke scene IDs",
     "256-scene timing identity list",
     "Private audit-only log/manifest",
-    "Raw data/caches/checkpoints",
+    "Raw data/caches and original training containers; inference exports are separate Release assets",
     "Downloaded SmartRefine/SRefiner neural sources",
     "Private .git directory and all history"
   ],
@@ -1354,8 +1374,6 @@
   ],
   "owner_confirmation_needed": [],
   "further_reproduction_limits": [
-    "Original WOMD historical exclusion/probe/qualification metadata must be supplied locally",
-    "Authorized weights not distributed",
     "Clean environment resolver install not validated",
     "Full raw-to-tables and external native compatibility reproduction not validated"
   ],
@@ -1422,5 +1440,20 @@
       "frozen_algorithm_files_unchanged": 147,
       "configuration_and_result_changes": false
     }
-  }
+  },
+  "reproduction_assets": {
+    "release_tag": "paper-artifacts-v1-20261106",
+    "checkpoint_exports": 40,
+    "original_state_tensors_unchanged": true,
+    "final_split_documents": 7,
+    "raw_identifier_lists_published": false,
+    "private_historical_inputs_needed_for_final_cohort_restore": false,
+    "scope": "No training or new benchmark evaluation; release assets outside Git"
+  },
+  "initial_release_reproduction_limits": [
+    "Original WOMD historical exclusion/probe/qualification metadata must be supplied locally",
+    "Authorized weights not distributed",
+    "Clean environment resolver install not validated",
+    "Full raw-to-tables and external native compatibility reproduction not validated"
+  ]
 }

@@ -15,12 +15,13 @@ the network, objective, projection, solver, protection and metric functions are 
 replacement implementations. Local AV2 changes include a 50/60-step adapter and
 the native target/history interface. NDPNet internal Near/Far stages remain present.
 
-No dataset, checkpoint, downloaded external implementation or private credential
-is included. Third-party library dependencies remain separately licensed.
+No dataset, raw identifier list, downloaded external implementation or private credential
+is included in Git. Separately noticed checkpoint exports are available through
+GitHub Releases; see docs/checkpoints.md. Third-party library dependencies remain separately licensed.
 Original project additions: Copyright 2026 Yankan Fu, licensed under Apache-2.0
 with the copyright holder's express authorization. This statement does not overwrite
 upstream copyrights or licenses, or separate dataset terms. See root NOTICE and
-docs/LICENSING.md. No weight release is implied.
+docs/LICENSING.md. Released checkpoint artifacts retain separate model/provider terms and upstream attribution.
 
 The separate upstream QCNet license text is retained at
 `licenses/QCNet_LICENSE`, retrieved from the official

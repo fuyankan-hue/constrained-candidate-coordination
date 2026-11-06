@@ -14,11 +14,15 @@ def main():
     weights=json.loads(a.weights.read_text());registry=json.loads((ROOT/'configs/checkpoint_hashes.json').read_text())['av2']
     assert a.cache_root.is_dir(),'The user-owned native cache directory is missing'
     assert not a.workdir.exists(),'Do not overwrite an existing native experiment workspace'
-    assert sha(a.backbone)==registry['backbone_sha256'] and sha(weights['rcim'])==registry['RCIM42_sha256']
+    exports=json.loads((ROOT/'configs/artifact_release.json').read_text())['checkpoints']
+    def matches_original(path,original):
+        actual=sha(path)
+        return actual==original or any(x['sha256']==actual and x['source_sha256']==original for x in exports)
+    assert matches_original(a.backbone,registry['backbone_sha256']) and matches_original(weights['rcim'],registry['RCIM42_sha256'])
     expected=registry['head_sha256'];a.workdir.mkdir(parents=True)
     def link(src,rel):
         dest=a.workdir/rel;dest.parent.mkdir(parents=True,exist_ok=True);dest.symlink_to(Path(src).resolve(),target_is_directory=Path(src).is_dir())
-        if rel in expected:assert sha(dest)==expected[rel],('Frozen asset mismatch',rel)
+        if rel in expected:assert matches_original(dest,expected[rel]),('Frozen asset mismatch',rel)
     for file in (ROOT/'reproduction/native_av2/code').glob('*.py'):
         link(file,'code/'+file.name)
     link(ROOT/'third_party/ndpnet_av2','source/repo')

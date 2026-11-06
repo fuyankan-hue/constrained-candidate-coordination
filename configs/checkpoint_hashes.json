@@ -1,5 +1,5 @@
 {
-  "release_status": "not bundled; permission and hosting pending",
+  "release_status": "Original historical hashes retained; public inference export hashes and source mapping in configs/artifact_release.json",
   "womd": {
     "backbone_sha256": "c437f3148045b6391a030104bf16005e2d41bee2bb208382fe44fed62413335a",
     "RCIM42_sha256": "bcba1ba399aad069b8b85ae1147c3b9eee1b224c107040c378237d37b6f69762",

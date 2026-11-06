@@ -21,7 +21,9 @@ WOMD-developed trained model architectures and associated derivatives, where the
 constitute Distributed WOD Models, are released subject to that Agreement, including
 its non-commercial restrictions and downstream conditions. A copy is in LICENSES/.
 The Apache copyright license does not replace or waive these separate conditions.
-No checkpoints, model tensors, raw data, caches or per-scene lists are distributed.
+Raw data, caches and raw scene-ID/file inventories are not distributed.
+Frozen inference checkpoints and one-way cohort-membership tokens are available
+as separately noticed GitHub Release assets; see docs/checkpoints.md.
 
 AV2 data attribution: Argoverse 2, copyright 2021 Argo AI, LLC; data/documentation
 CC BY-NC-SA 4.0, API code MIT. No AV2 data is bundled or relicensed by this project.

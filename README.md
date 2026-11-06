@@ -62,8 +62,9 @@ No environment was installed or modified while assembling this candidate.
 
 ## Data and checkpoint preparation
 
-Obtain WOMD and AV2 yourself under their official terms; no raw data, processed
-cache or checkpoint is distributed here:
+Obtain WOMD and AV2 yourself under their official terms; raw data and processed
+caches are not redistributed. Frozen inference checkpoints are available as
+checksum-pinned GitHub Release assets (separate model terms apply):
 
 * [WOMD official download](https://waymo.com/open/download/) and
   [terms](https://waymo.com/open/terms/). Experiments used Scenario TFRecords v1.3.0,
@@ -72,13 +73,15 @@ cache or checkpoint is distributed here:
   50 observed and 60 predicted frames at 10 Hz.
 
 `docs/data.md` specifies raw/processed layouts, native extraction commands and
-cache contracts. The pinned QCNet AV2 parser and offline preprocessing entry are documented in `docs/data.md`. Dataset-specific scene/file lists are omitted from this public release. Generate the exact local metadata with `scripts/generate_splits.py`; see `docs/data.md`. Never combine a
+cache contracts. The pinned QCNet AV2 parser and offline preprocessing entry are documented in `docs/data.md`. Dataset-specific scene/file lists are omitted from this public release. Restore exact local metadata with `scripts/restore_paper_splits.py` and the released one-way membership tokens; see `docs/data.md` and `docs/checkpoints.md`. Never combine a
 WOMD oriented-box denominator with the AV2 center-distance denominator.
 
 Checkpoint SHA256 values and selected epochs are in `configs/checkpoint_hashes.json`.
-Checkpoint distribution permission and hosting are pending. There is no invented download
-link. Copy `configs/weights.example.json` to an ignored local file and fill the
-actual checkpoint paths. `Full_fixed_OFF` deliberately uses the same Full I1/I2
+Download the 40 frozen paper checkpoint exports (WOMD/AV2 backbones, RCIM42 and
+three-seed matched R1/R2) with `python scripts/download_paper_artifacts.py`.
+See `docs/checkpoints.md` for model terms, tensor-equivalence verification and
+`local/paper_artifacts/{womd,av2}/weights.json` for generated local weight maps.
+Export hashes and original training-file hashes are recorded separately. `Full_fixed_OFF` deliberately uses the same Full I1/I2
 heads; matched `NoRCIM` uses its own I2. Loading is strict; the native WOMD I2
 `network.` state-dict prefix is an I/O wrapper, not a changed model.
 
@@ -95,8 +98,9 @@ export CCC_SPLIT_ROOT="$PWD/local/splits"
 ```
 
 Keep these generated lists out of Git. The CLI checks historical membership/order
-fingerprints and refuses mismatches. WOMD historical exclusion/probe/qualification
-metadata must be supplied locally; it cannot be reconstructed from a hash alone.
+fingerprints and refuses mismatches. The public one-way membership bundle now restores the exact final cohorts using
+your own raw-record indexes, without private exclusion/probe/qualification inputs.
+The legacy derivation script still requires those inputs if used instead.
 Then prepare native rows as described in `docs/reproduction.md` and run:
 
 ```bash
@@ -118,8 +122,9 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train_refiner.py \
 For AV2 use `configs/av2.json`, `work/av2`, and RCIM output
 `work/av2/models/rcim_seed42`. Native refiner recipes use the fixed manifests,
 architecture and output convention documented in `docs/reproduction.md`.
-No public checkpoint is currently available, so the commands cannot reproduce
-the published numbers from a fresh clone without separately authorized weights.
+Public inference exports are available via the release downloader. Dataset access,
+correct runtimes and the documented preprocessing remain necessary; a clean
+raw-data-to-results reproduction has not been certified.
 
 ## Frozen evaluation
 
@@ -222,11 +227,11 @@ trained model architectures and associated derivatives that constitute Distribut
 WOD Models are subject to that Agreement and its downstream non-commercial,
 production-system and vehicle-operation restrictions. Its full agreement text is
 in `LICENSES/Waymo_Dataset_License_March_2025.html`. The Apache license does not
-override those conditions; absence of weight files does not waive them.
+override those conditions; the separately released model exports retain them.
 
 AV2 data/documentation are CC BY-NC-SA 4.0 and its API code is MIT, per
-https://www.argoverse.org/about.html#terms-of-use. No data, feature caches, model
-weights, scene IDs or filename inventories are included. See `NOTICE` and
+https://www.argoverse.org/about.html#terms-of-use. No data, feature caches, raw scene IDs or filename inventories are included in Git.
+Inference weights are separate Release assets under their model/provider terms. See `NOTICE` and
 `docs/LICENSING.md`; do not describe this entire stack as unrestricted commercial
 Apache software.
 
@@ -254,10 +259,11 @@ That historical command is not a clean-clone command: a normal GitHub clone has 
 `origin` remote and GitHub commit metadata. Initial audit results are retained with
 their original scope. Public hosting does not change those historical facts.
 
-Dataset-specific historical metadata is local-only. Generation is deterministic
-and checked against published fingerprints, but an absent historical exclusion or
-qualification input is a real reproduction blocker: the tool fails rather than
-fabricates the original split or declares a new split equivalent. Aggregate paper
+Raw dataset identifiers remain local. The public cohort-token recovery route
+restores original membership/order and checks the published fingerprints without
+private historical exclusion or qualification inputs. The older derivation route
+still fails if its required historical inputs are absent, rather than inventing
+a substitute split. Aggregate paper
 numbers are archived results, not new benchmark results from preparing this release.
 
 The three requirements files describe separate observed runtimes, not one combined
@@ -267,5 +273,5 @@ metadata conflicts with its observed NumPy/package layout; existing protobuf/rea
 imports work, but clean `pip install -r requirements-reader.txt` is **not validated**.
 No environment installation, optimizer step, full raw extraction or Table2–11
 end-to-end rerun was performed here. Optional external learned methods require
-their upstream source and original approved compatibility assets. Checkpoints are
-not published and no download URL is invented. See `docs/PUBLIC_RELEASE_NOTES.md`.
+their upstream source and original approved compatibility assets. Frozen checkpoint exports and exact cohort recovery are available as described
+in `docs/checkpoints.md`. See `docs/PUBLIC_RELEASE_NOTES.md` for remaining limits.

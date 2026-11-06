@@ -44,6 +44,9 @@ Each native file is `cache/training/SHARD/SCENE.pt`, with:
   validity,length,width,type. Actual WOMD track IDs are recorded separately from
   context tensor indices; do not interchange them.
 
+Exact final cohorts can now be restored without the private historical inputs;
+see the new public recovery command below.
+
 Training fit is `int(sha256(scene)[:8],16)%5!=0`. Local generation below
 reconstructs RCIM calibration/audit, matched-refiner train/tune, and optionally
 final cohorts, using the original namespaces and ordering. Historical exclusion
@@ -128,7 +131,28 @@ missing scene-to-cache matches and target-ID mismatches fail rather than guess.
 Only unpickle caches/checkpoints from sources you trust; torch.load/pickle are not
 safe input formats for arbitrary untrusted files.
 
-## Local deterministic membership reconstruction
+## Public recovery of exact historical cohorts
+
+Download the frozen checkpoint and membership assets first:
+
+```bash
+python scripts/download_paper_artifacts.py --dataset all
+python scripts/restore_paper_splits.py womd \
+  --training-index local/womd_training_raw.jsonl \
+  --validation-index local/womd_validation_raw.jsonl --output local/splits
+python scripts/restore_paper_splits.py av2 --processed-root data/av2 --output local/splits
+export CCC_SPLIT_ROOT="$PWD/local/splits"
+```
+
+The WOMD Validation index is produced with the same index_womd.py command using
+`--split validation`; this is metadata indexing, not prediction evaluation.
+This route matches published one-way membership tokens against user-owned IDs
+and validates the original canonical fingerprints. It needs no private exposure
+union, 64 probe list or confirmation-qualification inventory. Raw identifiers and
+restored lists stay local. No model/GT-based selection is performed. See
+`docs/checkpoints.md` for the exact scope and limitations.
+
+## Legacy derivation using original historical metadata
 
 No original scene-ID or filename list is distributed. The expected counts and
 ordered canonical SHA256 fingerprints are in `configs/split_rules.json`.

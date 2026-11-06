@@ -14,7 +14,8 @@ python scripts/build_training_manifests.py --raw-index local/womd_training_raw.j
  --cache-root work/womd/cache/training --output-dir local
 ```
 
-Then prepare RCIM native rows from the explicit local manifest (first generate the local split metadata per docs/data.md and set CCC_SPLIT_ROOT):
+Released checkpoints and exact cohort-token recovery are documented in `docs/checkpoints.md`;
+use its downloader for inference without retraining. Then prepare RCIM native rows from the explicit local manifest (first generate the local split metadata per docs/data.md and set CCC_SPLIT_ROOT):
 
 ```bash
 python scripts/prepare_training.py --config configs/womd.json \
@@ -71,7 +72,7 @@ the formal matched-refiner loops execute all10epochs/5120updates.
 | Paper table | Cohort / entry | Notes |
 |---|---|---|
 |2|WOMD44,097 Validation; `scripts/infer.py` + `scripts/evaluate.py`|A,A_I1,E_I1,B2,NoRCIM,Full; archived `results/womd_validation.json`|
-|3|20,000 frozen Training confirmation; same entry|local historical fingerprint-verified IDs; qualification/exclusion input required; backbone membership unknown|
+|3|20,000 frozen Training confirmation; same entry|local historical fingerprint-verified IDs; public token recovery or original qualification/exclusion inputs; backbone membership unknown|
 |4|paired summary from Tables2/3|same scene draw across three fixed models; original archived CIs retained|
 |5|5,000 exposed Training audit; `--methods Full_coord Full_I1 Full_noP2 Full`|shared Full heads; identifies P2 contribution, not retraining|
 |6|fixed-head ON/OFF; `--methods Full Full_fixed_OFF`|Full I1/I2 unchanged; differs from matched NoRCIM; RNG20261103|

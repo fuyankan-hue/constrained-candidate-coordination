@@ -31,8 +31,7 @@ architectures/software/algorithms developed using its dataset. Sections 1, 2(c)
 and 4 require attribution, prominent downstream non-commercial notice, a copy of
 the Agreement for Distributed WOD Models, and restrictions on commercial,
 production and vehicle-operation uses. We apply that notice to the WOMD-developed
-architecture and related model-derived portions conservatively, even though no
-weights are published. These conditions are not added to or erased from the Apache
+architecture and related model-derived portions conservatively, including the separately published inference checkpoint exports. These conditions are not added to or erased from the Apache
 text. See NOTICE and LICENSES/Waymo_Dataset_License_March_2025.html, and the
 controlling source https://waymo.com/open/terms/.
 
@@ -42,16 +41,19 @@ deployment or that no-weights means the Agreement is irrelevant.
 
 AV2 data/documentation use CC BY-NC-SA 4.0; code/API use MIT, as stated at
 https://www.argoverse.org/about.html#terms-of-use. Apache does not relicense AV2
-data or grant commercial rights to dataset-derived artifacts. No raw samples,
-processed tensors, trajectories, maps, checkpoints, scene lists or filename
-inventories are included here. Rights for any future artifact publication must be
-checked separately under its applicable dataset and upstream terms.
+data or grant commercial rights to dataset-derived artifacts. No raw samples, processed data tensors, trajectories, maps, scene lists or filename
+inventories are included. Model tensors are available separately as GitHub Release
+assets, with unchanged state_dict values, required notices and a copy of the
+Waymo Agreement in each archive. See docs/checkpoints.md for their independent terms.
 
 No general public-redistribution permission for individual scene-ID/filename
 inventories was established in this audit. All seven historical lists are omitted,
 including AV2 lists, rather than assuming identifiers are automatically unrestricted.
-Only code, scalar protocols, aggregate paper results and fingerprints remain.
-Deterministic scripts regenerate local metadata from authorized user-owned inputs.
+Code, scalar protocols, aggregate results and fingerprints remain in Git.
+A separate release publishes our final cohort choices as one-way membership tokens,
+without raw identifiers or dataset records. Local recovery validates the original
+fingerprints using authorized user-owned indexes; hashes are not an access-control
+or anonymization guarantee. Model/provider restrictions remain separate.
 
 The original-code copyright attribution is confirmed as Yankan Fu, 2026. The
 separate dataset-term scope above continues to apply. Broader commercial

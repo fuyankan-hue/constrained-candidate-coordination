@@ -15,14 +15,17 @@ and derivatives. Waymo's agreement and its copy remain included.
 All seven historical scene/file inventories, fit smoke IDs, and the256-scene timing
 list are omitted. Aggregate metrics and protocol scalar values are unchanged.
 The deterministic split generator must reproduce expected historical fingerprints;
-missing local exclusion/qualification metadata is explicitly a reproduction blocker.
+the initial release required private exclusion/qualification inputs. That historical
+limitation is now addressed for final-cohort reconstruction by the published
+one-way membership asset and restore_paper_splits.py; prior audit facts are unchanged.
 Code for every core method, WOMD/AV2 processing/training/inference/evaluation and
 adapted external interfaces is retained. The core algorithm files are checked
 byte-for-byte against the audited Private candidate; only release I/O wrappers,
 metadata generation and documentation are changed.
 
-No checkpoints or raw/processed data are distributed. A future weight publication
-requires its own provider/upstream permission and hosting decision. SmartRefine/
+No raw/processed data are distributed. Frozen checkpoint inference exports are
+now separate GitHub Release assets with provider notices and tensor-equivalence
+verification; see docs/checkpoints.md. SmartRefine/
 SRefiner neural sources and the original SRefiner compatibility archive remain
 external dependencies; exact source hashes and acquisition links are retained.
 
@@ -45,3 +48,12 @@ every archived graph has retrospectively proven byte-identical provenance.
 No raw-data processing, model inference, optimizer step or experiment rerun is part
 of this repair. Existing audit evidence remains historical and is not relabelled
 as a full fresh-environment reproduction.
+
+## Frozen reproduction assets (2026-11-06)
+
+40 inference exports, two datasets, all three Refiner seeds; original state_dict
+tensors verified bitwise equal. One-way membership recovery restores all seven
+historical final cohort documents using user-owned metadata and original canonical
+fingerprints. No model training, benchmark rerun or threshold changes. Original
+source/checkpoint files and archived metrics remain unchanged. The clean-install
+and external-baseline limitations above still apply.
