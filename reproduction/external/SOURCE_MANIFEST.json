@@ -1,0 +1,62 @@
+{
+  "SmartRefine": {
+    "official_repo": "https://github.com/opendilab/SmartRefine",
+    "archive_sha256": "8be7197a9a65be0bb7e80f9007eb6b4e2a3fc8b976883f302a6d08a2062e1011",
+    "files": {
+      "README.md": "51a36ec8dcb0f88fbd385c57e7595232752bbe0a745edc5aaf806db920465058",
+      "eval.py": "cacc43e68db1be37b8687c26809394557b63656df58a7b3e6ef65ec391615aa3",
+      "eval.sh": "598553a392905212a6c19ea616ae351f517366bd3d19e4eef5c80b1a4b77b90e",
+      "eval_store.py": "4470b9c42ad0bef470a7ef728bb5ce4712477cc009d75102871af30667a5a766",
+      "requirements.txt": "dd5bf17a8757268be90480509257f7504c511bcc1d403e7214be8708496f458d",
+      "train.py": "610d85dbc587beb680d5386fd33521c710f1712e502506f95b06577260a4315c",
+      "train.sh": "f7529c735f9b39f6bab8a1a8c775ff1e3a6b8fa8ae1c4f99ba86173e680570e5",
+      "utils.py": "0cd3956adfbc414678877594afecc0e6f47c079e222ded04ca0530895a45579e",
+      "datamodules/__init__.py": "96fef188085e4fc0f29b94051093af489087436be2197a051ee303fe29950b84",
+      "datamodules/argoverse_v1_datamodule.py": "9fd3454a5e801e05658d818c589e550a5c41afe8d5128c733f4c83061d958c1a",
+      "datasets/__init__.py": "0aafc53ab7bc57bc0a9b57b834fde10073c1532dea29d88094e7ee9d28bda479",
+      "datasets/argoverse_v1_dataset.py": "25972b94bec7706c6cb086fdd9677eee068e30e1d23d6f5d49e53657e514de8f",
+      "losses/__init__.py": "638f093e0315f488d4af456462ccc9aa388f574271f437b2c888680291b32217",
+      "losses/laplace_nll_loss.py": "2be80aee4ef0661c5decdb3dafc0136a673f2fed1985892d5ce6f62d1d614913",
+      "losses/score_reg_l1_loss.py": "8bd95e95f4f7ca01150ae840bbc7e3203686b7007ae41f60fa4fe4fb6f5f0576",
+      "losses/soft_target_cross_entropy_loss.py": "87d3e6610fc0142ef7f7de0f70df267ba48a28c2a2eda8a6f3e432cc8c351191",
+      "metrics/__init__.py": "c914fc6075ab13f121f882bbe85b13db3e4cd1d980a72184bc98e1ebc8084e70",
+      "metrics/ade.py": "977e65e918947a4a9c8aa23b78264989fb8d9b86189dfa8fe188ea6aa1cd9eeb",
+      "metrics/fde.py": "074427b64a87947fc520e09e5cff2d02c382b7b93b7f3242df9e216a8f6ae6b0",
+      "metrics/mr.py": "d139d8a6c2b631aa565dcd56b6c8280ef9ed7384231d565b97880ee3c0d65ea7",
+      "models/__init__.py": "78c5255fae8ded29bb0558b06a7ed32ecd61989f85930eed3a343a77191a47cb",
+      "models/decoder.py": "d2f40a70edac368f58c97cb7ff6232e610ac37a61867cc34c2a987acd86851b6",
+      "models/embedding.py": "45d006d535872740099ef3a6e4a21579c24563c07576eb2dff74ae23dc43bfc8",
+      "models/local_encoder.py": "6230ef52b8a42449ade32207f8749c4f55a9105063e3fea329ce4722039611a4",
+      "models/refine.py": "8f6c3f4794fbbd5095ac1aec1090057de20d353db68d722b310c999fbb782407",
+      "models/target_region.py": "9251d2eae9b23c8ec05982b6746bc17555da947dde449e53278549969fb0aa89"
+    }
+  },
+  "SRefiner": {
+    "official_repo": "https://github.com/Liwen-Xiao/SRefiner",
+    "archive_sha256": "c8f6d3c796a1ee65f3bb2ab7210eb961f74b2eca6ff8ff69b983948aebd053cf",
+    "files": {
+      "README.md": "b0c182792d9a71abd32661b7e0f84b6e874a30bd8c8fc66f83ee5b934e9f3f90",
+      "av2_py/evaluation_ddp_refine-av2-multiagent.py": "a7c56327ee572b2922ef9c06c769958e6878e1907a65e0acd22760e95606785b",
+      "av2_py/train_ddp_refine-av2-multiagent.py": "56c3732484a981021f81f7a6d2ab8c6fdc20e7793099c8cd7adf5808601d0d2a",
+      "av2_script/fmae-av2-refine-multiagent-train_ddp.sh": "65c44e5451fd24afd14e166f3cea2554d0a6a77b332d46eb3c5f2497c8aa9f2e",
+      "av2_script/fmae-av2-refine-multiagent_eval_ddp.sh": "d2b56c3986ae296c5457dd2a2f999715480535946a346374b350a9c4683dd393",
+      "losses/__init__.py": "8a6d5e9712c7c7c80fb9d92613e3ee30361778f774074c102f9856fbe6043410",
+      "losses/laplace_nll_loss.py": "6430f5ac33feedccc359fcdfc6058e377bfd8e45dc4d5f6b92b0f75216ec6f32",
+      "losses/score_reg_l1_loss.py": "8bd95e95f4f7ca01150ae840bbc7e3203686b7007ae41f60fa4fe4fb6f5f0576",
+      "losses/soft_target_cross_entropy_loss.py": "176f2b2ac833eb99e909ea159cf613ae9c1b9b25552edc890abebe4cd30d52a1",
+      "refine/__init__.py": "c06f3a12c3a3757aab5103dc8a95acbc4437d2eec5d6af96ffa083400fc80a58",
+      "refine/av2_loader.py": "a1ff6549bc3133dbcf6ca95efa90d17e5dfa282a14a8d825656fbfe090f3a52f",
+      "refine/av2_refine.py": "54314eec02e59a26b9dc607b4266a4f44c18edde51f79dd924c592962a454e75",
+      "refine/av2_refine_dataset.py": "14f8e407ba6c8ae858a800a7108346e51188f8491d8ef03e443cc43ce579c8db",
+      "refine/av2_target_region.py": "8822b6d312c49a36b9ab727c75be3f9f35238e8a806609ca1aee4b51c73e935c",
+      "refine/decoder.py": "be2a8f6f42df1bebccfc4a4791c9f5dd8f6834ac9f624a6097972811aa130443",
+      "refine/embedding.py": "8d5f167f16bf67d770a73d58cfb050dc35449c6df789c28fe42a58f2b13042f3",
+      "refine/local_encoder.py": "f9efd017d87a700e192dae5fa4d4bca0b177e4022af699a491a87afdeeb39b84",
+      "utils/__init__.py": "926264e132973ae5d3a150ae1cb283c351e6e40dd22d70dfb359ba11ee31fce9",
+      "utils/evaluator.py": "36bf2d4faa79ca2e1e9217e355297a8460405aedceb03c703f4164a4388a6e4a",
+      "utils/logger.py": "fdfb9465c5b24d61fed575854ef0c053696404e30dd7673517a5fd2cb33fb938",
+      "utils/optimizer.py": "17fe61df995fa60013dab8f9089ff5b3fc3bfdbf5411b1819c54a39b634e3a1a",
+      "utils/utils.py": "b65a13ae3c8634054039203ad3483aaf2d0fcd5dc8ddbc47406c978ee97f5804"
+    }
+  }
+}
