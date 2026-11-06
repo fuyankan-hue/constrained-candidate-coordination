@@ -53,7 +53,7 @@ second residual on targets whose B mode equals A; it is not the same feasible
 space as Full. Each matched NoRCIM I2 is separately trained under identical
 budget/order. In contrast, `Full_fixed_OFF` must load **Full's unchanged I2**.
 
-AV2 uses the same `prepare_training.py` stages with its config and workdir;
+For AV2 first use `scripts/preprocess_av2.py` and the local split generation steps in `docs/data.md`. AV2 then uses the same `scripts/prepare_training.py` stages with its config and workdir;
 native I1 arms A/E/B, native I2 arms RCIM/NoRCIM/B. Paths are
 `prepared/i1/{train,tune}` and `prepared/i2/seedSEED/{train,tune}`. Native trainer
 assertions verify exact scene membership and counts.
@@ -70,7 +70,7 @@ the formal matched-refiner loops execute all10epochs/5120updates.
 
 | Paper table | Cohort / entry | Notes |
 |---|---|---|
-|2|WOMD44,097 Validation; `infer.py` + `evaluate.py`|A,A_I1,E_I1,B2,NoRCIM,Full; archived `results/womd_validation.json`|
+|2|WOMD44,097 Validation; `scripts/infer.py` + `scripts/evaluate.py`|A,A_I1,E_I1,B2,NoRCIM,Full; archived `results/womd_validation.json`|
 |3|20,000 frozen Training confirmation; same entry|local historical fingerprint-verified IDs; qualification/exclusion input required; backbone membership unknown|
 |4|paired summary from Tables2/3|same scene draw across three fixed models; original archived CIs retained|
 |5|5,000 exposed Training audit; `--methods Full_coord Full_I1 Full_noP2 Full`|shared Full heads; identifies P2 contribution, not retraining|
@@ -127,7 +127,7 @@ hidden behind a fabricated universal launch command.
 
 ## Validation performed in this release
 
-See `docs/validation.json and docs/PUBLIC_RELEASE_NOTES.md`: syntax, import, config, argument, deterministic
+See `docs/validation.json` and `docs/PUBLIC_RELEASE_NOTES.md`: syntax, import, config, argument, deterministic
 decomposition/geometry tests and a few frozen fit forwards are reported separately
 from full experiment reproduction. No optimizer step, full Validation pass or
 new threshold selection is part of packaging.

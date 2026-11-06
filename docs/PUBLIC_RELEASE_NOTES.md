@@ -1,8 +1,10 @@
 # Public candidate release boundary
 
-This is an independent copy prepared under the project lead's express authorization
-to publish original research code. It does not inherit Private Git history and was
-not pushed or made Public. Root LICENSE is the unmodified Apache-2.0 text;
+This research-code repository is published publicly at
+https://github.com/fuyankan-hue/constrained-candidate-coordination (main).
+It was prepared independently under the project lead's express authorization and
+does not inherit the Private research repository's Git history. Statements that no
+push occurred in the initial preparation audit describe that earlier audit only. Root LICENSE is the unmodified Apache-2.0 text;
 NOTICE and docs/LICENSING.md define third-party and dataset-term scope.
 
 Copyright 2026 Yankan Fu. The copyright holder has explicitly confirmed the right
@@ -29,3 +31,17 @@ CUDA bitwise reproduction and all Tables2-11 from scratch are not verified. Exis
 runtime syntax/import/CLI/unit checks and deterministic metadata reconstruction are
 reported separately. No training, held-out model evaluation or threshold search was
 performed during this preparation. No new scientific result is asserted.
+
+## Minimal documentation/AV2 entry repair (2026-11-06)
+
+The missing AV2 parser is now supplied unmodified from QCNet commit
+55cacb418cbbce3753119c1f157360e66993d0d0, matching the local QCNet preprocessing
+environment file SHA256. Its original Apache-2.0 header remains. The new
+scripts/preprocess_av2.py wrapper invokes that parser offline without changing its
+agent/map conversion, checks the native50/60-step defaults, and refuses automatic
+downloads or replacement of partial graph output. Historical preprocessed .pkl
+files do not record a preprocessing-parser hash; this addition is not a claim that
+every archived graph has retrospectively proven byte-identical provenance.
+No raw-data processing, model inference, optimizer step or experiment rerun is part
+of this repair. Existing audit evidence remains historical and is not relabelled
+as a full fresh-environment reproduction.

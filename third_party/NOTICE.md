@@ -27,3 +27,9 @@ The separate upstream QCNet license text is retained at
 https://raw.githubusercontent.com/ZikangZhou/QCNet/main/LICENSE on 2026-11-05.
 Its SHA256 is c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4.
 This upstream license does not substitute for approval of the new-code license.
+
+The AV2 dataset parser at ndpnet_av2/datasets/argoverse_v2_dataset.py is additionally
+retained unmodified from official QCNet commit55cacb418cbbce3753119c1f157360e66993d0d0.
+Copyright2023 Zikang Zhou; Apache-2.0. See licenses/QCNet_LICENSE. Its file SHA256 is
+851071ad9bd4fef01b2d7ba705b71ea2c1db6dc299a4ea2c1a18d9e756437399.
+The release-only offline invocation wrapper does not change its conversion rules.

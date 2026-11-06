@@ -1,5 +1,5 @@
 {
-  "status": "PUBLIC_CANDIDATE_NOT_UPLOADED",
+  "status": "PUBLIC_REPOSITORY_RELEASE",
   "project_lead_public_preparation_authorized": true,
   "files": [
     {
@@ -351,6 +351,10 @@
       "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
     },
     {
+      "path": "scripts/preprocess_av2.py",
+      "treatment": "Project offline parser invocation wrapper; Apache-2.0, Copyright2026 Yankan Fu; no parser/model algorithm change"
+    },
+    {
       "path": "scripts/preprocess_womd.py",
       "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
     },
@@ -637,6 +641,10 @@
       "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
       "original_source_id": "frozen_backbone_ndpnet_av2/datasets/__init__.py",
       "original_source_SHA256": "2f45dc258e73f2df24ffdded5159cb5edc473a494cac697a231e37d2491afb27"
+    },
+    {
+      "path": "third_party/ndpnet_av2/datasets/argoverse_v2_dataset.py",
+      "treatment": "Unmodified QCNet Apache-2.0 source; Copyright2023 Zikang Zhou; official pinned commit and file fingerprint in docs/source_manifest.json"
     },
     {
       "path": "third_party/ndpnet_av2/datasets/waymo_dataset.py",
@@ -1389,5 +1397,30 @@
     "SPDX": "Apache-2.0",
     "holder_explicitly_confirmed_right_to_publish": true,
     "scope": "Original project contributions only; third-party licenses and dataset agreements remain separate"
+  },
+  "publication": {
+    "repository": "https://github.com/fuyankan-hue/constrained-candidate-coordination",
+    "visibility": "public",
+    "branch": "main",
+    "checked_date": "2026-11-06"
+  },
+  "preparation_audit_flags_scope": "no_remote_creation/no_push and verification record the original preparation audit only, not current public hosting or the documentation repair",
+  "documentation_repair": {
+    "date": "2026-11-06",
+    "scope": "Published status, internal documentation paths, pinned AV2 parser and offline invocation entry",
+    "no_training": true,
+    "no_experiment_data_changes": true,
+    "checks": {
+      "syntax_python_files": 170,
+      "core_imports_and_parameter_counts": true,
+      "unit_tests_passed": 3,
+      "AV2_parser_import_and_default_check": true,
+      "dataset_read": false,
+      "preprocessing_executed": false,
+      "internal_paths_checked": 39,
+      "missing_internal_paths": 0,
+      "frozen_algorithm_files_unchanged": 147,
+      "configuration_and_result_changes": false
+    }
   }
 }

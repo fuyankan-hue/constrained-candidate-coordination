@@ -1,8 +1,8 @@
 # Constrained Candidate Coordination and Staged Trajectory Refinement
 
-Code-complete Public release candidate for the EAAI submission **Constrained Candidate
+Public research code for the EAAI submission **Constrained Candidate
 Coordination and Staged Trajectory Refinement for Multi-Agent Interaction
-Consistency**. This independent candidate has not been pushed or published. Its Git history does not inherit the Private repository.
+Consistency**. The code is published at https://github.com/fuyankan-hue/constrained-candidate-coordination. The release was prepared with an independent code-only history rather than inheriting the Private research repository.
 
 ## Method and scope
 
@@ -72,7 +72,7 @@ cache or checkpoint is distributed here:
   50 observed and 60 predicted frames at 10 Hz.
 
 `docs/data.md` specifies raw/processed layouts, native extraction commands and
-cache contracts. Dataset-specific scene/file lists are omitted from this Public candidate. Generate the exact local metadata with `scripts/generate_splits.py`; see `docs/data.md`. Never combine a
+cache contracts. The pinned QCNet AV2 parser and offline preprocessing entry are documented in `docs/data.md`. Dataset-specific scene/file lists are omitted from this public release. Generate the exact local metadata with `scripts/generate_splits.py`; see `docs/data.md`. Never combine a
 WOMD oriented-box denominator with the AV2 center-distance denominator.
 
 Checkpoint SHA256 values and selected epochs are in `configs/checkpoint_hashes.json`.
@@ -241,18 +241,18 @@ Apache software.
 }
 ```
 
-Authors/year follow the manuscript; DOI/repository URL remain pending. No acceptance,
-DOI or hosting URL is implied. Please also cite NDPNet, QCNet, WOMD and AV2 using
+Authors/year follow the manuscript. The repository URL above is public; a manuscript DOI and acceptance status are not implied. Please also cite NDPNet, QCNet, WOMD and AV2 using
 their upstream citation information. We acknowledge the original implementations
 and dataset providers; retained code headers identify their copyrights.
 
-## Public candidate checks and limits
+## Release checks and reproduction limits
 
 `PUBLIC_RELEASE_MANIFEST.json` classifies the file set and `RELEASE_SHA256.json`
-fingerprints it. `scripts/audit_git.py --require-staged --expect-no-remote` checks
-working files, the staged index, every stored object (including unreachable blobs),
-refs and reflogs. This directory was created without copying `.git`; no history
-from the Private repository, data lists, checkpoint or secret is inherited.
+fingerprints it. The initial pre-publication audit ran
+`scripts/audit_git.py --require-staged --expect-no-remote` before adding a remote.
+That historical command is not a clean-clone command: a normal GitHub clone has an
+`origin` remote and GitHub commit metadata. Initial audit results are retained with
+their original scope. Public hosting does not change those historical facts.
 
 Dataset-specific historical metadata is local-only. Generation is deterministic
 and checked against published fingerprints, but an absent historical exclusion or

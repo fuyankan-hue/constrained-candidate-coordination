@@ -53,15 +53,44 @@ For existing caches `scripts/make_manifest.py` indexes scene/path mappings using
 an explicit scene list. For RCIM training, keep `shard` and `record_index` from
 the raw manifest and use `fit`, `calibration`, `audit` split labels; the native
 prepared order is shard then record order. Keep empty-supervision scenes in the
-index but exclude them through the original `nfi_prepare.item` eligibility code.
+index but exclude them through the original eligibility function `item` retained in `src/ccc/core/womd_labels.py`.
 
 ## AV2
 
-Process official AV2 scenario parquet/map data with the retained QCNet-derived
-`third_party/ndpnet_av2/datasets/argoverse_v2_dataset.py`. Its native
-`ArgoverseV2Dataset(root=...,split='train' or 'val')` parser creates `.pkl` graphs;
-the library implementation is retained rather than replaced. The processed tree
-is `DATA/av2/train/processed/SCENE.pkl` and `.../val/processed/SCENE.pkl`.
+The AV2 graph parser comes from QCNet, not the NDPNet WOMD dataset class. The
+now-bundled `third_party/ndpnet_av2/datasets/argoverse_v2_dataset.py` is unmodified
+QCNet commit `55cacb418cbbce3753119c1f157360e66993d0d0`, SHA256
+`851071ad9bd4fef01b2d7ba705b71ea2c1db6dc299a4ea2c1a18d9e756437399`.
+It matches the parser file in the existing local QCNet preprocessing environment.
+Official pinned source:
+https://github.com/ZikangZhou/QCNet/blob/55cacb418cbbce3753119c1f157360e66993d0d0/datasets/argoverse_v2_dataset.py .
+Its original Apache-2.0 copyright is retained; the corresponding license copy is
+`third_party/licenses/QCNet_LICENSE`. Raw AV2 data and the av2-api dependency are
+separate: use AV2 API0.2.1 in the documented Torch2 scoring/backbone environment.
+The historical .pkl archive does not embed a preprocessing-parser SHA, so exact
+raw-to-archived-graph reconstruction is not retrospectively certified here.
+
+Download/unpack official AV2 scenarios yourself into
+`data/av2/train/raw/SCENE/` and `data/av2/val/raw/SCENE/`, each containing its
+scenario parquet and map JSON. The native parser uses50observed/60future steps,
+dim3, predict_unseen_agents=False and vector_repr=True. The thin offline entry
+loads the file directly, avoiding the NDPNet dataset package's WOMD-only export:
+
+```bash
+# Import/default check only; reads no dataset and runs no preprocessing.
+python scripts/preprocess_av2.py --root data/av2 --split train --check-only
+# Explicit preprocessing of user-owned raw data, not run in this release repair.
+python scripts/preprocess_av2.py --root data/av2 --split train
+python scripts/preprocess_av2.py --root data/av2 --split val
+python scripts/generate_splits.py av2 --processed-root data/av2 --output local/splits
+```
+
+The offline entry requires a complete raw split and an empty output directory
+(or skips a complete existing graph split). It disables upstream automatic
+download/extraction and refuses to overwrite partial processed output. The parser
+writes `data/av2/train/processed/SCENE.pkl` and the analogous val tree. No parser
+algorithm has been replaced. Actual end-to-end raw preprocessing remains untested
+in this documentation repair.
 
 The exact native ordered filenames are regenerated from user-owned processed
 files. The generator verifies the original ordered-list fingerprints before writing
@@ -127,8 +156,8 @@ python scripts/generate_splits.py womd --raw-index local/womd_training_raw.jsonl
 export CCC_SPLIT_ROOT="$PWD/local/splits"
 ```
 
-`known_previous_scenes.json` is the exact historical exclusion union from the
-original experiment. `old_probe_scene_ids.json` contains the64 pre-Stage-R probe
+`local/known_previous_scenes.json` is the exact historical exclusion union from the
+original experiment. `local/old_probe_scene_ids.json` contains the64 pre-Stage-R probe
 IDs from the original protocol. Both accept a JSON list; a `scene_ids` list or
 `records` list with scene fields is also accepted. Neither list is bundled.
 The raw index must preserve shard/record_index and observed requested-target counts.
