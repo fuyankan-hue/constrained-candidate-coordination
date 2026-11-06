@@ -1,0 +1,1393 @@
+{
+  "status": "PUBLIC_CANDIDATE_NOT_UPLOADED",
+  "project_lead_public_preparation_authorized": true,
+  "files": [
+    {
+      "path": ".gitignore",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "LICENSE",
+      "treatment": "official Apache-2.0 text; project scope in NOTICE"
+    },
+    {
+      "path": "LICENSES/SOURCES.json",
+      "treatment": "provider agreement/source record; independent terms, not Apache-2.0"
+    },
+    {
+      "path": "LICENSES/Waymo_Dataset_License_March_2025.html",
+      "treatment": "provider agreement/source record; independent terms, not Apache-2.0"
+    },
+    {
+      "path": "NOTICE",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "PUBLIC_RELEASE_MANIFEST.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "README.md",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "RELEASE_SHA256.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "configs/av2.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "configs/checkpoint_hashes.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "configs/external_classical_frozen.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "configs/external_learned_protocol.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "configs/runtime_versions.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "configs/split_rules.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "configs/weights.example.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "configs/womd.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "docs/LICENSING.md",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "docs/PUBLIC_RELEASE_NOTES.md",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "docs/data.md",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "docs/environment.md",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "docs/reproduction.md",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "docs/source_manifest.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "docs/validation.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "pyproject.toml",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "reproduction/README.md",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "reproduction/av2_closing/inference_cost.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "closing_checks_20261031/code/inference_cost.py",
+      "original_source_SHA256": "97f522609604a6291f176d3ad5bc7e5b322f1deca81db551f284b7bae08241a6"
+    },
+    {
+      "path": "reproduction/av2_closing/metric_check.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "closing_checks_20261031/code/metric_check.py",
+      "original_source_SHA256": "b353741af50cf44cff10605b3b9f6d1883d199030ad6d96ccb808a7118a75423"
+    },
+    {
+      "path": "reproduction/external/SOURCE_MANIFEST.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "reproduction/external/classical/aggregate.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/classical/aggregate.py",
+      "original_source_SHA256": "bd70530cdabf09856880452cf9cf06e21976a3358b86000c65b1fc2e21545b4c"
+    },
+    {
+      "path": "reproduction/external/classical/classical.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/classical/classical.py",
+      "original_source_SHA256": "fd8da8a48aa513bccd43389e272070a4af95ef0d827da3ed4ff4069dcaa75790"
+    },
+    {
+      "path": "reproduction/external/classical/orca_port.cpp",
+      "treatment": "RVO2 Apache-2.0 derivative with original copyright and modification notice",
+      "original_source_id": "external_baselines_20261102/classical/orca_port.cpp",
+      "original_source_SHA256": "51dd6b0d405d5f31289f650935693e6634b3b859a24df1148108c1fd188bcca9"
+    },
+    {
+      "path": "reproduction/external/classical/worker.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/classical/worker.py",
+      "original_source_SHA256": "3007112e78c4d622b11d6cc8368560834aa0f03fa79cf99831db360004dcbe49"
+    },
+    {
+      "path": "reproduction/external/code/baseline_data.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/code/baseline_data.py",
+      "original_source_SHA256": "3dc4770c97d3cd6f6c1b6c029df140a67c85bfb969bf65415593d953cb29f1dd"
+    },
+    {
+      "path": "reproduction/external/code/baseline_evaluate.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/code/baseline_evaluate.py",
+      "original_source_SHA256": "108fcbd3080e46bc159294579255e02a81dc35893187826834e76e68fdb86c1f"
+    },
+    {
+      "path": "reproduction/external/code/baseline_model.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/code/baseline_model.py",
+      "original_source_SHA256": "4bddf12e742f846ce8794540f63956887de4ab03f1e216202909707a7c6f9f94"
+    },
+    {
+      "path": "reproduction/external/code/baseline_train.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/code/baseline_train.py",
+      "original_source_SHA256": "bb323bd24b4f6ef1613158879fde283cbf9fd89179a62f21c99fe0d0f33da110"
+    },
+    {
+      "path": "reproduction/external/code/build_adapters.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/code/build_adapters.py",
+      "original_source_SHA256": "6e1210fef820ced3cdfef273cfaadd0dd390bb5fa23b3febdc9761c2e8448b1a"
+    },
+    {
+      "path": "reproduction/external/code/reference_loss_check.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/code/reference_loss_check.py",
+      "original_source_SHA256": "a39c2da0e9198c8de35989767804bd24c9c19ae5fc1d17317300222090cb5f10"
+    },
+    {
+      "path": "reproduction/external/learned/aggregate.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/learned/aggregate.py",
+      "original_source_SHA256": "888cbe255616b844b5d702b502bd85338eb77a53c8b3f25c171b3939d58a705f"
+    },
+    {
+      "path": "reproduction/external/learned/validation_worker.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "external_baselines_20261102/learned/validation_worker.py",
+      "original_source_SHA256": "d6ebdacf2c7f1086bfb55bd867e0b4fe0ac2012957d153eebd19b315a922a971"
+    },
+    {
+      "path": "reproduction/native_av2/code/av2_core.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/av2_core.py",
+      "original_source_SHA256": "cc597427cd9b07479f7424adf06d01eadad50724fc53cde32f4b323409f0b53a"
+    },
+    {
+      "path": "reproduction/native_av2/code/av2_pipeline.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/av2_pipeline.py",
+      "original_source_SHA256": "a234947c5c486fd6e313f91fae1bfeef53b88bc8ff15c82a10115c0d95d4835e"
+    },
+    {
+      "path": "reproduction/native_av2/code/av2_rcim.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/av2_rcim.py",
+      "original_source_SHA256": "0e56b20147bf397578ec131737b207719952d103c840a82c2701bfc759594e7e"
+    },
+    {
+      "path": "reproduction/native_av2/code/av2_refiner.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/av2_refiner.py",
+      "original_source_SHA256": "e9d8779239778be0d169e1cf77fc42b81e8b119ab117c914451e2136931d45dd"
+    },
+    {
+      "path": "reproduction/native_av2/code/av2_refiner_train.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/av2_refiner_train.py",
+      "original_source_SHA256": "44dfa33310e571d4a7352de5dab7ed1a6e36fb543df16bf1941566f7d6359032"
+    },
+    {
+      "path": "reproduction/native_av2/code/base_nfi_model.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/base_nfi_model.py",
+      "original_source_SHA256": "1aac637ebb4bba9cb424ea673d86097703f8afd87154f02ed4ced6be6162624a"
+    },
+    {
+      "path": "reproduction/native_av2/code/frozen_features.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/frozen_features.py",
+      "original_source_SHA256": "2939ba07c5732f6a9d9aa0b81a83046e26164694f09070f85c1469f77a4425e9"
+    },
+    {
+      "path": "reproduction/native_av2/code/frozen_solvers.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/frozen_solvers.py",
+      "original_source_SHA256": "052c960f0140a7094b5331ccf2ac63a0b3b8418e2725e64d9787919cb97af38b"
+    },
+    {
+      "path": "reproduction/native_av2/code/motion_model.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/motion_model.py",
+      "original_source_SHA256": "da31fd308d36068d1aac6c31dd258dd866a8dbb3caddca05491409ea0c1a41a0"
+    },
+    {
+      "path": "reproduction/native_av2/code/nfi_model.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_frozen_framework_20261030_v1/code/nfi_model.py",
+      "original_source_SHA256": "1aac637ebb4bba9cb424ea673d86097703f8afd87154f02ed4ced6be6162624a"
+    },
+    {
+      "path": "requirements-reader.txt",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "requirements-scoring.txt",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "requirements.txt",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/av2_metric_recheck.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/av2_validation.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/external_av2_validation.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/fixed_refiner_on_off.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/isolated_inference_cost.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/paper_tables.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/provenance.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/womd_audit.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/womd_confirmation.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "results/womd_validation.json",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "scripts/_bootstrap.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/audit_git.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/build_training_manifests.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/check_release.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/extract_features.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/generate_splits.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/index_womd.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/infer.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/make_manifest.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/native_av2_cost.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/prepare_training.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/preprocess_womd.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/stage_native_av2.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/train_rcim.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "scripts/train_refiner.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "src/ccc/__init__.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "src/ccc/core/__init__.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "src/ccc/core/admissible.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "feasible_contract.py",
+      "original_source_SHA256": "53c90813439ff50283fa89e52a3b28a1aedc9a1ab545bcd50270f76284e57b8a"
+    },
+    {
+      "path": "src/ccc/core/aggregate.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "stage_AB_joint_decision_rank_once_20261029/code/joint_decision_rank_once.py",
+      "original_source_SHA256": "173670f72d923a830dcfa909a5e31bfa4b9eb1cafa44141e0a61b11ea4d8651a"
+    },
+    {
+      "path": "src/ccc/core/av2_ops.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_core.py",
+      "original_source_SHA256": "cc597427cd9b07479f7424adf06d01eadad50724fc53cde32f4b323409f0b53a"
+    },
+    {
+      "path": "src/ccc/core/geometry.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "original_metrics.py",
+      "original_source_SHA256": "6306eed396cdd32a0ef3c39761d0886124b034e66cd48b29b809f51accf702c8"
+    },
+    {
+      "path": "src/ccc/core/motion_model.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "motion_model.py",
+      "original_source_SHA256": "da31fd308d36068d1aac6c31dd258dd866a8dbb3caddca05491409ea0c1a41a0"
+    },
+    {
+      "path": "src/ccc/core/nfi_model.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "nfi_model.py",
+      "original_source_SHA256": "1aac637ebb4bba9cb424ea673d86097703f8afd87154f02ed4ced6be6162624a"
+    },
+    {
+      "path": "src/ccc/core/rcim_av2.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_rcim.py",
+      "original_source_SHA256": "0e56b20147bf397578ec131737b207719952d103c840a82c2701bfc759594e7e"
+    },
+    {
+      "path": "src/ccc/core/rcim_womd.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "refine_only_20261026_1930/refine_train.py",
+      "original_source_SHA256": "7ca96370bb57bf24072de2491fd9a1be486cc6b7c638ed73d644e535386ae791"
+    },
+    {
+      "path": "src/ccc/core/refiner_av2.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_refiner.py",
+      "original_source_SHA256": "e9d8779239778be0d169e1cf77fc42b81e8b119ab117c914451e2136931d45dd"
+    },
+    {
+      "path": "src/ccc/core/refiner_womd.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "stage_R_model.py",
+      "original_source_SHA256": "71e7568b721b015eac769b3f9182114cc6a3fc6afe321447e298bf571493eeff"
+    },
+    {
+      "path": "src/ccc/core/solvers.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "frozen_solvers.py",
+      "original_source_SHA256": "052c960f0140a7094b5331ccf2ac63a0b3b8418e2725e64d9787919cb97af38b"
+    },
+    {
+      "path": "src/ccc/core/womd_bank.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "stage_R_continuous_refinement/code/stage_R_prepare.py",
+      "original_source_SHA256": "a5d78e76445e989193d8a76307761827bb167a692761a775e2da0078bb2c5bdf"
+    },
+    {
+      "path": "src/ccc/core/womd_geometry.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "stage_K_counterfactual_reliability/code/stage_K_features.py",
+      "original_source_SHA256": "f808dfe128906dd2ba363773b414b3ef30102909061d5d9850163150dcb1b057"
+    },
+    {
+      "path": "src/ccc/core/womd_i2_loss.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "rcim_required5_20261029/round5_projected_RCIM_refinement/code/rcim_round5_refinement.py",
+      "original_source_SHA256": "a0f39f01f6f00fbc76450bc46e8fec045e8f8177741c998e2310c5afa7fbceaf"
+    },
+    {
+      "path": "src/ccc/core/womd_labels.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "nfi_prepare.py",
+      "original_source_SHA256": "c1e1d4d591e3ded48ed766d20f84ac5eea68aacff5680894d6622b7fe5a0cccd"
+    },
+    {
+      "path": "src/ccc/core/womd_native_row.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "frozen_RCIM_multiseed_completion_20261030_v2/code/complete_frozen_multiseed.py",
+      "original_source_SHA256": "68c0f23bf098d8aa2726884ac73135f4998ae4abcb5cd3f3fb454445f0e96bdd"
+    },
+    {
+      "path": "src/ccc/core/womd_protection.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "stage_R_continuous_refinement/code/stage_R_evaluate.py",
+      "original_source_SHA256": "2b87917c5f2360c5c22d43f78370d01206a851d39dd25e1e951e642cbe6afda5"
+    },
+    {
+      "path": "src/ccc/core/womd_selection.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "frozen_RCIM_final_evaluation_20261030/code/evaluate_frozen.py",
+      "original_source_SHA256": "feabb062193ff5d8e97bf850265fd83ce5eb36d0bae95454c2d74966a643725d"
+    },
+    {
+      "path": "src/ccc/data/__init__.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "src/ccc/data/av2_extract.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "frozen_features.py",
+      "original_source_SHA256": "2939ba07c5732f6a9d9aa0b81a83046e26164694f09070f85c1469f77a4425e9"
+    },
+    {
+      "path": "src/ccc/data/womd_extract.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "extract_stream.py",
+      "original_source_SHA256": "ed1dc484fb763e7e384ff578a6339243f26c3978bde116fdf7194376f9cb9355"
+    },
+    {
+      "path": "src/ccc/data/womd_index.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "index_records.py",
+      "original_source_SHA256": "82267bb6c96195d9ad12af774eba7e7f7b100bc0a1ddb435ccea290e33fc7a1d"
+    },
+    {
+      "path": "src/ccc/data/womd_m1.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "m1_original_functions.py",
+      "original_source_SHA256": "9d914ebaaee98ed4e2b7e0c20e8eddcf0bbc605667fa6044a6efdc8f62153f41"
+    },
+    {
+      "path": "src/ccc/data/womd_raw.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "preprocess_stream.py",
+      "original_source_SHA256": "73c8fb7ea10ea3663bfe432f88a74e49c74a1914387892b7731245505fc8bd8c"
+    },
+    {
+      "path": "src/ccc/data/womd_validate.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "common.py",
+      "original_source_SHA256": "6bd6be80ebf4d181a74e3a1e8c14ff1fd4f2734f16076c00b87395f7337c05a8"
+    },
+    {
+      "path": "src/ccc/inference.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "src/ccc/io.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "src/ccc/recipes/__init__.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "src/ccc/recipes/av2_rcim.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_rcim.py",
+      "original_source_SHA256": "0e56b20147bf397578ec131737b207719952d103c840a82c2701bfc759594e7e"
+    },
+    {
+      "path": "src/ccc/recipes/av2_refiners.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "av2_refiner_train.py",
+      "original_source_SHA256": "44dfa33310e571d4a7352de5dab7ed1a6e36fb543df16bf1941566f7d6359032"
+    },
+    {
+      "path": "src/ccc/recipes/womd_a_bank.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "stage_W_two_diagnostics_20261029/code/diagnose.py",
+      "original_source_SHA256": "2fcfb321feb727bff0ceec928d7b8f64d29bbe04c95ddca988e0a5c3ee47466f"
+    },
+    {
+      "path": "src/ccc/recipes/womd_i1.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "stage_S_matched_final_20261028/code/stage_SM_train.py",
+      "original_source_SHA256": "91d3dc7513b896cc1cb550f9cd89fe732bb134f9d9eedee4b74089d9cfbd3874"
+    },
+    {
+      "path": "src/ccc/recipes/womd_i2.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "frozen_RCIM_multiseed_completion_20261030_v2/code/complete_frozen_multiseed.py",
+      "original_source_SHA256": "68c0f23bf098d8aa2726884ac73135f4998ae4abcb5cd3f3fb454445f0e96bdd"
+    },
+    {
+      "path": "src/ccc/recipes/womd_rcim.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement",
+      "original_source_id": "refine_only_20261026_1930/refine_train.py",
+      "original_source_SHA256": "7ca96370bb57bf24072de2491fd9a1be486cc6b7c638ed73d644e535386ae791"
+    },
+    {
+      "path": "src/ccc/runtime.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "src/ccc/splits.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "src/ccc/training_io.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "tests/test_contracts.py",
+      "treatment": "project contribution: Apache-2.0, Copyright 2026 Yankan Fu; relevant WOMD model/derivative scope also subject to separate provider agreement"
+    },
+    {
+      "path": "third_party/NOTICE.md",
+      "treatment": "project documentation/configuration/aggregate research results; third-party and provider rights remain separate"
+    },
+    {
+      "path": "third_party/licenses/NDPNet_ndpnet_av2_LICENSE",
+      "treatment": "unmodified component license text; no repository-wide relicensing"
+    },
+    {
+      "path": "third_party/licenses/NDPNet_ndpnet_womd_LICENSE",
+      "treatment": "unmodified component license text; no repository-wide relicensing"
+    },
+    {
+      "path": "third_party/licenses/QCNet_LICENSE",
+      "treatment": "unmodified component license text; no repository-wide relicensing"
+    },
+    {
+      "path": "third_party/licenses/RVO2_Apache_LICENSE",
+      "treatment": "unmodified component license text; no repository-wide relicensing"
+    },
+    {
+      "path": "third_party/licenses/SRefiner_LICENSE",
+      "treatment": "unmodified component license text; no repository-wide relicensing"
+    },
+    {
+      "path": "third_party/licenses/SmartRefine_LICENSE",
+      "treatment": "unmodified component license text; no repository-wide relicensing"
+    },
+    {
+      "path": "third_party/ndpnet_av2/LICENSE",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/LICENSE",
+      "original_source_SHA256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third_party/ndpnet_av2/datamodules/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/datamodules/__init__.py",
+      "original_source_SHA256": "46e49b0dfc7a167008c629bff0741d315e17b075adcaea9a5c043351516b16e5"
+    },
+    {
+      "path": "third_party/ndpnet_av2/datamodules/waymo_datamodule.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/datamodules/waymo_datamodule.py",
+      "original_source_SHA256": "e59e3ce02d178d7ddec7c219e2fb02ec869a86b1cc91b44243cdbb1730da0b6f"
+    },
+    {
+      "path": "third_party/ndpnet_av2/datasets/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/datasets/__init__.py",
+      "original_source_SHA256": "2f45dc258e73f2df24ffdded5159cb5edc473a494cac697a231e37d2491afb27"
+    },
+    {
+      "path": "third_party/ndpnet_av2/datasets/waymo_dataset.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/datasets/waymo_dataset.py",
+      "original_source_SHA256": "ffaa75a9c57cf28d03d99adc02f6ac4bd7e00a0c82b18ce69b828bc11ae26384"
+    },
+    {
+      "path": "third_party/ndpnet_av2/environment.yml",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/environment.yml",
+      "original_source_SHA256": "936e0f9dca79f5810b5be6b42627a09e08089988d6452357f2be1f00bb9f2833"
+    },
+    {
+      "path": "third_party/ndpnet_av2/layers/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/layers/__init__.py",
+      "original_source_SHA256": "3d3ea842d39bf91637b4597ee3da5da5bf3ffb0c8a52a86c401877fb90ea5d33"
+    },
+    {
+      "path": "third_party/ndpnet_av2/layers/attention_layer.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/layers/attention_layer.py",
+      "original_source_SHA256": "170d657b917565b084b7901755b1d8d70039b588ef0fc91ef61a6dea6bdbe3a6"
+    },
+    {
+      "path": "third_party/ndpnet_av2/layers/fourier_embedding.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/layers/fourier_embedding.py",
+      "original_source_SHA256": "2e7d1b92a7bb25b4afb8ef68b79123ea09ceca32ee46929cc2f3da60096c4a5b"
+    },
+    {
+      "path": "third_party/ndpnet_av2/layers/mlp_layer.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/layers/mlp_layer.py",
+      "original_source_SHA256": "5711c8409c372fba5b18cc440107c50c773636b68a0209c8f56bb89208e64ee7"
+    },
+    {
+      "path": "third_party/ndpnet_av2/losses/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/losses/__init__.py",
+      "original_source_SHA256": "ea83433e22aba78d9e586c1774ba92c5e0399ad1a5248ecc077e8561f09e670e"
+    },
+    {
+      "path": "third_party/ndpnet_av2/losses/focal_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/losses/focal_loss.py",
+      "original_source_SHA256": "354f7ac7bb9aec5bd6f7baeb6207d52a591ca39bc2459f8b488138e46bea3049"
+    },
+    {
+      "path": "third_party/ndpnet_av2/losses/gaussian_nll_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/losses/gaussian_nll_loss.py",
+      "original_source_SHA256": "6d324fd0ef3287893263cb9d2ac7981fc89cdbac12f1010bec91d2e4c36b61ff"
+    },
+    {
+      "path": "third_party/ndpnet_av2/losses/laplace_nll_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/losses/laplace_nll_loss.py",
+      "original_source_SHA256": "83678719d5f570c3605db68fcb3b8e883f41b2fc893d3417f625a5d80c6b000e"
+    },
+    {
+      "path": "third_party/ndpnet_av2/losses/motion_consistency_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/losses/motion_consistency_loss.py",
+      "original_source_SHA256": "e0858ae690cb1852269db12c096570177f673ff40d2480c1d969fce483cf6082"
+    },
+    {
+      "path": "third_party/ndpnet_av2/losses/nll_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/losses/nll_loss.py",
+      "original_source_SHA256": "b086772249f2a8bc79797852115f4f8f92819447ccfa331865dcd269b4ddd0a0"
+    },
+    {
+      "path": "third_party/ndpnet_av2/losses/von_mises_nll_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/losses/von_mises_nll_loss.py",
+      "original_source_SHA256": "c810ba72f2e9fd9afd5540e9bba52a53d89f6dbae7de774c93b0cc3af59c9e7d"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/__init__.py",
+      "original_source_SHA256": "d3aa5c5988f4984e5a52988bdafd6bef14572f1c65ac7c1b6891de3c5b734d9f"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/average_meter.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/average_meter.py",
+      "original_source_SHA256": "528a1fe74259fe5907b002132a62806c1ce0ec3d44eaad98e5b9c9e266167923"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/brier.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/brier.py",
+      "original_source_SHA256": "d3a4d4cc669c1bcc58fdfa2025b18d883bab0cfd36db0e3d1080bd271aea7369"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/min_ade.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/min_ade.py",
+      "original_source_SHA256": "6fa014e754e0c15b1214e7f1db33a3cf9114871d469c1aad9cef275623624a64"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/min_ahe.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/min_ahe.py",
+      "original_source_SHA256": "aca5400137aff34cd6d80efa4b24b16114f7a3d8d490a800ad974b10a2658b22"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/min_fde.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/min_fde.py",
+      "original_source_SHA256": "4e92af1dcb17310b38c09d7fc5fb903633c383117bc78e8b9a09457c7afcb0fd"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/min_fhe.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/min_fhe.py",
+      "original_source_SHA256": "be5986a44ecf432a9b985a13b821f05cab624cc5d10d1b9b011ec7a8e4d8c0eb"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/mr.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/mr.py",
+      "original_source_SHA256": "194d39515a1f320879da4538dfe0183f68a33a706e621432bff56aa2416abf9e"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/prob_mr.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/prob_mr.py",
+      "original_source_SHA256": "74a5ab5b6a316840cb4f386ff922ce7572b8c3bc2a7456f486db1a0d0208d867"
+    },
+    {
+      "path": "third_party/ndpnet_av2/metrics/utils.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/metrics/utils.py",
+      "original_source_SHA256": "2aada6ee70153a16ed33ac6b7329ebf2b0f77b1090ae649987c96892ad864fdf"
+    },
+    {
+      "path": "third_party/ndpnet_av2/modules/NDPNet_agent_encoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/modules/NDPNet_agent_encoder.py",
+      "original_source_SHA256": "b858ce98a28b25fdbe334def354fdae506088425ea6110c9f7aabfaaf49db322"
+    },
+    {
+      "path": "third_party/ndpnet_av2/modules/NDPNet_decoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/modules/NDPNet_decoder.py",
+      "original_source_SHA256": "73aa4a2c2fc11869e603cff43b6eecd8a36f94b8f87f11f5e5eb05aec4bc23f5"
+    },
+    {
+      "path": "third_party/ndpnet_av2/modules/NDPNet_encoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/modules/NDPNet_encoder.py",
+      "original_source_SHA256": "6649886acdc1062fe2747ef2bd16fbe5942167fdf168afd960be379e146f4b2a"
+    },
+    {
+      "path": "third_party/ndpnet_av2/modules/NDPNet_map_encoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/modules/NDPNet_map_encoder.py",
+      "original_source_SHA256": "9e084d4529fb17eb07a0d33a74ac2dc0eed2425b013d88f185d2feef2ebf7f67"
+    },
+    {
+      "path": "third_party/ndpnet_av2/modules/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/modules/__init__.py",
+      "original_source_SHA256": "d13b912a9a3c72787138e3df129257c23a8dbb6aec1e451ea26b0469bffb1aba"
+    },
+    {
+      "path": "third_party/ndpnet_av2/modules/av2_qcnet_agent_encoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/modules/av2_qcnet_agent_encoder.py",
+      "original_source_SHA256": "e8dfa021eb7665c7e674afc996367571d5f01c6090837b2d77490867800a2136"
+    },
+    {
+      "path": "third_party/ndpnet_av2/modules/av2_qcnet_map_encoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/modules/av2_qcnet_map_encoder.py",
+      "original_source_SHA256": "ee5e491679ba1a5d3f97d005aa0201cb1d1df2e9283330364f977bacba9e26cf"
+    },
+    {
+      "path": "third_party/ndpnet_av2/predictors/NDPNet.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/predictors/NDPNet.py",
+      "original_source_SHA256": "6d9cb8a3036b54563a83db5395a39a93031eafc422c13a58daabdb4ba6a0629f"
+    },
+    {
+      "path": "third_party/ndpnet_av2/predictors/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/predictors/__init__.py",
+      "original_source_SHA256": "9aaffc4e186223a562d7771013ac79ee03164fa3eec7986ecce871e3cf6a1ffb"
+    },
+    {
+      "path": "third_party/ndpnet_av2/test.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/test.py",
+      "original_source_SHA256": "acc8ce03e15acbe8c88b343de2306f7b26bf2dd0b5ea50ee49fe243a4c28dfa8"
+    },
+    {
+      "path": "third_party/ndpnet_av2/train.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/train.py",
+      "original_source_SHA256": "0b8bf828aeca1a70aa2a0fb6e972e3321bcdc266574aa45d55c604a5465e81f3"
+    },
+    {
+      "path": "third_party/ndpnet_av2/transforms/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/transforms/__init__.py",
+      "original_source_SHA256": "f2ed9e78d5d23a10f488a7e6bd690a4441ffdb45899944405ff6ffa887c7cace"
+    },
+    {
+      "path": "third_party/ndpnet_av2/transforms/av2_qcnet_adapter.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/transforms/av2_qcnet_adapter.py",
+      "original_source_SHA256": "953549ae125a6051c5c7afaf7d9bb58a4bc4e0925680a3e35d04113f24694568"
+    },
+    {
+      "path": "third_party/ndpnet_av2/transforms/target_builder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/transforms/target_builder.py",
+      "original_source_SHA256": "e52c4c2ba522dcb453237dd3b2af2f822dd333c9d4290c27c02909e379018804"
+    },
+    {
+      "path": "third_party/ndpnet_av2/utils/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/utils/__init__.py",
+      "original_source_SHA256": "45f472b41806fa8048a8607a19cb2892117e095dd164586ed9594de021b79f0f"
+    },
+    {
+      "path": "third_party/ndpnet_av2/utils/geometry.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/utils/geometry.py",
+      "original_source_SHA256": "39d3ff8d7e13d8c2363aa6836817b6595a334e83e6cf3de3ad25303688f11c68"
+    },
+    {
+      "path": "third_party/ndpnet_av2/utils/graph.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/utils/graph.py",
+      "original_source_SHA256": "e1b99dd89b777dd747f860d066ad3c8eb4a7893f1821b3f3b833ebf578a2f7a6"
+    },
+    {
+      "path": "third_party/ndpnet_av2/utils/list.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/utils/list.py",
+      "original_source_SHA256": "c8f48c345190953fe61d396bffe1d5ee4a2e2227d17f4252d068d2e62d2b8b2c"
+    },
+    {
+      "path": "third_party/ndpnet_av2/utils/nms.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/utils/nms.py",
+      "original_source_SHA256": "d81ccf91734f592b4a2ce77bc50b75048fb977f977be9c23490ccaaa91d950f0"
+    },
+    {
+      "path": "third_party/ndpnet_av2/utils/submission.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/utils/submission.py",
+      "original_source_SHA256": "14f224cf865ca8035dcea1beb468c4868ea11d7129baa0db5390ae3297acf675"
+    },
+    {
+      "path": "third_party/ndpnet_av2/utils/weight_init.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_av2/utils/weight_init.py",
+      "original_source_SHA256": "ae25481823668e4772fcec7683ea609b9449435112d077143013e543261d33f2"
+    },
+    {
+      "path": "third_party/ndpnet_womd/LICENSE",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/LICENSE",
+      "original_source_SHA256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "third_party/ndpnet_womd/datamodules/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/datamodules/__init__.py",
+      "original_source_SHA256": "46e49b0dfc7a167008c629bff0741d315e17b075adcaea9a5c043351516b16e5"
+    },
+    {
+      "path": "third_party/ndpnet_womd/datamodules/waymo_datamodule.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/datamodules/waymo_datamodule.py",
+      "original_source_SHA256": "e59e3ce02d178d7ddec7c219e2fb02ec869a86b1cc91b44243cdbb1730da0b6f"
+    },
+    {
+      "path": "third_party/ndpnet_womd/datasets/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/datasets/__init__.py",
+      "original_source_SHA256": "2f45dc258e73f2df24ffdded5159cb5edc473a494cac697a231e37d2491afb27"
+    },
+    {
+      "path": "third_party/ndpnet_womd/datasets/waymo_dataset.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/datasets/waymo_dataset.py",
+      "original_source_SHA256": "ffaa75a9c57cf28d03d99adc02f6ac4bd7e00a0c82b18ce69b828bc11ae26384"
+    },
+    {
+      "path": "third_party/ndpnet_womd/environment.yml",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/environment.yml",
+      "original_source_SHA256": "936e0f9dca79f5810b5be6b42627a09e08089988d6452357f2be1f00bb9f2833"
+    },
+    {
+      "path": "third_party/ndpnet_womd/layers/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/layers/__init__.py",
+      "original_source_SHA256": "3d3ea842d39bf91637b4597ee3da5da5bf3ffb0c8a52a86c401877fb90ea5d33"
+    },
+    {
+      "path": "third_party/ndpnet_womd/layers/attention_layer.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/layers/attention_layer.py",
+      "original_source_SHA256": "170d657b917565b084b7901755b1d8d70039b588ef0fc91ef61a6dea6bdbe3a6"
+    },
+    {
+      "path": "third_party/ndpnet_womd/layers/fourier_embedding.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/layers/fourier_embedding.py",
+      "original_source_SHA256": "2e7d1b92a7bb25b4afb8ef68b79123ea09ceca32ee46929cc2f3da60096c4a5b"
+    },
+    {
+      "path": "third_party/ndpnet_womd/layers/mlp_layer.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/layers/mlp_layer.py",
+      "original_source_SHA256": "5711c8409c372fba5b18cc440107c50c773636b68a0209c8f56bb89208e64ee7"
+    },
+    {
+      "path": "third_party/ndpnet_womd/losses/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/losses/__init__.py",
+      "original_source_SHA256": "ea83433e22aba78d9e586c1774ba92c5e0399ad1a5248ecc077e8561f09e670e"
+    },
+    {
+      "path": "third_party/ndpnet_womd/losses/focal_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/losses/focal_loss.py",
+      "original_source_SHA256": "354f7ac7bb9aec5bd6f7baeb6207d52a591ca39bc2459f8b488138e46bea3049"
+    },
+    {
+      "path": "third_party/ndpnet_womd/losses/gaussian_nll_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/losses/gaussian_nll_loss.py",
+      "original_source_SHA256": "6d324fd0ef3287893263cb9d2ac7981fc89cdbac12f1010bec91d2e4c36b61ff"
+    },
+    {
+      "path": "third_party/ndpnet_womd/losses/laplace_nll_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/losses/laplace_nll_loss.py",
+      "original_source_SHA256": "83678719d5f570c3605db68fcb3b8e883f41b2fc893d3417f625a5d80c6b000e"
+    },
+    {
+      "path": "third_party/ndpnet_womd/losses/motion_consistency_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/losses/motion_consistency_loss.py",
+      "original_source_SHA256": "dfdc10fefd3ff6bca1ccbfd8ad32dedc0ff9c368d31ae22d169d51d698ab4de4"
+    },
+    {
+      "path": "third_party/ndpnet_womd/losses/nll_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/losses/nll_loss.py",
+      "original_source_SHA256": "b086772249f2a8bc79797852115f4f8f92819447ccfa331865dcd269b4ddd0a0"
+    },
+    {
+      "path": "third_party/ndpnet_womd/losses/von_mises_nll_loss.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/losses/von_mises_nll_loss.py",
+      "original_source_SHA256": "c810ba72f2e9fd9afd5540e9bba52a53d89f6dbae7de774c93b0cc3af59c9e7d"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/__init__.py",
+      "original_source_SHA256": "d3aa5c5988f4984e5a52988bdafd6bef14572f1c65ac7c1b6891de3c5b734d9f"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/average_meter.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/average_meter.py",
+      "original_source_SHA256": "528a1fe74259fe5907b002132a62806c1ce0ec3d44eaad98e5b9c9e266167923"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/brier.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/brier.py",
+      "original_source_SHA256": "d3a4d4cc669c1bcc58fdfa2025b18d883bab0cfd36db0e3d1080bd271aea7369"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/min_ade.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/min_ade.py",
+      "original_source_SHA256": "6fa014e754e0c15b1214e7f1db33a3cf9114871d469c1aad9cef275623624a64"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/min_ahe.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/min_ahe.py",
+      "original_source_SHA256": "aca5400137aff34cd6d80efa4b24b16114f7a3d8d490a800ad974b10a2658b22"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/min_fde.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/min_fde.py",
+      "original_source_SHA256": "4e92af1dcb17310b38c09d7fc5fb903633c383117bc78e8b9a09457c7afcb0fd"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/min_fhe.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/min_fhe.py",
+      "original_source_SHA256": "be5986a44ecf432a9b985a13b821f05cab624cc5d10d1b9b011ec7a8e4d8c0eb"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/mr.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/mr.py",
+      "original_source_SHA256": "194d39515a1f320879da4538dfe0183f68a33a706e621432bff56aa2416abf9e"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/prob_mr.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/prob_mr.py",
+      "original_source_SHA256": "74a5ab5b6a316840cb4f386ff922ce7572b8c3bc2a7456f486db1a0d0208d867"
+    },
+    {
+      "path": "third_party/ndpnet_womd/metrics/utils.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/metrics/utils.py",
+      "original_source_SHA256": "2aada6ee70153a16ed33ac6b7329ebf2b0f77b1090ae649987c96892ad864fdf"
+    },
+    {
+      "path": "third_party/ndpnet_womd/modules/NDPNet_agent_encoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/modules/NDPNet_agent_encoder.py",
+      "original_source_SHA256": "b858ce98a28b25fdbe334def354fdae506088425ea6110c9f7aabfaaf49db322"
+    },
+    {
+      "path": "third_party/ndpnet_womd/modules/NDPNet_decoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/modules/NDPNet_decoder.py",
+      "original_source_SHA256": "5135654992f14b2aa7cfab90f5da4561f34fcc73cd5dc54d614b1aba54eeff73"
+    },
+    {
+      "path": "third_party/ndpnet_womd/modules/NDPNet_encoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/modules/NDPNet_encoder.py",
+      "original_source_SHA256": "d5de78f8156f38eba63ef325ae0be6e1a6521d34ec792a56186590187c49039e"
+    },
+    {
+      "path": "third_party/ndpnet_womd/modules/NDPNet_map_encoder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/modules/NDPNet_map_encoder.py",
+      "original_source_SHA256": "9e084d4529fb17eb07a0d33a74ac2dc0eed2425b013d88f185d2feef2ebf7f67"
+    },
+    {
+      "path": "third_party/ndpnet_womd/modules/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/modules/__init__.py",
+      "original_source_SHA256": "d13b912a9a3c72787138e3df129257c23a8dbb6aec1e451ea26b0469bffb1aba"
+    },
+    {
+      "path": "third_party/ndpnet_womd/predictors/NDPNet.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/predictors/NDPNet.py",
+      "original_source_SHA256": "00c9dafdb7d179f7cdaade39804c04fef6c1c5d13e43498e1109b53ffe873d26"
+    },
+    {
+      "path": "third_party/ndpnet_womd/predictors/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/predictors/__init__.py",
+      "original_source_SHA256": "9aaffc4e186223a562d7771013ac79ee03164fa3eec7986ecce871e3cf6a1ffb"
+    },
+    {
+      "path": "third_party/ndpnet_womd/test.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/test.py",
+      "original_source_SHA256": "acc8ce03e15acbe8c88b343de2306f7b26bf2dd0b5ea50ee49fe243a4c28dfa8"
+    },
+    {
+      "path": "third_party/ndpnet_womd/train.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/train.py",
+      "original_source_SHA256": "0b8bf828aeca1a70aa2a0fb6e972e3321bcdc266574aa45d55c604a5465e81f3"
+    },
+    {
+      "path": "third_party/ndpnet_womd/transforms/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/transforms/__init__.py",
+      "original_source_SHA256": "f2ed9e78d5d23a10f488a7e6bd690a4441ffdb45899944405ff6ffa887c7cace"
+    },
+    {
+      "path": "third_party/ndpnet_womd/transforms/target_builder.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/transforms/target_builder.py",
+      "original_source_SHA256": "e52c4c2ba522dcb453237dd3b2af2f822dd333c9d4290c27c02909e379018804"
+    },
+    {
+      "path": "third_party/ndpnet_womd/utils/__init__.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/utils/__init__.py",
+      "original_source_SHA256": "45f472b41806fa8048a8607a19cb2892117e095dd164586ed9594de021b79f0f"
+    },
+    {
+      "path": "third_party/ndpnet_womd/utils/geometry.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/utils/geometry.py",
+      "original_source_SHA256": "39d3ff8d7e13d8c2363aa6836817b6595a334e83e6cf3de3ad25303688f11c68"
+    },
+    {
+      "path": "third_party/ndpnet_womd/utils/graph.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/utils/graph.py",
+      "original_source_SHA256": "e1b99dd89b777dd747f860d066ad3c8eb4a7893f1821b3f3b833ebf578a2f7a6"
+    },
+    {
+      "path": "third_party/ndpnet_womd/utils/list.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/utils/list.py",
+      "original_source_SHA256": "c8f48c345190953fe61d396bffe1d5ee4a2e2227d17f4252d068d2e62d2b8b2c"
+    },
+    {
+      "path": "third_party/ndpnet_womd/utils/nms.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/utils/nms.py",
+      "original_source_SHA256": "d81ccf91734f592b4a2ce77bc50b75048fb977f977be9c23490ccaaa91d950f0"
+    },
+    {
+      "path": "third_party/ndpnet_womd/utils/submission.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/utils/submission.py",
+      "original_source_SHA256": "14f224cf865ca8035dcea1beb468c4868ea11d7129baa0db5390ae3297acf675"
+    },
+    {
+      "path": "third_party/ndpnet_womd/utils/weight_init.py",
+      "treatment": "retained NDPNet/QCNet Apache-2.0 upstream portions and local adaptations; notices retained",
+      "original_source_id": "frozen_backbone_ndpnet_womd/utils/weight_init.py",
+      "original_source_SHA256": "ae25481823668e4772fcec7683ea609b9449435112d077143013e543261d33f2"
+    }
+  ],
+  "algorithm_source_files_byte_identical": 147,
+  "algorithm_source_paths": [
+    "src/ccc/core/nfi_model.py",
+    "src/ccc/core/motion_model.py",
+    "src/ccc/core/rcim_womd.py",
+    "src/ccc/core/rcim_av2.py",
+    "src/ccc/core/refiner_womd.py",
+    "src/ccc/core/refiner_av2.py",
+    "src/ccc/core/geometry.py",
+    "src/ccc/core/womd_geometry.py",
+    "src/ccc/core/solvers.py",
+    "src/ccc/core/admissible.py",
+    "src/ccc/core/womd_bank.py",
+    "src/ccc/core/womd_protection.py",
+    "src/ccc/core/av2_ops.py",
+    "src/ccc/core/womd_selection.py",
+    "src/ccc/core/womd_labels.py",
+    "src/ccc/core/womd_i2_loss.py",
+    "src/ccc/core/aggregate.py",
+    "src/ccc/recipes/womd_rcim.py",
+    "src/ccc/recipes/womd_i1.py",
+    "src/ccc/recipes/womd_i2.py",
+    "src/ccc/recipes/av2_refiners.py",
+    "src/ccc/recipes/av2_rcim.py",
+    "src/ccc/recipes/womd_a_bank.py",
+    "src/ccc/core/womd_native_row.py",
+    "third_party/ndpnet_womd/environment.yml",
+    "third_party/ndpnet_womd/LICENSE",
+    "third_party/ndpnet_womd/test.py",
+    "third_party/ndpnet_womd/train.py",
+    "third_party/ndpnet_womd/datamodules/waymo_datamodule.py",
+    "third_party/ndpnet_womd/datamodules/__init__.py",
+    "third_party/ndpnet_womd/datasets/waymo_dataset.py",
+    "third_party/ndpnet_womd/datasets/__init__.py",
+    "third_party/ndpnet_womd/layers/attention_layer.py",
+    "third_party/ndpnet_womd/layers/fourier_embedding.py",
+    "third_party/ndpnet_womd/layers/mlp_layer.py",
+    "third_party/ndpnet_womd/layers/__init__.py",
+    "third_party/ndpnet_womd/losses/focal_loss.py",
+    "third_party/ndpnet_womd/losses/gaussian_nll_loss.py",
+    "third_party/ndpnet_womd/losses/laplace_nll_loss.py",
+    "third_party/ndpnet_womd/losses/motion_consistency_loss.py",
+    "third_party/ndpnet_womd/losses/nll_loss.py",
+    "third_party/ndpnet_womd/losses/von_mises_nll_loss.py",
+    "third_party/ndpnet_womd/losses/__init__.py",
+    "third_party/ndpnet_womd/metrics/average_meter.py",
+    "third_party/ndpnet_womd/metrics/brier.py",
+    "third_party/ndpnet_womd/metrics/min_ade.py",
+    "third_party/ndpnet_womd/metrics/min_ahe.py",
+    "third_party/ndpnet_womd/metrics/min_fde.py",
+    "third_party/ndpnet_womd/metrics/min_fhe.py",
+    "third_party/ndpnet_womd/metrics/mr.py",
+    "third_party/ndpnet_womd/metrics/prob_mr.py",
+    "third_party/ndpnet_womd/metrics/utils.py",
+    "third_party/ndpnet_womd/metrics/__init__.py",
+    "third_party/ndpnet_womd/modules/NDPNet_agent_encoder.py",
+    "third_party/ndpnet_womd/modules/NDPNet_decoder.py",
+    "third_party/ndpnet_womd/modules/NDPNet_encoder.py",
+    "third_party/ndpnet_womd/modules/NDPNet_map_encoder.py",
+    "third_party/ndpnet_womd/modules/__init__.py",
+    "third_party/ndpnet_womd/predictors/NDPNet.py",
+    "third_party/ndpnet_womd/predictors/__init__.py",
+    "third_party/ndpnet_womd/transforms/target_builder.py",
+    "third_party/ndpnet_womd/transforms/__init__.py",
+    "third_party/ndpnet_womd/utils/geometry.py",
+    "third_party/ndpnet_womd/utils/graph.py",
+    "third_party/ndpnet_womd/utils/list.py",
+    "third_party/ndpnet_womd/utils/nms.py",
+    "third_party/ndpnet_womd/utils/submission.py",
+    "third_party/ndpnet_womd/utils/weight_init.py",
+    "third_party/ndpnet_womd/utils/__init__.py",
+    "third_party/ndpnet_av2/environment.yml",
+    "third_party/ndpnet_av2/LICENSE",
+    "third_party/ndpnet_av2/test.py",
+    "third_party/ndpnet_av2/train.py",
+    "third_party/ndpnet_av2/datamodules/waymo_datamodule.py",
+    "third_party/ndpnet_av2/datamodules/__init__.py",
+    "third_party/ndpnet_av2/datasets/waymo_dataset.py",
+    "third_party/ndpnet_av2/datasets/__init__.py",
+    "third_party/ndpnet_av2/layers/attention_layer.py",
+    "third_party/ndpnet_av2/layers/fourier_embedding.py",
+    "third_party/ndpnet_av2/layers/mlp_layer.py",
+    "third_party/ndpnet_av2/layers/__init__.py",
+    "third_party/ndpnet_av2/losses/focal_loss.py",
+    "third_party/ndpnet_av2/losses/gaussian_nll_loss.py",
+    "third_party/ndpnet_av2/losses/laplace_nll_loss.py",
+    "third_party/ndpnet_av2/losses/motion_consistency_loss.py",
+    "third_party/ndpnet_av2/losses/nll_loss.py",
+    "third_party/ndpnet_av2/losses/von_mises_nll_loss.py",
+    "third_party/ndpnet_av2/losses/__init__.py",
+    "third_party/ndpnet_av2/metrics/average_meter.py",
+    "third_party/ndpnet_av2/metrics/brier.py",
+    "third_party/ndpnet_av2/metrics/min_ade.py",
+    "third_party/ndpnet_av2/metrics/min_ahe.py",
+    "third_party/ndpnet_av2/metrics/min_fde.py",
+    "third_party/ndpnet_av2/metrics/min_fhe.py",
+    "third_party/ndpnet_av2/metrics/mr.py",
+    "third_party/ndpnet_av2/metrics/prob_mr.py",
+    "third_party/ndpnet_av2/metrics/utils.py",
+    "third_party/ndpnet_av2/metrics/__init__.py",
+    "third_party/ndpnet_av2/modules/av2_qcnet_agent_encoder.py",
+    "third_party/ndpnet_av2/modules/av2_qcnet_map_encoder.py",
+    "third_party/ndpnet_av2/modules/NDPNet_agent_encoder.py",
+    "third_party/ndpnet_av2/modules/NDPNet_decoder.py",
+    "third_party/ndpnet_av2/modules/NDPNet_encoder.py",
+    "third_party/ndpnet_av2/modules/NDPNet_map_encoder.py",
+    "third_party/ndpnet_av2/modules/__init__.py",
+    "third_party/ndpnet_av2/predictors/NDPNet.py",
+    "third_party/ndpnet_av2/predictors/__init__.py",
+    "third_party/ndpnet_av2/transforms/av2_qcnet_adapter.py",
+    "third_party/ndpnet_av2/transforms/target_builder.py",
+    "third_party/ndpnet_av2/transforms/__init__.py",
+    "third_party/ndpnet_av2/utils/geometry.py",
+    "third_party/ndpnet_av2/utils/graph.py",
+    "third_party/ndpnet_av2/utils/list.py",
+    "third_party/ndpnet_av2/utils/nms.py",
+    "third_party/ndpnet_av2/utils/submission.py",
+    "third_party/ndpnet_av2/utils/weight_init.py",
+    "third_party/ndpnet_av2/utils/__init__.py",
+    "src/ccc/data/womd_m1.py",
+    "src/ccc/data/womd_raw.py",
+    "src/ccc/data/womd_extract.py",
+    "src/ccc/data/av2_extract.py",
+    "src/ccc/data/womd_validate.py",
+    "src/ccc/data/womd_index.py",
+    "reproduction/av2_closing/metric_check.py",
+    "reproduction/av2_closing/inference_cost.py",
+    "reproduction/external/code/baseline_data.py",
+    "reproduction/external/code/baseline_model.py",
+    "reproduction/external/code/baseline_train.py",
+    "reproduction/external/code/baseline_evaluate.py",
+    "reproduction/external/code/build_adapters.py",
+    "reproduction/external/code/reference_loss_check.py",
+    "reproduction/external/learned/validation_worker.py",
+    "reproduction/external/learned/aggregate.py",
+    "reproduction/external/classical/classical.py",
+    "reproduction/external/classical/worker.py",
+    "reproduction/external/classical/aggregate.py",
+    "reproduction/external/classical/orca_port.cpp",
+    "reproduction/native_av2/code/av2_core.py",
+    "reproduction/native_av2/code/av2_pipeline.py",
+    "reproduction/native_av2/code/av2_rcim.py",
+    "reproduction/native_av2/code/av2_refiner.py",
+    "reproduction/native_av2/code/av2_refiner_train.py",
+    "reproduction/native_av2/code/frozen_features.py",
+    "reproduction/native_av2/code/frozen_solvers.py",
+    "reproduction/native_av2/code/motion_model.py",
+    "reproduction/native_av2/code/nfi_model.py",
+    "reproduction/native_av2/code/base_nfi_model.py"
+  ],
+  "omitted": [
+    "All seven scene-ID / filename lists",
+    "Actual fit smoke scene IDs",
+    "256-scene timing identity list",
+    "Private audit-only log/manifest",
+    "Raw data/caches/checkpoints",
+    "Downloaded SmartRefine/SRefiner neural sources",
+    "Private .git directory and all history"
+  ],
+  "aggregate_result_files_preserved": [
+    "av2_metric_recheck.json",
+    "av2_validation.json",
+    "external_av2_validation.json",
+    "fixed_refiner_on_off.json",
+    "isolated_inference_cost.json",
+    "paper_tables.json",
+    "provenance.json",
+    "womd_audit.json",
+    "womd_confirmation.json",
+    "womd_validation.json"
+  ],
+  "owner_confirmation_needed": [],
+  "further_reproduction_limits": [
+    "Original WOMD historical exclusion/probe/qualification metadata must be supplied locally",
+    "Authorized weights not distributed",
+    "Clean environment resolver install not validated",
+    "Full raw-to-tables and external native compatibility reproduction not validated"
+  ],
+  "no_remote_creation": true,
+  "no_push": true,
+  "no_training": true,
+  "verification": {
+    "syntax_python_files": 168,
+    "core_imports_and_parameter_counts": {
+      "WOMD_RCIM": 44449,
+      "AV2_RCIM": 44449,
+      "Refiner": 76026
+    },
+    "existing_model_runtimes_checked": [
+      "Torch1.13.1+cu117 / NumPy1.19.5",
+      "Torch2.0.1+cu118 / NumPy1.24.3"
+    ],
+    "per_runtime_unit_tests": 3,
+    "per_runtime_CLI_help_entries": 15,
+    "per_runtime_training_check_only_cases": 14,
+    "deterministic_split_regeneration": {
+      "files": 7,
+      "historical_membership_and_order_match": true,
+      "local_metadata_only": true,
+      "new_raw_trajectory_or_tensor_reads": false
+    },
+    "public_generated_manifest_mapping": {
+      "rcim_records": 396845,
+      "refiner_records": 9216,
+      "cache_tensor_read": false
+    },
+    "new_training": false,
+    "GPU_used": false,
+    "full_benchmark_rerun": false
+  },
+  "original_code_license": {
+    "copyright_holder": "Yankan Fu",
+    "copyright_year": "2026",
+    "SPDX": "Apache-2.0",
+    "holder_explicitly_confirmed_right_to_publish": true,
+    "scope": "Original project contributions only; third-party licenses and dataset agreements remain separate"
+  }
+}

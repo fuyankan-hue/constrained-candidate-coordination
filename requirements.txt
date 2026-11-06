@@ -1,0 +1,5 @@
+# Exact continuous-refinement runtime used in the formal experiment.
+# Install PyTorch's CUDA 11.7 build from its official wheel index as documented.
+torch==1.13.1
+numpy==1.19.5
+scipy==1.10.1

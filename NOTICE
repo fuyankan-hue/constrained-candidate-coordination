@@ -1,0 +1,27 @@
+Constrained Candidate Coordination and Staged Trajectory Refinement
+Public release candidate; not published by this preparation task.
+
+Copyright 2026 Yankan Fu.
+
+Original project contributions are licensed under the Apache License, Version 2.0,
+as expressly authorized by their copyright holder, Yankan Fu. This attribution
+applies to those original contributions and does not replace the independent
+copyrights, licenses or dataset-derived rights identified below.
+
+NDPNet / QCNet upstream portions retain their original Apache-2.0 licenses and
+copyright headers. The RVO2-derived ORCA source retains its Apache-2.0 notice.
+See third_party/NOTICE.md and docs/LICENSING.md for file-level scope.
+
+Waymo: This software was made using the Waymo Open Dataset, provided by Waymo LLC
+under the Waymo Dataset License Agreement for Non-Commercial Use, available at
+https://waymo.com/open/terms/, and your access and use of such work are governed by
+the terms and conditions therein.
+
+WOMD-developed trained model architectures and associated derivatives, where they
+constitute Distributed WOD Models, are released subject to that Agreement, including
+its non-commercial restrictions and downstream conditions. A copy is in LICENSES/.
+The Apache copyright license does not replace or waive these separate conditions.
+No checkpoints, model tensors, raw data, caches or per-scene lists are distributed.
+
+AV2 data attribution: Argoverse 2, copyright 2021 Argo AI, LLC; data/documentation
+CC BY-NC-SA 4.0, API code MIT. No AV2 data is bundled or relicensed by this project.
