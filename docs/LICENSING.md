@@ -1,61 +1,38 @@
-# License scope and copyright attribution
+# Licenses and attribution
 
-Copyright 2026 the original authors (identities withheld for review).
+Copyright 2026 the original authors. Author identification is withheld for
+anonymous review; ownership and license terms are unchanged.
 
-The copyright holder has expressly confirmed ownership and authorization to release
-the original project contributions under Apache License 2.0. `LICENSE` contains the
-unmodified standard license text; `NOTICE` identifies its scope. Third-party code
-and dataset-derived rights remain separately governed. This does not grant an
-unrestricted commercial license for the whole research stack.
+Original project code is licensed under Apache-2.0 (`LICENSE`). Third-party
+copyrights, model terms and dataset agreements have their own scope; see `NOTICE`.
 
-## Third-party components
+## Third-party code
 
-* NDPNet and QCNet snapshots: original Apache-2.0 portions and copyright notices
-  remain, with local adaptation/source hashes recorded in source_manifest.json.
-* RVO2 ORCA port: original Apache-2.0 header and modification notice remain.
-* SmartRefine: official archived license Apache-2.0; neural implementation and
-  weights are not bundled. Obtain it from https://github.com/opendilab/SmartRefine
-  and match reproduction/external/SOURCE_MANIFEST.json before native reproduction.
-* SRefiner: archived MIT text has literal upstream copyright placeholders. It is
-  preserved without inventing attribution. Neural and compatibility sources and
-  weights are not bundled. Obtain the approved source from
-  https://github.com/Liwen-Xiao/SRefiner and clarify attribution before vendoring.
-* Original wrappers/integration changes are identified separately from upstream
-  code in PUBLIC_RELEASE_MANIFEST.json. An upstream license is not falsely
-  attributed to an entirely original algorithm or to dataset content.
+| Component | License and source |
+|---|---|
+| NDPNet and QCNet snapshots | Original Apache-2.0 notices are retained in `third_party/`; adaptations and hashes are listed in `docs/source_manifest.json`. |
+| RVO2-derived ORCA port | Apache-2.0; original header and modification notice retained. |
+| SmartRefine | Archived upstream Apache-2.0 license retained. Neural source and weights are not bundled; obtain them from https://github.com/opendilab/SmartRefine and match `reproduction/external/SOURCE_MANIFEST.json`. |
+| SRefiner | Archived MIT text is retained, including its upstream placeholders. Neural source, compatibility files and weights remain external; obtain them from https://github.com/Liwen-Xiao/SRefiner and clarify attribution before redistributing them. |
 
-## Dataset agreements are separate
+Original wrappers are identified separately in `PUBLIC_RELEASE_MANIFEST.json`.
+Upstream licenses are not applied to unrelated project code or dataset content.
 
-Waymo's March 2025 Agreement defines Derivative IP broadly, including model
-architectures/software/algorithms developed using its dataset. Sections 1, 2(c)
-and 4 require attribution, prominent downstream non-commercial notice, a copy of
-the Agreement for Distributed WOD Models, and restrictions on commercial,
-production and vehicle-operation uses. We apply that notice to the WOMD-developed
-architecture and related model-derived portions conservatively, including the encoded inference checkpoint exports in this review copy. These conditions are not added to or erased from the Apache
-text. See NOTICE and LICENSES/Waymo_Dataset_License_March_2025.html, and the
-controlling source https://waymo.com/open/terms/.
+## Models and datasets
 
-The official FAQ https://waymo.com/open/faq/ describes public training-code release
-for research reproduction as an acceptable example. This does not imply unrestricted
-deployment or that no-weights means the Agreement is irrelevant.
+The [Waymo Dataset License Agreement for Non-Commercial Use](https://waymo.com/open/terms/)
+(March 2025) governs WOMD-derived models and related work. Its attribution,
+downstream notice, agreement-copy and non-commercial conditions remain applicable
+to the included inference exports. Each archive contains the Agreement and
+`MODEL_NOTICE.txt`. Source-code Apache-2.0 does not replace these conditions or
+grant commercial, production-system or vehicle-operation rights.
 
-AV2 data/documentation use CC BY-NC-SA 4.0; code/API use MIT, as stated at
-https://www.argoverse.org/about.html#terms-of-use. Apache does not relicense AV2
-data or grant commercial rights to dataset-derived artifacts. No raw samples, processed data tensors, trajectories, maps, scene lists or filename
-inventories are included. Model tensors are available separately as encoded review
-assets, with unchanged state_dict values, required notices and a copy of the
-Waymo Agreement in each archive. See docs/checkpoints.md for their independent terms.
+[Argoverse terms](https://www.argoverse.org/about.html#terms-of-use) provide data
+and documentation under CC BY-NC-SA 4.0 and API code under MIT. AV2 attribution,
+upstream code rights and applicable dataset-derived rights remain separate.
 
-No general public-redistribution permission for individual scene-ID/filename
-inventories was established in this audit. All seven historical lists are omitted,
-including AV2 lists, rather than assuming identifiers are automatically unrestricted.
-Code, scalar protocols, aggregate results and fingerprints remain in Git.
-A separate release publishes our final cohort choices as one-way membership tokens,
-without raw identifiers or dataset records. Local recovery validates the original
-fingerprints using authorized user-owned indexes; hashes are not an access-control
-or anonymization guarantee. Model/provider restrictions remain separate.
-
-The original-code copyright attribution is confirmed as the original authors (identities withheld for review), 2026. The
-separate dataset-term scope above continues to apply. Broader commercial
-distribution would require the relevant provider permission; this release does
-not grant it.
+Raw samples, processed data, trajectories, maps, raw scene-ID/file inventories and
+private paths are not distributed. The encoded review assets contain frozen
+inference models and one-way tokens for research cohort choices. Tokens can be
+matched against an authorized local corpus; they are not access control.
+See `docs/checkpoints.md` for assembly and recovery.

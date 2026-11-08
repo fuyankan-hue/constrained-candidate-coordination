@@ -1,200 +1,154 @@
 # Constrained Candidate Coordination and Staged Trajectory Refinement
 
-Public research code for the EAAI submission **Constrained Candidate
-Coordination and Staged Trajectory Refinement for Multi-Agent Interaction
-Consistency**. This is the anonymous review artifact. Author identification and personal hosting links are withheld. Download the complete review repository archive, including assets/review, to obtain the frozen inference assets without visiting a personal repository.
+Code and frozen inference models for **Constrained Candidate Coordination and
+Staged Trajectory Refinement for Multi-Agent Interaction Consistency**, submitted
+to Engineering Applications of Artificial Intelligence. Author details are
+withheld for anonymous review.
 
-## Method and scope
+## Method
 
-The method coordinates a frozen predictor's six mode-specific trajectories and
-then refines the selected continuous paths:
+The framework coordinates the six trajectories of a frozen NDPNet predictor,
+then refines the selected paths:
 
-**Frozen NDPNet → RCIM → CJM20 + anchor-centered projection + geometry-first
-joint selection → B-spline Refiner 1 + P1 → B-spline Refiner 2 + P2.**
+**NDPNet → RCIM → constrained joint selection → B-spline R1 + P1 → R2 + P2.**
 
-RCIM (Refine-Conditioned Candidate Interaction Modeling) learns candidate-pair compatibility from Refine features and predicted
-relative motion. Its 44,449-parameter architecture is unchanged: Near/Far hidden
-inputs are zero, while the backbone's Near/Far stages and geometry branches are
-retained. Original candidate eligibility is 20 m maximum whole-path deviation;
-eligible candidates are radially projected into a 4 m whole-path neighborhood of
-the independent unary top-1 anchor. Unary scores are linearly extended and pair
-scores bilinearly extended. Geometry-first lexicographic selection preserves the
-anchor-relative feasibility contract. Two 76,026-parameter residual refiners and
-scene-level protection retain a 5 m whole-path displacement bound from the original
-top-1. That is a displacement guarantee, not a bound on absolute FDE.
+- RCIM learns candidate-pair compatibility from mode-specific Refine features and
+  predicted relative motion. Near/Far hidden inputs are zero; those backbone
+  stages remain intact.
+- CJM20 admits candidates within 20 m of the independent top-1 path. Eligible
+  candidates are projected into a 4 m whole-path neighborhood of that anchor.
+  Unary and pair scores are extended linearly and bilinearly, respectively.
+- Geometry-first joint selection applies baseline-relative feasibility rules.
+  Two bounded B-spline refiners use scene-level protection after each stage.
+- The final path stays within 5 m of the original top-1. This limits trajectory
+  change, not absolute prediction error or real-world collision risk.
 
-The added parameter count is **196,501**. Pair-overlap metrics are prediction-side
-geometric proxies, not real collisions or closed-loop planning performance.
+RCIM has **44,449** parameters; each refiner has **76,026**, for **196,501** added
+parameters. RCIM seed 42 is fixed; refiner seeds are 42, 43 and 44.
 
-The core functions are copied from the code that produced the frozen experiments;
-packaging changes configure paths, imports and command-line I/O. This is not a new
-implementation of the algorithms. `docs/source_manifest.json` records source-file
-and per-symbol hashes and declared portability edits. Historical exploration,
-Conditional CE, AIR, CJR and FCR are not release defaults.
-
-## Relationship to NDPNet and QCNet
-
-The backbone is [NDPNet](https://github.com/HuaHu-yizhou/NDPNet), built upon
-[QCNet](https://github.com/ZikangZhou/QCNet). Exact locally used source snapshots
-are retained under `third_party/ndpnet_womd` and `third_party/ndpnet_av2`, including
-their original copyright notices and Apache-2.0 LICENSE files. There is no upstream
-Git commit in the experiment archives; file hashes identify the actual snapshots.
-The AV2 backbone is a historical local adaptation, not claimed to be an official
-author-released AV2 checkpoint. See `third_party/NOTICE.md`.
+The backbone is [NDPNet](https://github.com/HuaHu-yizhou/NDPNet), built on
+[QCNet](https://github.com/ZikangZhou/QCNet). The used source snapshots and their
+licenses are retained in `third_party/`; see [source provenance](docs/source_manifest.json).
 
 ## Environment
 
-Linux / Python **3.8.10**. The frozen WOMD experiment used **two environments**:
+The experiments used Linux and separate environments:
 
-| Stage | PyTorch | NumPy | Additional observed dependencies |
+| Stage | Python | PyTorch | NumPy |
 |---|---|---|---|
-| Backbone / WOMD candidate scoring | 2.0.1+cu118 | 1.24.3 | PyG 2.3.0, Lightning 2.0.4, AV2 API 0.2.1 |
-| Continuous-refiner training/inference | 1.13.1+cu117 | 1.19.5 | SciPy 1.10.1 |
+| WOMD backbone/scoring; all AV2 model stages | 3.8.10 | 2.0.1+cu118 | 1.24.3 |
+| WOMD continuous refinement | 3.8.10 | 1.13.1+cu117 | 1.19.5 |
+| WOMD raw-data reader | 3.11.17 | 2.0.1+cpu | 1.24.3 |
 
-AV2 backbone, RCIM, refiner training/inference and the isolated benchmark used
-**Torch2.0.1+cu118/NumPy1.24.3**, as confirmed by the native launchers and timing
-records. WOMD raw parsing used a third CPU-reader environment: Python3.11.17,
-TensorFlow-CPU2.13.0, Torch2.0.1+cpu and Waymo protobuf package1.6.7. Do not silently replace either runtime with a
-new Torch version. `requirements.txt` and `requirements-scoring.txt` pin the direct
-core dependencies; the retained backbone `environment.yml` and
-`docs/environment.md` cover extraction dependencies and CUDA-specific PyG wheels.
-No environment was installed or modified while assembling this candidate.
+Use `requirements-scoring.txt`, `requirements.txt` and `requirements-reader.txt`
+for their respective stages. These record observed versions, not a single
+resolver-tested lockfile. CUDA/PyG pairing and the reader SDK dependency conflict
+are explained in [environment.md](docs/environment.md). Do not combine the three
+requirements files. A clean installation remains unverified.
 
-## Data and checkpoint preparation
+## Data and weights
 
-Obtain WOMD and AV2 yourself under their official terms; raw data and processed
-caches are not redistributed. Frozen inference checkpoints are available as
-checksum-pinned assets inside this review repository (separate model terms apply):
+Obtain [WOMD Scenario v1.3.0](https://waymo.com/open/download/) and
+[Argoverse 2 Motion Forecasting](https://argoverse.github.io/user-guide/tasks/motion_forecasting.html)
+under their provider terms. Raw data and feature caches are not included.
+See [data.md](docs/data.md) for indexing, preprocessing, extraction and manifests.
 
-* [WOMD official download](https://waymo.com/open/download/) and
-  [terms](https://waymo.com/open/terms/). Experiments used Scenario TFRecords v1.3.0,
-  11 observed and 80 predicted frames at 10 Hz.
-* [AV2 official task/download guide](https://argoverse.github.io/user-guide/tasks/motion_forecasting.html),
-  50 observed and 60 predicted frames at 10 Hz.
+Download the complete review repository archive, including `assets/review`.
+Then run from the repository root:
 
-`docs/data.md` specifies raw/processed layouts, native extraction commands and
-cache contracts. The pinned QCNet AV2 parser and offline preprocessing entry are documented in `docs/data.md`. Dataset-specific scene/file lists are omitted from this public release. Restore exact local metadata with `scripts/restore_paper_splits.py` and the released one-way membership tokens; see `docs/data.md` and `docs/checkpoints.md`. Never combine a
-WOMD oriented-box denominator with the AV2 center-distance denominator.
+```bash
+python scripts/download_paper_artifacts.py --dataset all
+```
 
-Checkpoint SHA256 values and selected epochs are in `configs/checkpoint_hashes.json`.
-Download the 40 frozen paper checkpoint exports (WOMD/AV2 backbones, RCIM42 and
-three-seed matched R1/R2) with `python scripts/download_paper_artifacts.py`.
-See `docs/checkpoints.md` for model terms, tensor-equivalence verification and
-`local/paper_artifacts/{womd,av2}/weights.json` for generated local weight maps.
-Export hashes and original training-file hashes are recorded separately. `Full_fixed_OFF` deliberately uses the same Full I1/I2
-heads; matched `NoRCIM` uses its own I2. Loading is strict; the native WOMD I2
-`network.` state-dict prefix is an I/O wrapper, not a changed model.
+Despite its filename, this command assembles the included assets **offline**.
+It verifies chunk, archive and checkpoint SHA256 values without contacting a
+personal hosting service. It provides 40 inference exports and generates:
 
-## Training commands (not executed during release preparation)
+| Dataset | Weights map | Backbone checkpoint |
+|---|---|---|
+| WOMD | `local/paper_artifacts/womd/weights.json` | `local/paper_artifacts/womd/checkpoints/backbone.ckpt` |
+| AV2 | `local/paper_artifacts/av2/weights.json` | `local/paper_artifacts/av2/checkpoints/backbone.ckpt` |
 
-Run from this repository root. Choose one authorized idle GPU yourself after
-checking `nvidia-smi`; a trainer expects exactly one visible GPU. There are no
-automatic GPU-selection or other-user termination commands in this release.
-
-First regenerate local metadata as described in `docs/data.md`, then set:
+The exports preserve all frozen model tensors; training-only metadata is omitted.
+[checkpoints.md](docs/checkpoints.md) describes the model terms, export hashes and
+recovery of the original seven cohort documents from user-owned dataset indexes.
+After recovery, set `CCC_SPLIT_ROOT` to the generated membership directory:
 
 ```bash
 export CCC_SPLIT_ROOT="$PWD/local/splits"
 ```
 
-Keep these generated lists out of Git. The CLI checks historical membership/order
-fingerprints and refuses mismatches. The public one-way membership bundle now restores the exact final cohorts using
-your own raw-record indexes, without private exclusion/probe/qualification inputs.
-The legacy derivation script still requires those inputs if used instead.
-Then prepare native rows as described in `docs/reproduction.md` and run:
+## Frozen evaluation
+
+The example below uses the fixed WOMD audit manifest prepared in
+[data.md](docs/data.md). Use a new output directory for each cohort/configuration.
+Selection runs in the scoring environment; WOMD refinement runs in its separate
+refiner environment.
 
 ```bash
-# Original Joint-CE RCIM; same command/config family for AV2.
+# Scoring environment: generate joint choices once.
+python scripts/infer.py --config configs/womd.json \
+  --manifest local/audit.jsonl --split audit --phase selection \
+  --weights local/paper_artifacts/womd/weights.json --output work/eval_womd
+
+# WOMD refiner environment: evaluate all three fixed refiner seeds.
+for seed in 42 43 44; do
+  python scripts/infer.py --config configs/womd.json \
+    --manifest local/audit.jsonl --split audit --phase refinement \
+    --weights local/paper_artifacts/womd/weights.json --seed "$seed" --device cpu \
+    --methods A A_I1 E_I1 B2 NoRCIM Full --output work/eval_womd
+done
+
+python scripts/evaluate.py --config configs/womd.json --input work/eval_womd \
+  --output work/eval_womd/summary.json --main Full --references A A_I1 B2 NoRCIM
+```
+
+For AV2 use `configs/av2.json`, `local/paper_artifacts/av2/weights.json` and the AV2
+manifest/cohort described in the data guide. Both phases use the AV2 environment.
+For the fixed-refiner score ablation, run `--methods Full Full_fixed_OFF` and
+summarize with `--main Full --references Full_fixed_OFF`. This shares Full's two
+heads and differs from the separately matched `NoRCIM` second head.
+
+## Training
+
+The native recipes and full preparation sequence are in
+[reproduction.md](docs/reproduction.md). The following WOMD commands assume the
+corresponding RCIM rows and refiner banks are already prepared. Expose one
+authorized GPU and use fresh training outputs.
+
+```bash
 CUDA_VISIBLE_DEVICES=0 python scripts/train_rcim.py \
   --config configs/womd.json --workdir work/womd \
   --output work/womd/rcim_models --seed 42
 
-# A/E/B matched first heads; repeat each arm for seeds 42, 43 and 44.
 CUDA_VISIBLE_DEVICES=0 python scripts/train_refiner.py \
   --config configs/womd.json --workdir work/womd --stage i1 --arm E --seed 42
 
-# Separate RCIM / NoRCIM / B second heads; same-seed frozen first head required.
 CUDA_VISIBLE_DEVICES=0 python scripts/train_refiner.py \
-  --config configs/womd.json --workdir work/womd --stage i2 --arm RCIM \
-  --seed 42 --weights local/weights_womd.json
+  --config configs/womd.json --workdir work/womd --stage i2 --arm RCIM --seed 42 \
+  --weights local/paper_artifacts/womd/weights.json
 ```
 
-For AV2 use `configs/av2.json`, `work/av2`, and RCIM output
-`work/av2/models/rcim_seed42`. Native refiner recipes use the fixed manifests,
-architecture and output convention documented in `docs/reproduction.md`.
-Inference exports are assembled offline by the review-asset entrypoint. Dataset access,
-correct runtimes and the documented preprocessing remain necessary; a clean
-raw-data-to-results reproduction has not been certified.
+RCIM uses Joint CE, AdamW (learning rate 2e-4, weight decay 1e-4), clipping at 5,
+at most eight epochs and patience three. Each refiner uses 8,192 training and
+1,024 tuning scenes, batch size 16, ten epochs and 5,120 updates. RCIM checkpoint
+selection uses calibration Joint CE; refiners use tuning ADE + 0.25 FDE.
+Repeat refiner training for seeds 42/43/44 and the required matched arms. See the
+reproduction guide before chaining newly trained checkpoints.
 
-## Frozen evaluation
+## Results and checks
 
-First create a **local** JSONL manifest with `scene`, `path` and `split` from
-authorized native caches. WOMD RCIM preparation also requires `shard` and
-`record_index`, preserving native scene order. See the data guide; the example
-below does not silently guess a cohort.
+`results/paper_tables.json` contains the eleven manuscript tables. Other files in
+`results/` contain the saved WOMD audit, confirmation, Validation, AV2 Validation,
+fixed-refiner ablation, external comparisons and inference-cost summaries.
+[reproduction.md](docs/reproduction.md) maps Tables 2–11 to entrypoints and metrics.
 
-```bash
-# Run WOMD selection in the scoring environment; only prediction-side fields enter it.
-python scripts/infer.py --config configs/womd.json \
-  --manifest local/audit.jsonl --weights local/weights_womd.json \
-  --split audit --phase selection --output work/eval_womd
-
-# Switch to the frozen refiner environment; repeat for seeds 42, 43, 44.
-python scripts/infer.py --config configs/womd.json \
-  --manifest local/audit.jsonl --weights local/weights_womd.json \
-  --split audit --phase refinement --seed 42 --device cpu \
-  --methods A A_I1 E_I1 B2 NoRCIM Full --output work/eval_womd
-
-python scripts/evaluate.py --config configs/womd.json \
-  --input work/eval_womd --output work/eval_womd/summary.json \
-  --main Full --references A A_I1 B2 NoRCIM
-```
-
-Use `--device cuda` for refiner inference after checking GPU availability. Dataset
-cohorts are explicit: `fit`, `calibration`, `tune`, `audit`, `confirmation`,
-`validation`. For AV2 select its config and native cache manifest. These commands
-do not authorize changing a method after observing held-out results.
-
-For the fixed-head attribution (Table 6), use
-`--methods Full Full_fixed_OFF` with the Full heads for each seed, and summarize
-with `--main Full --references Full_fixed_OFF`. This is different from separately
-matched `NoRCIM`. For Table 5 use `Full_coord Full_I1 Full_noP2 Full`.
-
-## Verified experimental settings
-
-| Item | Frozen value |
-|---|---|
-| RCIM | seed42, Joint CE over36 pairs, q=softmax(-r/3), r=relative ADE+.25 relative FDE |
-| RCIM training | AdamW 2e-4, weight decay1e-4, clip5, at most8 epochs, patience3, min_delta1e-4 |
-| RCIM selection | edge-weighted calibration Joint CE; no audit checkpoint selection |
-| Supervised edges | both endpoints valid, observed distance<=75m, common valid future>=60 WOMD /45 AV2 |
-| Prediction graph | observed current distance **<75m**; boundary intentionally differs from supervised eligibility |
-| Refiner seeds | 42/43/44 with fixed RCIM42; not three independently trained RCIMs |
-| Each refiner | 8192 train/1024 tune, batch16, exactly10 epochs/5120 updates |
-| Optimizer | AdamW 2e-4, wd1e-4, cosine to2e-5; I1 clip5, I2 clip1 |
-| Loss | position+.25endpoint+.05residual L2+.002residual acceleration L2; I1 SmoothL1, I2 Euclidean |
-| Model choice | unprotected tune endpoint-valid ADE+.25FDE; epoch0 eligible; improvement>1e-4 |
-| Protection | beta in[1,.5,.25,.125,0], common scene-level accepted update |
-| Search | exact when product<=65536, otherwise at most8 ascending coordinate sweeps from A |
-
-WOMD RCIM has327,578 usable supervised fit scenes and1,692 usable calibration
-scenes from the fixed2,000 calibration IDs. Do not confuse selected scene counts
-with scenes containing eligible supervision. AV2 native Training split:159,753 fit,
-20,136 calibration,20,019 reserved development; refiner train/tune8192/1024.
-
-## Results and table reproduction
-
-`results/paper_tables.json` preserves the exact eleven manuscript table bodies and
-their source SHA256. Numeric official summaries are kept separately for WOMD
-audit,20k confirmation,44,097 Validation, AV2 24,988 Validation, closing focal
-checks, isolated latency and external methods. These are archived results, not new
-experiment claims from this packaging task. See `docs/reproduction.md` for the
-Table2–11 entrypoint map, scientific definitions, fairness boundaries and remaining
-release gates. Original WOMD Validation had historical exposure; the20k cohort is
-not represented as guaranteed-unseen to the pretrained backbone. AV2's backbone
-was historically selected using its Validation set. These boundaries are retained.
-
-## Release checks and current limitations
+WOMD uses oriented-box overlap; AV2 uses a center-distance proxy below 1 m.
+Neither is a real collision measurement. Intervals use whole-scene paired
+bootstrap samples with predictions averaged across the three fixed models.
+The 20,000-scene cohort is held out from added-module development, not certified
+unseen to the backbone. WOMD and AV2 backbone Validation exposure is retained in
+the experimental record.
 
 ```bash
 python scripts/check_release.py
@@ -202,75 +156,35 @@ python scripts/check_release.py --imports
 python -m unittest discover -s tests
 ```
 
-The read-only CPU release smoke uses a few existing **fit** records and frozen
-weights. It is neither a new full benchmark nor a training reproduction. Training
-entrypoints are syntax/import/argument checked, not retrained here. Raw-data
-extraction and optional external-source reconstruction require their separate
-backbone dependencies and have not been rerun over the datasets during packaging.
-`docs/validation.json` reports actual pass/fail coverage, rather than claiming all
-experiments were freshly reproduced.
+These checks cover integrity, imports and local contracts. Prior small CPU
+forward checks, current distribution status and remaining limitations are
+separated in [validation.json](docs/validation.json) and
+[release notes](docs/PUBLIC_RELEASE_NOTES.md). Full raw-data-to-table reproduction
+on a clean machine and optional external-method dependencies remain unverified.
 
-## License, attribution and citation
+## License
 
-**Copyright 2026 the original authors (identities withheld for review).** The copyright holder has expressly authorized release
-of the original project contributions under **Apache License 2.0**. Upstream
-NDPNet/QCNet/RVO2 copyrights and independent licenses remain. SmartRefine/SRefiner
-neural code and weights are not bundled; use their official sources and the
-retained archive fingerprints. Third-party ownership and dataset terms remain
-separate.
+Original code is Apache-2.0; author identification is withheld for review.
+NDPNet, QCNet, RVO2 and other third-party notices retain their respective scope.
+See `LICENSE`, `NOTICE` and [LICENSING.md](docs/LICENSING.md).
 
-**Dataset conditions remain separate.** This software was made using the Waymo
-Open Dataset, provided by Waymo LLC under the Waymo Dataset License Agreement for
-Non-Commercial Use, available at https://waymo.com/open/terms/, and your access and
-use of such work are governed by the terms and conditions therein. WOMD-developed
-trained model architectures and associated derivatives that constitute Distributed
-WOD Models are subject to that Agreement and its downstream non-commercial,
-production-system and vehicle-operation restrictions. Its full agreement text is
-in `LICENSES/Waymo_Dataset_License_March_2025.html`. The Apache license does not
-override those conditions; the separately released model exports retain them.
+This software was made using the Waymo Open Dataset, provided by Waymo LLC under
+the [Waymo Dataset License Agreement for Non-Commercial Use](https://waymo.com/open/terms/),
+and your access and use of such work are governed by the terms and conditions
+therein. WOD model use remains subject to that Agreement, including downstream
+non-commercial restrictions. AV2 data/documentation are CC BY-NC-SA 4.0 and its
+API is MIT. Source-code Apache-2.0 does not replace these separate terms.
 
-AV2 data/documentation are CC BY-NC-SA 4.0 and its API code is MIT, per
-https://www.argoverse.org/about.html#terms-of-use. No data, feature caches, raw scene IDs or filename inventories are included in Git.
-Inference weights are included as encoded review assets under their model/provider terms. See `NOTICE` and
-`docs/LICENSING.md`; do not describe this entire stack as unrestricted commercial
-Apache software.
+## Citation
 
 ```bibtex
 @misc{constrained_candidate_coordination,
-  author={Anonymous authors},
-  year={2026},
-  title={Constrained Candidate Coordination and Staged Trajectory Refinement
-         for Multi-Agent Interaction Consistency},
-  note={Manuscript prepared for Engineering Applications of Artificial Intelligence}
+  author = {Anonymous authors},
+  title = {Constrained Candidate Coordination and Staged Trajectory Refinement
+           for Multi-Agent Interaction Consistency},
+  year = {2026},
+  note = {Manuscript submitted to Engineering Applications of Artificial Intelligence}
 }
 ```
 
-Author identification is withheld in this review copy; a manuscript DOI and acceptance status are not implied. Please also cite NDPNet, QCNet, WOMD and AV2 using
-their upstream citation information. We acknowledge the original implementations
-and dataset providers; retained code headers identify their copyrights.
-
-## Release checks and reproduction limits
-
-`PUBLIC_RELEASE_MANIFEST.json` classifies the file set and `RELEASE_SHA256.json`
-fingerprints it. The initial pre-publication audit ran
-`scripts/audit_git.py --require-staged --expect-no-remote` before adding a remote.
-That historical command is not a clean-clone command: a normal GitHub clone has an
-`origin` remote and GitHub commit metadata. Initial audit results are retained with
-their original scope. Public hosting does not change those historical facts.
-
-Raw dataset identifiers remain local. The public cohort-token recovery route
-restores original membership/order and checks the published fingerprints without
-private historical exclusion or qualification inputs. The older derivation route
-still fails if its required historical inputs are absent, rather than inventing
-a substitute split. Aggregate paper
-numbers are archived results, not new benchmark results from preparing this release.
-
-The three requirements files describe separate observed runtimes, not one combined
-installation or resolver-tested lock. All observed versions are recorded in
-`configs/runtime_versions.json` and `docs/environment.md`. The WOMD reader SDK
-metadata conflicts with its observed NumPy/package layout; existing protobuf/reader
-imports work, but clean `pip install -r requirements-reader.txt` is **not validated**.
-No environment installation, optimizer step, full raw extraction or Table2–11
-end-to-end rerun was performed here. Optional external learned methods require
-their upstream source and original approved compatibility assets. Frozen checkpoint exports and exact cohort recovery are available as described
-in `docs/checkpoints.md`. See `docs/PUBLIC_RELEASE_NOTES.md` for remaining limits.
+Please also cite NDPNet, QCNet, WOMD and Argoverse 2 using their original references.

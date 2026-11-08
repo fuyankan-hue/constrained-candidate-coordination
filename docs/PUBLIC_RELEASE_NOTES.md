@@ -1,59 +1,53 @@
-# Public candidate release boundary
+# Release notes and verification scope
 
-This is the anonymous review copy of the research-code artifact. Personal
-repository addresses and original-author identification are withheld.
-It was prepared independently under the project lead's express authorization and
-does not inherit the Private research repository's Git history. Statements that no
-push occurred in the initial preparation audit describe that earlier audit only. Root LICENSE is the unmodified Apache-2.0 text;
-NOTICE and docs/LICENSING.md define third-party and dataset-term scope.
+This review copy includes the core method, training/evaluation entrypoints,
+recorded configurations and paper results. Author details and personal hosting
+links are withheld; third-party notices and provider terms are retained.
 
-Copyright 2026 the original authors (identities withheld for review). The copyright holder has explicitly confirmed the right
-to release the original project code under Apache License 2.0. This confirmation
-does not replace third-party licenses or the separate terms for WOMD architectures
-and derivatives. Waymo's agreement and its copy remain included.
+## Current contents
 
-All seven historical scene/file inventories, fit smoke IDs, and the256-scene timing
-list are omitted. Aggregate metrics and protocol scalar values are unchanged.
-The deterministic split generator must reproduce expected historical fingerprints;
-the initial release required private exclusion/qualification inputs. That historical
-limitation is now addressed for final-cohort reconstruction by the published
-one-way membership asset and restore_paper_splits.py; prior audit facts are unchanged.
-Code for every core method, WOMD/AV2 processing/training/inference/evaluation and
-adapted external interfaces is retained. The core algorithm files are checked
-byte-for-byte against the audited Private candidate; only release I/O wrappers,
-metadata generation and documentation are changed.
+- Forty frozen inference exports cover WOMD/AV2 backbones, RCIM42 and matched
+  R1/R2 heads for refiner seeds 42/43/44.
+- `assets/review` contains 34 encoded chunks, each below 8 MiB. The existing
+  `scripts/download_paper_artifacts.py` entrypoint assembles them offline and
+  verifies chunks, archives and checkpoint files.
+- One-way membership tokens recover the seven original cohort documents from
+  user-owned dataset metadata. Original membership/order fingerprints are checked.
+- The QCNet AV2 parser is retained unmodified from commit
+  `55cacb418cbbce3753119c1f157360e66993d0d0`, with its Apache-2.0 notice.
+  `scripts/preprocess_av2.py` invokes it offline and rejects partial-output overwrite.
 
-No raw/processed data are distributed. Frozen checkpoint inference exports are
-now encoded review assets with provider notices and tensor-equivalence
-verification; see docs/checkpoints.md. SmartRefine/
-SRefiner neural sources and the original SRefiner compatibility archive remain
-external dependencies; exact source hashes and acquisition links are retained.
+The inference exports retain every frozen model tensor and omit optimizers,
+callbacks and private training metadata. Original-container and export hashes
+are recorded separately. The formal scientific checkpoints and paper results
+have not been changed.
 
-Clean environment installation, raw-data-to-results reconstruction, fresh training,
-CUDA bitwise reproduction and all Tables2-11 from scratch are not verified. Existing
-runtime syntax/import/CLI/unit checks and deterministic metadata reconstruction are
-reported separately. No training, held-out model evaluation or threshold search was
-performed during this preparation. No new scientific result is asserted.
+## Historical checks
 
-## Minimal documentation/AV2 entry repair (2026-11-06)
+`docs/validation.json` keeps the original packaging checks under
+`historical_packaging_audit`. Statements such as no weights distributed, pending
+hosting and no Git push describe that earlier stage, not the current release.
+Current distribution information is under `current_release`.
 
-The missing AV2 parser is now supplied unmodified from QCNet commit
-55cacb418cbbce3753119c1f157360e66993d0d0, matching the local QCNet preprocessing
-environment file SHA256. Its original Apache-2.0 header remains. The new
-scripts/preprocess_av2.py wrapper invokes that parser offline without changing its
-agent/map conversion, checks the native50/60-step defaults, and refuses automatic
-downloads or replacement of partial graph output. Historical preprocessed .pkl
-files do not record a preprocessing-parser hash; this addition is not a claim that
-every archived graph has retrospectively proven byte-identical provenance.
-No raw-data processing, model inference, optimizer step or experiment rerun is part
-of this repair. Existing audit evidence remains historical and is not relabelled
-as a full fresh-environment reproduction.
+Those checks include source/weight integrity, imports and parameter counts in the
+two existing model runtimes, argument checks, synthetic contracts, small frozen
+CPU fit forwards and deterministic cohort reconstruction. They do not represent
+a new training run or full benchmark. The older `docs/checks.log` referenced in
+that record is an internal audit log and is not included in the review archive.
 
-## Frozen reproduction assets (2026-11-06)
+## Remaining limitations
 
-40 inference exports, two datasets, all three Refiner seeds; original state_dict
-tensors verified bitwise equal. One-way membership recovery restores all seven
-historical final cohort documents using user-owned metadata and original canonical
-fingerprints. No model training, benchmark rerun or threshold changes. Original
-source/checkpoint files and archived metrics remain unchanged. The clean-install
-and external-baseline limitations above still apply.
+- A clean resolver installation and complete raw-data-to-tables reproduction
+  remain unverified; the WOMD reader SDK conflict is described in `environment.md`.
+- Historical AV2 graphs do not embed a preprocessing-parser hash, so exact
+  raw-to-archived-graph provenance is not retrospectively certified.
+- SmartRefine/SRefiner neural and compatibility assets remain external. Table 11
+  is not claimed to be independently reproduced from this archive alone.
+- Local offline assembly has passed. Complete ZIP delivery and assembly through
+  the anonymous hosting service, plus its expiry settings, remain UNVERIFIED
+  because the review endpoint was inaccessible during the latest checks.
+- Whole-scene bootstrap ordering and historical backbone exposure are documented
+  in `reproduction.md`; neither is changed by this maintenance.
+
+AI tools assisted repository packaging and documentation maintenance. This update
+does not remove or alter the manuscript's disclosure of AI-assisted preparation.

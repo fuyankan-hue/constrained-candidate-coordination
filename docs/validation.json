@@ -1,180 +1,217 @@
 {
-  "status": "PRIOR_PRIVATE_PACKAGING_EVIDENCE_NOT_PUBLIC_REBUILD",
-  "no_training": true,
-  "no_GPU_used": true,
-  "no_full_benchmark_rerun": true,
-  "no_data_or_weights_distributed": true,
-  "native_source_files_integrity": {
-    "pass_": true,
-    "files": 150,
-    "no_historical_writes": true
-  },
-  "checkpoint_hash_checks": {
-    "files": 40,
-    "passed": true
-  },
-  "native_symbols_checked": 85,
-  "declared_IO_only_symbol_changes": [
-    {
-      "file": "src/ccc/recipes/womd_rcim.py",
-      "symbol": "main",
-      "declared_portability_edits": [
-        "root=Path(__file__).resolve().parent/'models'"
-      ]
-    },
-    {
-      "file": "src/ccc/recipes/av2_refiners.py",
-      "symbol": "train_one",
-      "declared_portability_edits": [
-        "model source hash resolves to the imported native model module instead of an obsolete sibling filename; no training math changed"
-      ]
-    },
-    {
-      "file": "src/ccc/data/av2_extract.py",
-      "symbol": "Extractor",
-      "declared_portability_edits": [
-        "'/workspace/QCNet/data/av2_qcnet/'+split+'/processed/'+name"
-      ]
+  "schema_version": 2,
+  "scope": "Current distribution status is separate from historical test evidence.",
+  "current_release": {
+    "as_of": "2026-11-08",
+    "distribution": "anonymous review source and encoded inference assets",
+    "weights_distributed": true,
+    "checkpoint_exports": 40,
+    "asset_transport": "repository_hex_chunks",
+    "raw_dataset_distributed": false,
+    "raw_scene_id_inventories_distributed": false,
+    "source_code_license": "Apache-2.0 for original code; independent third-party and provider terms retained",
+    "original_model_weights_and_scientific_results_unchanged": true,
+    "anonymous_host_zip_delivery": "UNVERIFIED",
+    "anonymous_host_offline_reconstruction": "UNVERIFIED",
+    "clean_environment_installation": "UNVERIFIED",
+    "full_raw_data_to_tables_reproduction": "UNVERIFIED",
+    "documentation_maintenance_checks": {
+      "python_syntax_files": 173,
+      "documented_commands_argparse_checked": 44,
+      "training_entry_check_only_cases": 38,
+      "public_artifact_unit_tests": {
+        "passed": 5,
+        "failed": 0
+      },
+      "network_disabled_local_asset_assembly": "PASS",
+      "checkpoint_file_SHA256": {
+        "passed": 40,
+        "failed": 0
+      },
+      "anonymous_mirror_HTTP": "403 Forbidden; ZIP delivery and expiry UNVERIFIED",
+      "model_imports_this_maintenance": "NOT RUN: local Python has no PyTorch; prior model-runtime evidence retained below",
+      "training_or_benchmark_runs": 0
     }
-  ],
-  "frozen_forward_refinement_runtime": {
+  },
+  "historical_packaging_audit": {
+    "status": "PRIOR_PRIVATE_PACKAGING_EVIDENCE_NOT_PUBLIC_REBUILD",
     "no_training": true,
-    "device": "cpu",
-    "torch": "1.13.1+cu117",
-    "numpy": "1.19.5",
-    "womd_cases": [
+    "no_GPU_used": true,
+    "no_full_benchmark_rerun": true,
+    "no_data_or_weights_distributed": true,
+    "native_source_files_integrity": {
+      "pass_": true,
+      "files": 150,
+      "no_historical_writes": true
+    },
+    "checkpoint_hash_checks": {
+      "files": 40,
+      "passed": true
+    },
+    "native_symbols_checked": 85,
+    "declared_IO_only_symbol_changes": [
       {
-        "requested": 3,
-        "all_refiner_seeds_pass": true
+        "file": "src/ccc/recipes/womd_rcim.py",
+        "symbol": "main",
+        "declared_portability_edits": [
+          "root=Path(__file__).resolve().parent/'models'"
+        ]
       },
       {
-        "requested": 4,
-        "all_refiner_seeds_pass": true
-      }
-    ],
-    "av2_cases": [
-      {
-        "requested": 4,
-        "maximum_native_trajectory_error_m": 0.0,
-        "all_refiner_seeds_pass": true
+        "file": "src/ccc/recipes/av2_refiners.py",
+        "symbol": "train_one",
+        "declared_portability_edits": [
+          "model source hash resolves to the imported native model module instead of an obsolete sibling filename; no training math changed"
+        ]
       },
       {
-        "requested": 4,
-        "maximum_native_trajectory_error_m": 0.0,
-        "all_refiner_seeds_pass": true
+        "file": "src/ccc/data/av2_extract.py",
+        "symbol": "Extractor",
+        "declared_portability_edits": [
+          "'/workspace/QCNet/data/av2_qcnet/'+split+'/processed/'+name"
+        ]
       }
     ],
-    "native_selection_parity": true,
-    "GT_poison_invariance": true,
-    "WOMD_maximum_native_trajectory_error_m": 0.0
+    "frozen_forward_refinement_runtime": {
+      "no_training": true,
+      "device": "cpu",
+      "torch": "1.13.1+cu117",
+      "numpy": "1.19.5",
+      "womd_cases": [
+        {
+          "requested": 3,
+          "all_refiner_seeds_pass": true
+        },
+        {
+          "requested": 4,
+          "all_refiner_seeds_pass": true
+        }
+      ],
+      "av2_cases": [
+        {
+          "requested": 4,
+          "maximum_native_trajectory_error_m": 0.0,
+          "all_refiner_seeds_pass": true
+        },
+        {
+          "requested": 4,
+          "maximum_native_trajectory_error_m": 0.0,
+          "all_refiner_seeds_pass": true
+        }
+      ],
+      "native_selection_parity": true,
+      "GT_poison_invariance": true,
+      "WOMD_maximum_native_trajectory_error_m": 0.0
+    },
+    "frozen_forward_scoring_runtime": {
+      "no_training": true,
+      "device": "cpu",
+      "torch": "2.0.1+cu118",
+      "numpy": "1.24.3",
+      "womd_cases": [
+        {
+          "requested": 3,
+          "all_refiner_seeds_pass": true
+        },
+        {
+          "requested": 4,
+          "all_refiner_seeds_pass": true
+        }
+      ],
+      "av2_cases": [
+        {
+          "requested": 4,
+          "maximum_native_trajectory_error_m": 0.0,
+          "all_refiner_seeds_pass": true
+        },
+        {
+          "requested": 4,
+          "maximum_native_trajectory_error_m": 0.0,
+          "all_refiner_seeds_pass": true
+        }
+      ],
+      "native_selection_parity": true,
+      "GT_poison_invariance": true,
+      "WOMD_maximum_native_trajectory_error_m": 0.0
+    },
+    "CLI_fit_forward_smoke": {
+      "checks": [
+        {
+          "dataset": "womd",
+          "phase": "selection",
+          "seed": 42,
+          "pass_": true
+        },
+        {
+          "dataset": "womd",
+          "phase": "refinement",
+          "seed": 42,
+          "pass_": true
+        },
+        {
+          "dataset": "womd",
+          "phase": "refinement",
+          "seed": 43,
+          "pass_": true
+        },
+        {
+          "dataset": "womd",
+          "phase": "refinement",
+          "seed": 44,
+          "pass_": true
+        },
+        {
+          "dataset": "av2",
+          "phase": "selection",
+          "seed": 42,
+          "pass_": true
+        },
+        {
+          "dataset": "av2",
+          "phase": "refinement",
+          "seed": 42,
+          "pass_": true
+        },
+        {
+          "dataset": "av2",
+          "phase": "refinement",
+          "seed": 43,
+          "pass_": true
+        },
+        {
+          "dataset": "av2",
+          "phase": "refinement",
+          "seed": 44,
+          "pass_": true
+        }
+      ],
+      "seconds": 18.429630994796753,
+      "GPU_used": false,
+      "training": false,
+      "fit_only": true
+    },
+    "syntax_and_core_imports": "Passed in both original model runtimes; final rerun logged in docs/checks.log",
+    "dataset_interface_imports": [
+      "WOMD backbone",
+      "AV2 backbone",
+      "WOMD CPU indexer (separate process)",
+      "WOMD CPU graph parser (separate process)"
+    ],
+    "limitations": [
+      "No retraining or full-dataset rerun in this task",
+      "Fresh raw-to-cache dataset pass not rerun; interface imports checked",
+      "Optional native-layout external reproducers need authorized source/compatibility assets and separate validation",
+      "New-code license and checkpoint hosting/redistribution approval pending",
+      "No remote repository created and no git push executed"
+    ],
+    "syntax_python_files": 168,
+    "CLI_help_entries": 13,
+    "training_argument_checks_per_model_runtime": 14,
+    "synthetic_contract_tests_per_model_runtime": 3,
+    "paired_summary_smoke": "Passed using the same four fit fixtures; not a formal statistical experiment",
+    "native_AV2_stage_and_import_check": "Passed source/weight/manifest hash checks and native imports, no inference/training; split files retained as original LF bytes",
+    "QCNet_license_source": "https://raw.githubusercontent.com/ZikangZhou/QCNet/main/LICENSE",
+    "public_note": "Scene IDs omitted; these are prior checks, not a clean install or rerun of benchmarks."
   },
-  "frozen_forward_scoring_runtime": {
-    "no_training": true,
-    "device": "cpu",
-    "torch": "2.0.1+cu118",
-    "numpy": "1.24.3",
-    "womd_cases": [
-      {
-        "requested": 3,
-        "all_refiner_seeds_pass": true
-      },
-      {
-        "requested": 4,
-        "all_refiner_seeds_pass": true
-      }
-    ],
-    "av2_cases": [
-      {
-        "requested": 4,
-        "maximum_native_trajectory_error_m": 0.0,
-        "all_refiner_seeds_pass": true
-      },
-      {
-        "requested": 4,
-        "maximum_native_trajectory_error_m": 0.0,
-        "all_refiner_seeds_pass": true
-      }
-    ],
-    "native_selection_parity": true,
-    "GT_poison_invariance": true,
-    "WOMD_maximum_native_trajectory_error_m": 0.0
-  },
-  "CLI_fit_forward_smoke": {
-    "checks": [
-      {
-        "dataset": "womd",
-        "phase": "selection",
-        "seed": 42,
-        "pass_": true
-      },
-      {
-        "dataset": "womd",
-        "phase": "refinement",
-        "seed": 42,
-        "pass_": true
-      },
-      {
-        "dataset": "womd",
-        "phase": "refinement",
-        "seed": 43,
-        "pass_": true
-      },
-      {
-        "dataset": "womd",
-        "phase": "refinement",
-        "seed": 44,
-        "pass_": true
-      },
-      {
-        "dataset": "av2",
-        "phase": "selection",
-        "seed": 42,
-        "pass_": true
-      },
-      {
-        "dataset": "av2",
-        "phase": "refinement",
-        "seed": 42,
-        "pass_": true
-      },
-      {
-        "dataset": "av2",
-        "phase": "refinement",
-        "seed": 43,
-        "pass_": true
-      },
-      {
-        "dataset": "av2",
-        "phase": "refinement",
-        "seed": 44,
-        "pass_": true
-      }
-    ],
-    "seconds": 18.429630994796753,
-    "GPU_used": false,
-    "training": false,
-    "fit_only": true
-  },
-  "syntax_and_core_imports": "Passed in both original model runtimes; final rerun logged in docs/checks.log",
-  "dataset_interface_imports": [
-    "WOMD backbone",
-    "AV2 backbone",
-    "WOMD CPU indexer (separate process)",
-    "WOMD CPU graph parser (separate process)"
-  ],
-  "limitations": [
-    "No retraining or full-dataset rerun in this task",
-    "Fresh raw-to-cache dataset pass not rerun; interface imports checked",
-    "Optional native-layout external reproducers need authorized source/compatibility assets and separate validation",
-    "New-code license and checkpoint hosting/redistribution approval pending",
-    "No remote repository created and no git push executed"
-  ],
-  "syntax_python_files": 168,
-  "CLI_help_entries": 13,
-  "training_argument_checks_per_model_runtime": 14,
-  "synthetic_contract_tests_per_model_runtime": 3,
-  "paired_summary_smoke": "Passed using the same four fit fixtures; not a formal statistical experiment",
-  "native_AV2_stage_and_import_check": "Passed source/weight/manifest hash checks and native imports, no inference/training; split files retained as original LF bytes",
-  "QCNet_license_source": "https://raw.githubusercontent.com/ZikangZhou/QCNet/main/LICENSE",
-  "public_note": "Scene IDs omitted; these are prior checks, not a clean install or rerun of benchmarks."
+  "historical_note": "Pending approval/hosting, no-data-or-weights and no-push fields describe the initial packaging audit only. The referenced docs/checks.log is an internal historical log, not a file distributed with this review copy."
 }
