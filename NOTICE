@@ -1,10 +1,10 @@
 Constrained Candidate Coordination and Staged Trajectory Refinement
-Public research code release: https://github.com/fuyankan-hue/constrained-candidate-coordination.
+Anonymous research-code review copy. Author identification is withheld; ownership and license grants remain unchanged.
 
-Copyright 2026 Yankan Fu.
+Copyright 2026 the original authors (identities withheld for review).
 
 Original project contributions are licensed under the Apache License, Version 2.0,
-as expressly authorized by their copyright holder, Yankan Fu. This attribution
+as expressly authorized by their copyright holder, the original authors (identities withheld for review). This attribution
 applies to those original contributions and does not replace the independent
 copyrights, licenses or dataset-derived rights identified below.
 
@@ -23,7 +23,7 @@ its non-commercial restrictions and downstream conditions. A copy is in LICENSES
 The Apache copyright license does not replace or waive these separate conditions.
 Raw data, caches and raw scene-ID/file inventories are not distributed.
 Frozen inference checkpoints and one-way cohort-membership tokens are available
-as separately noticed GitHub Release assets; see docs/checkpoints.md.
+as separately noticed encoded review assets; see docs/checkpoints.md.
 
 AV2 data attribution: Argoverse 2, copyright 2021 Argo AI, LLC; data/documentation
 CC BY-NC-SA 4.0, API code MIT. No AV2 data is bundled or relicensed by this project.

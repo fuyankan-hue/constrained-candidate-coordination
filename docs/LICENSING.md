@@ -1,6 +1,6 @@
 # License scope and copyright attribution
 
-Copyright 2026 Yankan Fu.
+Copyright 2026 the original authors (identities withheld for review).
 
 The copyright holder has expressly confirmed ownership and authorization to release
 the original project contributions under Apache License 2.0. `LICENSE` contains the
@@ -31,7 +31,7 @@ architectures/software/algorithms developed using its dataset. Sections 1, 2(c)
 and 4 require attribution, prominent downstream non-commercial notice, a copy of
 the Agreement for Distributed WOD Models, and restrictions on commercial,
 production and vehicle-operation uses. We apply that notice to the WOMD-developed
-architecture and related model-derived portions conservatively, including the separately published inference checkpoint exports. These conditions are not added to or erased from the Apache
+architecture and related model-derived portions conservatively, including the encoded inference checkpoint exports in this review copy. These conditions are not added to or erased from the Apache
 text. See NOTICE and LICENSES/Waymo_Dataset_License_March_2025.html, and the
 controlling source https://waymo.com/open/terms/.
 
@@ -42,7 +42,7 @@ deployment or that no-weights means the Agreement is irrelevant.
 AV2 data/documentation use CC BY-NC-SA 4.0; code/API use MIT, as stated at
 https://www.argoverse.org/about.html#terms-of-use. Apache does not relicense AV2
 data or grant commercial rights to dataset-derived artifacts. No raw samples, processed data tensors, trajectories, maps, scene lists or filename
-inventories are included. Model tensors are available separately as GitHub Release
+inventories are included. Model tensors are available separately as encoded review
 assets, with unchanged state_dict values, required notices and a copy of the
 Waymo Agreement in each archive. See docs/checkpoints.md for their independent terms.
 
@@ -55,7 +55,7 @@ without raw identifiers or dataset records. Local recovery validates the origina
 fingerprints using authorized user-owned indexes; hashes are not an access-control
 or anonymization guarantee. Model/provider restrictions remain separate.
 
-The original-code copyright attribution is confirmed as Yankan Fu, 2026. The
+The original-code copyright attribution is confirmed as the original authors (identities withheld for review), 2026. The
 separate dataset-term scope above continues to apply. Broader commercial
 distribution would require the relevant provider permission; this release does
 not grant it.

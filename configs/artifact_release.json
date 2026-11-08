@@ -1,20 +1,195 @@
 {
   "version": 1,
-  "release_tag": "paper-artifacts-v1-20261106",
-  "download_base": "https://github.com/fuyankan-hue/constrained-candidate-coordination/releases/download/paper-artifacts-v1-20261106",
+  "release_tag": "anonymous-review-assets-v1",
   "model_terms": "Waymo Dataset License Agreement for Non-Commercial Use; separate AV2 and upstream rights, see docs/checkpoints.md",
   "assets": {
     "womd-paper-checkpoints.tar.gz": {
-      "bytes": 46282739,
-      "sha256": "8886cc53bbcf113728062e1826a7acd48c5f71b7f521c415186f58f053fa8fcd"
+      "bytes": 46280916,
+      "sha256": "d8e865023ae298980d6c69447c0ff32effc088b0105ff56a15de8e7e94c73846",
+      "chunks": [
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-000.hex",
+          "sha256": "6ac5648b30528384919ebd02733d6ea30a82f12172a770a925670a8a3133d134",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-001.hex",
+          "sha256": "828e7722c290d3bcffef99215ed7a9e007cd4670178a2d7294cd2aa485302b95",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-002.hex",
+          "sha256": "81809a4f0e5cc60c9d948419065c2e99872aee6275eb5937f2f467e6f3a40010",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-003.hex",
+          "sha256": "e0b4803af9873dbb98b31dd9f572d6b8e735eb5ee1217f424f8305d126bd6e83",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-004.hex",
+          "sha256": "b2d1a3465f0374365614d0b1cac2d7d3a5ed12c16f3f8784396b3ac0c639a27b",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-005.hex",
+          "sha256": "3622d0b95bf21d3505247398fe4e8a68667b41b1672681200238681a94d17899",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-006.hex",
+          "sha256": "e4a111e9be361187d2bcd3a9c04eeb341507f9ef89aa62acc56db3a761680cd2",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-007.hex",
+          "sha256": "e615d4b1f50c359f6806f6ece68d9e231189d941bb819070eb32eea7a461dc76",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-008.hex",
+          "sha256": "8e8014ed615b67ae0fc1ed7e18bf4dcb851be0bae9bff69740b0363ffca3e368",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-009.hex",
+          "sha256": "6dd3b4bebf6bd7cf179961c5a9dbd05b446ed5916c076b4f892264d049ed4835",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-010.hex",
+          "sha256": "90971a5b315100fc7a9865691a337340d0a60a9fa01f1fb4c6c9b22aea875e9f",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-011.hex",
+          "sha256": "7485d53e36eb1e9dcbe9684c2f422aabeec788fa48bed200f257516ed155260f",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-012.hex",
+          "sha256": "1b55099e184b4dcfa60a120f8c4bd7257fb21570809821269fc4dacd18da06f0",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-013.hex",
+          "sha256": "5b1f203653c15ede3eec1cb29b641e484e923c1bec3300ace0ed8305a73083f2",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/womd-paper-checkpoints/part-014.hex",
+          "sha256": "cd98a0fb185e70f05ec905ab717367860449b52505b26674cd1a697ae5cc2270",
+          "decoded_bytes": 2240724
+        }
+      ]
     },
     "av2-paper-checkpoints.tar.gz": {
-      "bytes": 44814138,
-      "sha256": "518939ed109180d1d77986bcf372de2a7058ed25c5e834c4bfdbb5dcb85ea0a2"
+      "bytes": 44812490,
+      "sha256": "c8873c3f1270dcaf15e2795aadaf59dd604866b56aa2427441036842e28fed5c",
+      "chunks": [
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-000.hex",
+          "sha256": "d6562e1543559039bb599717c1cb29b10023ba59fe66ae9e9793a5de7bf7c8ae",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-001.hex",
+          "sha256": "a9691fbb91c1d365e9655faf6edef8c5ef1d2275d92027c08ac1bfae40fce4ed",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-002.hex",
+          "sha256": "5d60aeb10d9630bc16335b45e145cc903829825615d019d391de0307fa550aad",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-003.hex",
+          "sha256": "93c149dcac3b5b6b3d0f04f205a54f7ed626867d1eb6672748122b2dab0766a8",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-004.hex",
+          "sha256": "1ce87bce41c6ca91691264cd9e9b5b3952beb5b9b01c255fdf11adb711bd4d25",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-005.hex",
+          "sha256": "705ae162bccfdf504d95986e7649da62b5e0a210d29ca396d932c022086a9151",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-006.hex",
+          "sha256": "134ddafc58de1aadbc849b5d52e94ac0dcf7e855bff489101f2dbd29f95a8353",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-007.hex",
+          "sha256": "f47c7d3e118a0688d8b9c77c4ff457c6a65fe97b238afebff3658dca9625911e",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-008.hex",
+          "sha256": "46cd76c75bb561db57ea0d689c4f8832cee5434a41eedc924ac48094856f9bbc",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-009.hex",
+          "sha256": "dfe5dbc8539514fd1453df2df07d7426f351fe99c6773c988713fd3247ddf5ef",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-010.hex",
+          "sha256": "a1de079a631353bd8cbd5bd7326d9522496899bd1bd714fceada43704bb72c3b",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-011.hex",
+          "sha256": "d3e9cfa5b4d4f13d62ed932072d17490b5499cc763925af77e1863c7380754d8",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-012.hex",
+          "sha256": "ff00ec7108f90c5c968bf9970d3fe2ecb99ac7f1c0e39599e989b582128c75d6",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-013.hex",
+          "sha256": "5fbd1ed113e55c4a298f4d187e3d6b556725b5b595cfdc9dd309ffb3c568d19b",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/av2-paper-checkpoints/part-014.hex",
+          "sha256": "7bd1d9393d83e7d5a3eff97b3c7dff56ca66c47c880420fdaec2b8a85917dfbf",
+          "decoded_bytes": 772298
+        }
+      ]
     },
     "paper-split-hashes.json.gz": {
       "bytes": 11950294,
-      "sha256": "32f9be0a8f680fad8de8ed301dcb48d4b071c04dd5aa9a2e182f797d6f5f8485"
+      "sha256": "32f9be0a8f680fad8de8ed301dcb48d4b071c04dd5aa9a2e182f797d6f5f8485",
+      "chunks": [
+        {
+          "path": "assets/review/paper-split-hashes/part-000.hex",
+          "sha256": "e141e57b2b2da6fe41117e0e2cc4debcc0b5b5698f5501919a549e91f6070d5e",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/paper-split-hashes/part-001.hex",
+          "sha256": "1b58b3737dbf9e543a0e10a620bbe9de9a56b0bcc8594818c342ef22a08e7cc0",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/paper-split-hashes/part-002.hex",
+          "sha256": "7ba603aa57e1d8772bfd078e230fbeedb98e76c10467254656e54479d071eb17",
+          "decoded_bytes": 3145728
+        },
+        {
+          "path": "assets/review/paper-split-hashes/part-003.hex",
+          "sha256": "53f32fa4b86139987ae4f0daee06e67f839e4de09bac3d4693318394eb4ad455",
+          "decoded_bytes": 2513110
+        }
+      ]
     }
   },
   "checkpoints": [
@@ -382,15 +557,17 @@
   "archive_notices": {
     "womd": {
       "Waymo_Dataset_License_March_2025.html": "56573ab807192d99f1553054052faa1708983e36f7a5ece2061e6ead2e76f37a",
-      "MODEL_NOTICE.txt": "c59ce40f8532496e3af5860f0d576d1413aee8120352c640bb06a75f8933dd49",
+      "MODEL_NOTICE.txt": "5234ed1dc615aae2049a75459d7fd7af54267a710726a6372eba898be6bb8285",
       "NDPNet_ndpnet_womd_LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
       "QCNet_LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     },
     "av2": {
       "Waymo_Dataset_License_March_2025.html": "56573ab807192d99f1553054052faa1708983e36f7a5ece2061e6ead2e76f37a",
-      "MODEL_NOTICE.txt": "c59ce40f8532496e3af5860f0d576d1413aee8120352c640bb06a75f8933dd49",
+      "MODEL_NOTICE.txt": "5234ed1dc615aae2049a75459d7fd7af54267a710726a6372eba898be6bb8285",
       "NDPNet_ndpnet_av2_LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
       "QCNet_LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
     }
-  }
+  },
+  "asset_transport": "repository_hex_chunks",
+  "review_note": "No personal hosting links; recover assets from the complete review repository archive. Model tensor files are unchanged."
 }

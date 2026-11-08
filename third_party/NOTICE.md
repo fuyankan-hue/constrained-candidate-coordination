@@ -17,8 +17,8 @@ the native target/history interface. NDPNet internal Near/Far stages remain pres
 
 No dataset, raw identifier list, downloaded external implementation or private credential
 is included in Git. Separately noticed checkpoint exports are available through
-GitHub Releases; see docs/checkpoints.md. Third-party library dependencies remain separately licensed.
-Original project additions: Copyright 2026 Yankan Fu, licensed under Apache-2.0
+the encoded review assets; see docs/checkpoints.md. Third-party library dependencies remain separately licensed.
+Original project additions: Copyright 2026 the original authors (identities withheld for review), licensed under Apache-2.0
 with the copyright holder's express authorization. This statement does not overwrite
 upstream copyrights or licenses, or separate dataset terms. See root NOTICE and
 docs/LICENSING.md. Released checkpoint artifacts retain separate model/provider terms and upstream attribution.

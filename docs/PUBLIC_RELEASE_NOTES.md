@@ -1,13 +1,13 @@
 # Public candidate release boundary
 
-This research-code repository is published publicly at
-https://github.com/fuyankan-hue/constrained-candidate-coordination (main).
+This is the anonymous review copy of the research-code artifact. Personal
+repository addresses and original-author identification are withheld.
 It was prepared independently under the project lead's express authorization and
 does not inherit the Private research repository's Git history. Statements that no
 push occurred in the initial preparation audit describe that earlier audit only. Root LICENSE is the unmodified Apache-2.0 text;
 NOTICE and docs/LICENSING.md define third-party and dataset-term scope.
 
-Copyright 2026 Yankan Fu. The copyright holder has explicitly confirmed the right
+Copyright 2026 the original authors (identities withheld for review). The copyright holder has explicitly confirmed the right
 to release the original project code under Apache License 2.0. This confirmation
 does not replace third-party licenses or the separate terms for WOMD architectures
 and derivatives. Waymo's agreement and its copy remain included.
@@ -24,7 +24,7 @@ byte-for-byte against the audited Private candidate; only release I/O wrappers,
 metadata generation and documentation are changed.
 
 No raw/processed data are distributed. Frozen checkpoint inference exports are
-now separate GitHub Release assets with provider notices and tensor-equivalence
+now encoded review assets with provider notices and tensor-equivalence
 verification; see docs/checkpoints.md. SmartRefine/
 SRefiner neural sources and the original SRefiner compatibility archive remain
 external dependencies; exact source hashes and acquisition links are retained.

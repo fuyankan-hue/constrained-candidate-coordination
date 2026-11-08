@@ -1,7 +1,9 @@
 # Frozen paper checkpoints and exact cohort recovery
 
-The inference checkpoints for WOMD and AV2 are provided in the
-[paper-artifacts-v1-20261106 release](https://github.com/fuyankan-hue/constrained-candidate-coordination/releases/tag/paper-artifacts-v1-20261106).
+The inference checkpoints for WOMD and AV2 are provided as checksum-pinned
+encoded assets under assets/review in this anonymous repository. Download the
+complete review archive and retain its directory layout; no personal hosting
+service or original-repository visit is needed.
 This contains two backbone exports, two RCIM42 exports, and 36 matched Refiner
 exports (R1 A/B/E and R2 B/NoRCIM/RCIM, seeds 42/43/44): 40 unique checkpoints.
 Full and matched NoRCIM share the same E-matched R1. Fixed-head OFF uses Full's
@@ -29,7 +31,7 @@ and a canonical tensor digest separately. Original hashes/epochs in
 Export hashes legitimately differ; do not relabel them as original file hashes.
 These exports support inference; exact optimizer-state resume is not provided.
 
-## Download and verify
+## Assemble and verify review assets
 
 From the repository root, using only Python's standard library:
 
@@ -37,8 +39,8 @@ From the repository root, using only Python's standard library:
 python scripts/download_paper_artifacts.py --dataset all --output local/paper_artifacts
 ```
 
-Use `--dataset womd` or `--dataset av2` for one dataset. The downloader pins the
-asset and every extracted checkpoint checksum, rejects unsafe archive members,
+Use `--dataset womd` or `--dataset av2` for one dataset. The entrypoint verifies the encoded chunks, reconstructed archives and every
+extracted checkpoint checksum, rejects unsafe archive members,
 and refuses to overwrite differing local files. It produces these user-local maps:
 
 * `local/paper_artifacts/womd/weights.json`
@@ -51,12 +53,12 @@ Paths in generated maps are local to your machine and must not be committed.
 inference export mapped to that original digest. Core algorithms are unchanged.
 
 Only load checkpoints obtained from a trusted release and checked against the
-pinned digests. Download checksums establish integrity, not unrestricted usage
+pinned digests. Asset checksums establish integrity, not unrestricted usage
 rights or a fresh end-to-end reproduction claim.
 
 ## Recover the original paper's scene memberships
 
-The release also contains `paper-split-hashes.json.gz`: ordered one-way SHA256
+The encoded review assets also reconstruct `paper-split-hashes.json.gz`: ordered one-way SHA256
 membership tokens for the original seven cohort documents. It contains no raw
 scene IDs, dataset filenames, records, trajectories, GT, predictions, or private
 paths. Tokens encode our research cohort choices, not replacement random splits.

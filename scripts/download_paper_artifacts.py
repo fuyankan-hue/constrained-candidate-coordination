@@ -1,5 +1,5 @@
-"""Download checksum-pinned paper checkpoints and cohort memberships; no model execution."""
-import argparse,hashlib,json,os,tarfile,tempfile,urllib.request
+"""Assemble checksum-pinned assets from the anonymous review archive; no network/model execution."""
+import argparse,hashlib,json,os,tarfile
 from pathlib import Path
 from _bootstrap import ROOT
 
@@ -18,11 +18,19 @@ def fetch(name,registry,output):
         return dest
     tmp=dest.with_name(dest.name+'.download')
     try:
-        request=urllib.request.Request(registry['download_base']+'/'+name,headers={'User-Agent':'ccc-paper-artifacts'})
-        with urllib.request.urlopen(request,timeout=120) as response,tmp.open('wb') as f:
-            while True:
-                block=response.read(1048576)
-                if not block:break
+        if registry.get('asset_transport')!='repository_hex_chunks':
+            raise ValueError('Expected the anonymous offline asset manifest')
+        with tmp.open('wb') as f:
+            for chunk in spec['chunks']:
+                path=ROOT/chunk['path']
+                if not path.is_file():
+                    raise FileNotFoundError('Missing encoded review asset. Download the complete review ZIP, including assets/review, and preserve its layout.')
+                encoded=path.read_bytes()
+                if hashlib.sha256(encoded).hexdigest()!=chunk['sha256']:
+                    raise ValueError('Encoded review chunk checksum mismatch: '+chunk['path'])
+                block=bytes.fromhex(encoded.decode('ascii'))
+                if len(block)!=chunk['decoded_bytes']:
+                    raise ValueError('Encoded chunk length mismatch')
                 f.write(block)
         if tmp.stat().st_size!=spec['bytes'] or sha(tmp)!=spec['sha256']:
             raise ValueError('Downloaded checksum mismatch: '+name)
@@ -83,7 +91,7 @@ def main():
         if target.exists() and json.loads(target.read_text(encoding='utf-8'))!=value:raise ValueError('Existing local weights map differs')
         target.write_text(json.dumps(value,indent=2)+'\n',encoding='utf-8')
         print('VERIFIED',dataset,'weights:',target)
-    print('Verified assets; no model inference, training or dataset access.')
+    print('Verified offline review assets; no network, model inference, training or dataset access.')
 
 
 if __name__=='__main__':main()

@@ -2,7 +2,7 @@
 
 Public research code for the EAAI submission **Constrained Candidate
 Coordination and Staged Trajectory Refinement for Multi-Agent Interaction
-Consistency**. The code is published at https://github.com/fuyankan-hue/constrained-candidate-coordination. The release was prepared with an independent code-only history rather than inheriting the Private research repository.
+Consistency**. This is the anonymous review artifact. Author identification and personal hosting links are withheld. Download the complete review repository archive, including assets/review, to obtain the frozen inference assets without visiting a personal repository.
 
 ## Method and scope
 
@@ -64,7 +64,7 @@ No environment was installed or modified while assembling this candidate.
 
 Obtain WOMD and AV2 yourself under their official terms; raw data and processed
 caches are not redistributed. Frozen inference checkpoints are available as
-checksum-pinned GitHub Release assets (separate model terms apply):
+checksum-pinned assets inside this review repository (separate model terms apply):
 
 * [WOMD official download](https://waymo.com/open/download/) and
   [terms](https://waymo.com/open/terms/). Experiments used Scenario TFRecords v1.3.0,
@@ -122,7 +122,7 @@ CUDA_VISIBLE_DEVICES=0 python scripts/train_refiner.py \
 For AV2 use `configs/av2.json`, `work/av2`, and RCIM output
 `work/av2/models/rcim_seed42`. Native refiner recipes use the fixed manifests,
 architecture and output convention documented in `docs/reproduction.md`.
-Public inference exports are available via the release downloader. Dataset access,
+Inference exports are assembled offline by the review-asset entrypoint. Dataset access,
 correct runtimes and the documented preprocessing remain necessary; a clean
 raw-data-to-results reproduction has not been certified.
 
@@ -212,7 +212,7 @@ experiments were freshly reproduced.
 
 ## License, attribution and citation
 
-**Copyright 2026 Yankan Fu.** The copyright holder has expressly authorized release
+**Copyright 2026 the original authors (identities withheld for review).** The copyright holder has expressly authorized release
 of the original project contributions under **Apache License 2.0**. Upstream
 NDPNet/QCNet/RVO2 copyrights and independent licenses remain. SmartRefine/SRefiner
 neural code and weights are not bundled; use their official sources and the
@@ -231,14 +231,13 @@ override those conditions; the separately released model exports retain them.
 
 AV2 data/documentation are CC BY-NC-SA 4.0 and its API code is MIT, per
 https://www.argoverse.org/about.html#terms-of-use. No data, feature caches, raw scene IDs or filename inventories are included in Git.
-Inference weights are separate Release assets under their model/provider terms. See `NOTICE` and
+Inference weights are included as encoded review assets under their model/provider terms. See `NOTICE` and
 `docs/LICENSING.md`; do not describe this entire stack as unrestricted commercial
 Apache software.
 
 ```bibtex
 @misc{constrained_candidate_coordination,
-  author={Fu, Yankan and Li, Luyang and Liang, Haijian and Han, Huiyan
-          and Zhao, Rong and Xue, Hongxin},
+  author={Anonymous authors},
   year={2026},
   title={Constrained Candidate Coordination and Staged Trajectory Refinement
          for Multi-Agent Interaction Consistency},
@@ -246,7 +245,7 @@ Apache software.
 }
 ```
 
-Authors/year follow the manuscript. The repository URL above is public; a manuscript DOI and acceptance status are not implied. Please also cite NDPNet, QCNet, WOMD and AV2 using
+Author identification is withheld in this review copy; a manuscript DOI and acceptance status are not implied. Please also cite NDPNet, QCNet, WOMD and AV2 using
 their upstream citation information. We acknowledge the original implementations
 and dataset providers; retained code headers identify their copyrights.
 
